@@ -1,0 +1,241 @@
+town_name,landmark_name,landmark_type,landmark_x,landmark_y,nearest_locality_name,locality_x,locality_y,distance_to_locality
+Devgarh Nagar,Ganesh Temple,ganesha_temple,-506.7,2816.1,Ambedkar Nagar,-603.5,2996.1,204.37768958474896
+Devgarh Nagar,Hanuman Temple,hanuman_temple,-532.5,3389.7,Ambedkar Nagar,-603.5,2996.1,399.95244717341075
+Devgarh Nagar,Medical Store,medical_store,-740.1,2565.6,Ambedkar Nagar,-603.5,2996.1,451.65231096497223
+Devgarh Nagar,Milk Dairy,milk_dairy,-868.8,3100.8,Ambedkar Nagar,-603.5,2996.1,285.21251725686943
+Devgarh Nagar,Ration Shop,ration_shop,-170.1,3207.2,Ambedkar Nagar,-603.5,2996.1,482.0775560011065
+Devgarh Nagar,Water Tank,water_tank,-1016.5,2852.7,Ambedkar Nagar,-603.5,2996.1,437.187099535199
+Devgarh Nagar,Bus Stop,bus_stop,1097.3,2655.1,Azad Mohalla,986.3,2772.6,161.6392588451209
+Devgarh Nagar,Community Hall,community_hall,492.6,2650.8,Azad Mohalla,986.3,2772.6,508.502635194745
+Devgarh Nagar,Govt School,govt_school,907.5,2586.7,Azad Mohalla,986.3,2772.6,201.9114905100748
+Devgarh Nagar,Medical Store,medical_store,1213.8,2524.6,Azad Mohalla,986.3,2772.6,336.54160218314763
+Devgarh Nagar,Petrol Bunk,petrol_bunk,900.0,3101.3,Azad Mohalla,986.3,2772.6,339.84022716564937
+Devgarh Nagar,Ration Shop,ration_shop,940.8,2546.9,Azad Mohalla,986.3,2772.6,230.24061327228938
+Devgarh Nagar,Bus Stop,bus_stop,1388.1,1115.9,Gandhi Basti,987.4,1270.5,429.489988241868
+Devgarh Nagar,Govt School,govt_school,970.9,1390.7,Gandhi Basti,987.4,1270.5,121.32720222604662
+Devgarh Nagar,Hanuman Temple,hanuman_temple,1438.2,927.4,Gandhi Basti,987.4,1270.5,566.5141216245188
+Devgarh Nagar,Medical Store,medical_store,1240.7,1472.2,Gandhi Basti,987.4,1270.5,323.7958925001984
+Devgarh Nagar,Park,park,750.7,1451.6,Gandhi Basti,987.4,1270.5,298.03372292410126
+Devgarh Nagar,Petrol Bunk,petrol_bunk,641.3,1006.0,Gandhi Basti,987.4,1270.5,435.5978190946323
+Devgarh Nagar,Post Office,post_office,674.9,1444.0,Gandhi Basti,987.4,1270.5,357.43321054429174
+Devgarh Nagar,Bus Stop,bus_stop,1193.3,-221.1,Indira Colony,1046.9,-2.6,263.01180581867413
+Devgarh Nagar,Hanuman Temple,hanuman_temple,1309.5,290.4,Indira Colony,1046.9,-2.6,393.4561729087497
+Devgarh Nagar,Park,park,1063.8,-332.3,Indira Colony,1046.9,-2.6,330.1328520459604
+Devgarh Nagar,Post Office,post_office,933.9,299.4,Indira Colony,1046.9,-2.6,322.4484454916786
+Devgarh Nagar,Bus Stop,bus_stop,2378.9,-1282.9,Krishna Puri,2589.2,-1273.1,210.52821663615518
+Devgarh Nagar,Govt School,govt_school,2441.1,-1253.6,Krishna Puri,2589.2,-1273.1,149.3782447346332
+Devgarh Nagar,Hanuman Temple,hanuman_temple,2469.1,-1329.6,Krishna Puri,2589.2,-1273.1,132.7262596474412
+Devgarh Nagar,Masjid,masjid,2048.1,-1324.2,Krishna Puri,2589.2,-1273.1,543.5075160473864
+Devgarh Nagar,Post Office,post_office,2447.4,-1191.9,Krishna Puri,2589.2,-1273.1,163.40342713664205
+Devgarh Nagar,Ration Shop,ration_shop,2661.9,-1811.1,Krishna Puri,2589.2,-1273.1,542.8897586066623
+Devgarh Nagar,Water Tank,water_tank,2577.3,-1320.1,Krishna Puri,2589.2,-1273.1,48.483089835529164
+Devgarh Nagar,Bus Stop,bus_stop,2665.0,509.0,Nehru Colony,3029.6,575.7,370.6508464849365
+Devgarh Nagar,Community Hall,community_hall,2958.1,214.7,Nehru Colony,3029.6,575.7,368.01256772017996
+Devgarh Nagar,Ganesh Temple,ganesha_temple,2886.7,951.8,Nehru Colony,3029.6,575.7,402.33272300423187
+Devgarh Nagar,Ration Shop,ration_shop,2908.5,940.9,Nehru Colony,3029.6,575.7,384.75479204293214
+Devgarh Nagar,Water Tank,water_tank,2844.3,775.5,Nehru Colony,3029.6,575.7,272.4997798164246
+Devgarh Nagar,Church,church,1440.8,-1984.6,Patel Nagar,1577.4,-2059.5,155.78693783498042
+Devgarh Nagar,Govt School,govt_school,1185.3,-2043.0,Patel Nagar,1577.4,-2059.5,392.44701553203345
+Devgarh Nagar,Masjid,masjid,1346.4,-2520.7,Patel Nagar,1577.4,-2059.5,515.8162851248493
+Devgarh Nagar,Medical Store,medical_store,1722.9,-2340.4,Patel Nagar,1577.4,-2059.5,316.34642403542364
+Devgarh Nagar,Milk Dairy,milk_dairy,1268.9,-2044.0,Patel Nagar,1577.4,-2059.5,308.88913868894775
+Devgarh Nagar,Ration Shop,ration_shop,1041.5,-1855.2,Patel Nagar,1577.4,-2059.5,573.5218391656939
+Devgarh Nagar,Church,church,2362.0,1745.2,Ram Nagar,2308.9,1849.5,117.03888242802039
+Devgarh Nagar,Community Hall,community_hall,2083.6,1623.1,Ram Nagar,2308.9,1849.5,319.40108014845555
+Devgarh Nagar,Ganesh Temple,ganesha_temple,2326.7,1917.1,Ram Nagar,2308.9,1849.5,69.90422018733904
+Devgarh Nagar,Govt School,govt_school,2072.1,2097.3,Ram Nagar,2308.9,1849.5,342.75221370547
+Devgarh Nagar,Hanuman Temple,hanuman_temple,2450.4,1996.0,Ram Nagar,2308.9,1849.5,203.67744106797886
+Devgarh Nagar,Masjid,masjid,1922.2,1715.5,Ram Nagar,2308.9,1849.5,409.2589522539489
+Devgarh Nagar,Medical Store,medical_store,2471.8,2057.0,Ram Nagar,2308.9,1849.5,263.8042076995741
+Devgarh Nagar,Park,park,2698.3,1438.9,Ram Nagar,2308.9,1849.5,565.8840163849833
+Devgarh Nagar,Ration Shop,ration_shop,2335.2,1476.5,Ram Nagar,2308.9,1849.5,373.92604883853704
+Devgarh Nagar,Bus Stop,bus_stop,-214.4,-209.1,Shastri Nagar,-533.7,-484.7,421.79123983316686
+Devgarh Nagar,Hanuman Temple,hanuman_temple,-347.0,-84.0,Shastri Nagar,-533.7,-484.7,442.0603804911723
+Devgarh Nagar,Masjid,masjid,-651.2,-773.0,Shastri Nagar,-533.7,-484.7,311.3248143017193
+Devgarh Nagar,Milk Dairy,milk_dairy,-280.8,-278.0,Shastri Nagar,-533.7,-484.7,326.6240958655684
+Devgarh Nagar,Post Office,post_office,-600.4,-539.8,Shastri Nagar,-533.7,-484.7,86.51531656302245
+Devgarh Nagar,Water Tank,water_tank,-669.0,-472.4,Shastri Nagar,-533.7,-484.7,135.85794051140329
+Devgarh Nagar,Bus Stop,bus_stop,708.4,-3319.2,Shivaji Nagar,688.3,-3007.0,312.8463680466818
+Devgarh Nagar,Church,church,513.3,-3082.8,Shivaji Nagar,688.3,-3007.0,190.7108806544609
+Devgarh Nagar,Community Hall,community_hall,815.5,-2841.7,Shivaji Nagar,688.3,-3007.0,208.57595738723114
+Devgarh Nagar,Ganesh Temple,ganesha_temple,331.0,-3084.2,Shivaji Nagar,688.3,-3007.0,365.5449767128526
+Devgarh Nagar,Hanuman Temple,hanuman_temple,999.8,-3112.8,Shivaji Nagar,688.3,-3007.0,328.97703567270474
+Devgarh Nagar,Medical Store,medical_store,647.5,-2633.2,Shivaji Nagar,688.3,-3007.0,376.0200526567701
+Devgarh Nagar,Milk Dairy,milk_dairy,599.8,-2839.0,Shivaji Nagar,688.3,-3007.0,189.88483351758245
+Devgarh Nagar,Ration Shop,ration_shop,471.9,-3260.2,Shivaji Nagar,688.3,-3007.0,333.0753668466041
+Devgarh Nagar,Bus Stop,bus_stop,-1421.3,-3128.0,Subhash Nagar,-1600.3,-2801.9,371.9975940782412
+Devgarh Nagar,Govt School,govt_school,-1869.6,-2662.9,Subhash Nagar,-1600.3,-2801.9,303.0569088471668
+Devgarh Nagar,Hanuman Temple,hanuman_temple,-1528.9,-2813.1,Subhash Nagar,-1600.3,-2801.9,72.27309319518555
+Devgarh Nagar,Masjid,masjid,-1698.8,-2329.8,Subhash Nagar,-1600.3,-2801.9,482.26617132036114
+Devgarh Nagar,Milk Dairy,milk_dairy,-1625.7,-2955.8,Subhash Nagar,-1600.3,-2801.9,155.981954084439
+Devgarh Nagar,Ration Shop,ration_shop,-1872.5,-2486.2,Subhash Nagar,-1600.3,-2801.9,416.844491387376
+Devgarh Nagar,Ganesh Temple,ganesha_temple,-301.2,792.9,Tilak Nagar,-200.6,1476.5,690.9626039084894
+Devgarh Nagar,Govt School,govt_school,-128.5,1670.7,Tilak Nagar,-200.6,1476.5,207.15223870380936
+Devgarh Nagar,Masjid,masjid,-310.8,990.8,Tilak Nagar,-200.6,1476.5,498.044706828614
+Devgarh Nagar,Park,park,47.0,1401.3,Tilak Nagar,-200.6,1476.5,258.76784962587607
+Devgarh Nagar,Petrol Bunk,petrol_bunk,-643.5,1512.2,Tilak Nagar,-200.6,1476.5,444.3364716068218
+Devgarh Nagar,Ration Shop,ration_shop,107.8,1245.9,Tilak Nagar,-200.6,1476.5,385.08040718790136
+Devgarh Nagar,Water Tank,water_tank,126.5,1694.7,Tilak Nagar,-200.6,1476.5,393.19924974496075
+Kaveripura,Church,church,303.0,2703.0,Anjaneya Badavane,290.7,2335.2,368.00561137026176
+Kaveripura,Community Hall,community_hall,-76.4,2500.3,Anjaneya Badavane,290.7,2335.2,402.51760209958536
+Kaveripura,Ganesh Temple,ganesha_temple,345.8,2454.5,Anjaneya Badavane,290.7,2335.2,131.40966478916246
+Kaveripura,Govt School,govt_school,175.9,2722.3,Anjaneya Badavane,290.7,2335.2,403.7641019209116
+Kaveripura,Medical Store,medical_store,782.8,2036.1,Anjaneya Badavane,290.7,2335.2,575.867363200937
+Kaveripura,Milk Dairy,milk_dairy,78.9,1970.3,Anjaneya Badavane,290.7,2335.2,421.91379451257563
+Kaveripura,Petrol Bunk,petrol_bunk,693.0,2069.9,Anjaneya Badavane,290.7,2335.2,481.9018364770982
+Kaveripura,Church,church,-1554.1,641.8,Ashoka Layout,-1205.8,409.2,418.82651539748525
+Kaveripura,Community Hall,community_hall,-1475.9,764.5,Ashoka Layout,-1205.8,409.2,446.3094218140595
+Kaveripura,Ganesh Temple,ganesha_temple,-1122.4,327.5,Ashoka Layout,-1205.8,409.2,116.74951820029055
+Kaveripura,Govt School,govt_school,-1029.5,702.3,Ashoka Layout,-1205.8,409.2,342.036986304113
+Kaveripura,Hanuman Temple,hanuman_temple,-1550.8,649.1,Ashoka Layout,-1205.8,409.2,420.2106733532598
+Kaveripura,Masjid,masjid,-1073.6,860.5,Ashoka Layout,-1205.8,409.2,470.2643192928845
+Kaveripura,Medical Store,medical_store,-1287.0,-45.0,Ashoka Layout,-1205.8,409.2,461.40121369584625
+Kaveripura,Petrol Bunk,petrol_bunk,-1390.5,326.1,Ashoka Layout,-1205.8,409.2,202.53320715379
+Kaveripura,Water Tank,water_tank,-1065.2,770.6,Ashoka Layout,-1205.8,409.2,387.78643607016477
+Kaveripura,Bus Stop,bus_stop,-1325.0,-3511.8,Basava Nagar,-1053.3,-3163.0,442.133837203171
+Kaveripura,Church,church,-834.6,-2978.5,Basava Nagar,-1053.3,-3163.0,286.12923653482176
+Kaveripura,Govt School,govt_school,-1114.9,-3404.5,Basava Nagar,-1053.3,-3163.0,249.23244170853846
+Kaveripura,Masjid,masjid,-1409.6,-2935.6,Basava Nagar,-1053.3,-3163.0,422.6824458148221
+Kaveripura,Medical Store,medical_store,-1249.4,-3317.3,Basava Nagar,-1053.3,-3163.0,249.52695245203495
+Kaveripura,Ration Shop,ration_shop,-1388.7,-3524.7,Basava Nagar,-1053.3,-3163.0,493.2748219806074
+Kaveripura,Bus Stop,bus_stop,546.3,-2981.0,Gandhi Nagar,665.2,-3094.2,164.1689678349717
+Kaveripura,Community Hall,community_hall,740.2,-3077.2,Gandhi Nagar,665.2,-3094.2,76.90253571892151
+Kaveripura,Hanuman Temple,hanuman_temple,216.6,-2659.5,Gandhi Nagar,665.2,-3094.2,624.664750085996
+Kaveripura,Ration Shop,ration_shop,677.7,-2777.8,Gandhi Nagar,665.2,-3094.2,316.6468221852223
+Kaveripura,Water Tank,water_tank,340.1,-3069.3,Gandhi Nagar,665.2,-3094.2,326.0521737391119
+Kaveripura,Church,church,-563.2,-1389.8,Hosa Badavane,-598.6,-1329.8,69.66462516945023
+Kaveripura,Ganesh Temple,ganesha_temple,-85.8,-1467.4,Hosa Badavane,-598.6,-1329.8,530.9402979620214
+Kaveripura,Govt School,govt_school,-232.8,-956.2,Hosa Badavane,-598.6,-1329.8,522.8638446096651
+Kaveripura,Medical Store,medical_store,-288.4,-1601.5,Hosa Badavane,-598.6,-1329.8,412.3650445903484
+Kaveripura,Milk Dairy,milk_dairy,-320.1,-1102.8,Hosa Badavane,-598.6,-1329.8,359.2927079694215
+Kaveripura,Park,park,-548.4,-1445.6,Hosa Badavane,-598.6,-1329.8,126.21283611423996
+Kaveripura,Ration Shop,ration_shop,-880.5,-1288.3,Hosa Badavane,-598.6,-1329.8,284.9383442080058
+Kaveripura,Bus Stop,bus_stop,-2168.9,2921.1,Kalyana Nagar,-1885.4,2441.1,557.4695058924748
+Kaveripura,Ganesh Temple,ganesha_temple,-2026.3,2547.9,Kalyana Nagar,-1885.4,2441.1,176.8022907091421
+Kaveripura,Govt School,govt_school,-1870.0,2291.9,Kalyana Nagar,-1885.4,2441.1,149.99266648739848
+Kaveripura,Masjid,masjid,-1610.3,2442.2,Kalyana Nagar,-1885.4,2441.1,275.10219919150063
+Kaveripura,Petrol Bunk,petrol_bunk,-1772.1,2191.4,Kalyana Nagar,-1885.4,2441.1,274.20244346103107
+Kaveripura,Ration Shop,ration_shop,-1584.2,2476.5,Kalyana Nagar,-1885.4,2441.1,303.2731442116167
+Kaveripura,Water Tank,water_tank,-1609.7,2681.5,Kalyana Nagar,-1885.4,2441.1,365.79044547390805
+Kaveripura,Bus Stop,bus_stop,689.7,86.7,Kuvempu Layout,1112.8,-196.7,509.24372357447857
+Kaveripura,Community Hall,community_hall,747.1,70.2,Kuvempu Layout,1112.8,-196.7,452.7384454627196
+Kaveripura,Ganesh Temple,ganesha_temple,916.1,-109.8,Kuvempu Layout,1112.8,-196.7,215.04069382328538
+Kaveripura,Govt School,govt_school,1268.8,49.0,Kuvempu Layout,1112.8,-196.7,291.0403580261679
+Kaveripura,Hanuman Temple,hanuman_temple,1092.3,-419.8,Kuvempu Layout,1112.8,-196.7,224.03986252450701
+Kaveripura,Milk Dairy,milk_dairy,1255.7,47.7,Kuvempu Layout,1112.8,-196.7,283.1108793388202
+Kaveripura,Ration Shop,ration_shop,817.7,172.4,Kuvempu Layout,1112.8,-196.7,472.56620700172795
+Kaveripura,Community Hall,community_hall,2792.5,-2125.6,Nehru Colony,2735.1,-2128.6,57.47834374788482
+Kaveripura,Hanuman Temple,hanuman_temple,2870.3,-2346.1,Nehru Colony,2735.1,-2128.6,256.09625143683786
+Kaveripura,Masjid,masjid,2323.4,-2387.1,Nehru Colony,2735.1,-2128.6,486.1266707351077
+Kaveripura,Medical Store,medical_store,2791.9,-2113.9,Nehru Colony,2735.1,-2128.6,58.6713729172926
+Kaveripura,Park,park,2739.7,-2130.3,Nehru Colony,2735.1,-2128.6,4.904079934095701
+Kaveripura,Ration Shop,ration_shop,3049.4,-2157.6,Nehru Colony,2735.1,-2128.6,315.6350582555748
+Kaveripura,Bus Stop,bus_stop,-2018.6,-2173.4,Shanthi Nagar,-2195.4,-2378.6,270.8602591743573
+Kaveripura,Govt School,govt_school,-2184.5,-2407.6,Shanthi Nagar,-2195.4,-2378.6,30.980800506119948
+Kaveripura,Hanuman Temple,hanuman_temple,-1685.0,-2569.7,Shanthi Nagar,-2195.4,-2378.6,545.0021743075894
+Kaveripura,Masjid,masjid,-1959.0,-1971.3,Shanthi Nagar,-2195.4,-2378.6,470.93338170063925
+Kaveripura,Medical Store,medical_store,-1861.7,-2310.6,Shanthi Nagar,-2195.4,-2378.6,340.5579099066707
+Kaveripura,Post Office,post_office,-1781.9,-2609.4,Shanthi Nagar,-2195.4,-2378.6,473.55135941099365
+Kaveripura,Ration Shop,ration_shop,-1857.7,-2547.8,Shanthi Nagar,-2195.4,-2378.6,377.7167324861319
+Kaveripura,Water Tank,water_tank,-2350.3,-2317.5,Shanthi Nagar,-2195.4,-2378.6,166.51492425605585
+Kaveripura,Govt School,govt_school,2056.3,-641.7,Siddeshwara Colony,1939.0,-996.1,373.30771489483044
+Kaveripura,Hanuman Temple,hanuman_temple,1982.8,-1241.6,Siddeshwara Colony,1939.0,-996.1,249.37660275174161
+Kaveripura,Masjid,masjid,1501.6,-1185.9,Siddeshwara Colony,1939.0,-996.1,476.804781855216
+Kaveripura,Medical Store,medical_store,1690.6,-1164.5,Siddeshwara Colony,1939.0,-996.1,300.10184937784044
+Kaveripura,Milk Dairy,milk_dairy,1631.8,-800.8,Siddeshwara Colony,1939.0,-996.1,364.0246282877026
+Kaveripura,Park,park,2135.9,-908.4,Siddeshwara Colony,1939.0,-996.1,215.54790650804298
+Kaveripura,Bus Stop,bus_stop,2149.0,1301.7,Vidya Nagar,2499.2,994.1,466.10921466969506
+Kaveripura,Ganesh Temple,ganesha_temple,2122.2,625.0,Vidya Nagar,2499.2,994.1,527.6019427560896
+Kaveripura,Govt School,govt_school,2260.1,774.1,Vidya Nagar,2499.2,994.1,324.9135423462678
+Kaveripura,Hanuman Temple,hanuman_temple,2076.3,1122.7,Vidya Nagar,2499.2,994.1,442.0207800545125
+Kaveripura,Masjid,masjid,2627.8,962.2,Vidya Nagar,2499.2,994.1,132.49743393741664
+Kaveripura,Park,park,2078.9,752.8,Vidya Nagar,2499.2,994.1,484.64190904212956
+Kaveripura,Post Office,post_office,2295.8,713.3,Vidya Nagar,2499.2,994.1,346.72784716546767
+Kaveripura,Ration Shop,ration_shop,2843.8,757.1,Vidya Nagar,2499.2,994.1,418.232184318711
+Kaveripura,Bus Stop,bus_stop,-2672.6,1243.4,Vinayaka Nagar,-2863.9,1096.5,241.19556380663408
+Kaveripura,Community Hall,community_hall,-3083.2,1414.7,Vinayaka Nagar,-2863.9,1096.5,386.4501649630906
+Kaveripura,Ganesh Temple,ganesha_temple,-3155.2,823.8,Vinayaka Nagar,-2863.9,1096.5,399.02503680846877
+Kaveripura,Masjid,masjid,-3425.3,1304.2,Vinayaka Nagar,-2863.9,1096.5,598.5893834674986
+Kaveripura,Post Office,post_office,-2799.4,893.5,Vinayaka Nagar,-2863.9,1096.5,213.00058685365164
+Kaveripura,Ration Shop,ration_shop,-3111.6,1242.6,Vinayaka Nagar,-2863.9,1096.5,287.57694622483194
+Navanagara East,Church,church,-1239.1,-2298.0,Defence Colony,-1112.2,-1888.2,428.9984265705411
+Navanagara East,Ganesh Temple,ganesha_temple,-1138.4,-1991.8,Defence Colony,-1112.2,-1888.2,106.86159272629237
+Navanagara East,Hanuman Temple,hanuman_temple,-1292.4,-1644.8,Defence Colony,-1112.2,-1888.2,302.84583536842644
+Navanagara East,Milk Dairy,milk_dairy,-1102.7,-2213.9,Defence Colony,-1112.2,-1888.2,325.83851828781695
+Navanagara East,Ration Shop,ration_shop,-1290.6,-1772.0,Defence Colony,-1112.2,-1888.2,212.90608258102907
+Navanagara East,Water Tank,water_tank,-933.1,-1915.8,Defence Colony,-1112.2,-1888.2,181.21415507625227
+Navanagara East,Community Hall,community_hall,-3921.2,-577.0,Green Park Layout,-3766.2,-883.9,343.82060729397824
+Navanagara East,Hanuman Temple,hanuman_temple,-3990.5,-1086.5,Green Park Layout,-3766.2,-883.9,302.2536186714728
+Navanagara East,Medical Store,medical_store,-3993.5,-840.9,Green Park Layout,-3766.2,-883.9,231.33155859069484
+Navanagara East,Water Tank,water_tank,-4072.0,-1017.3,Green Park Layout,-3766.2,-883.9,333.63033435225896
+Navanagara East,Govt School,govt_school,-1031.2,-536.6,HMT Colony,-722.6,-522.8,308.9084006627208
+Navanagara East,Hanuman Temple,hanuman_temple,-305.4,-277.2,HMT Colony,-722.6,-522.8,484.1231248349949
+Navanagara East,Medical Store,medical_store,-513.7,-242.5,HMT Colony,-722.6,-522.8,349.58160706764875
+Navanagara East,Milk Dairy,milk_dairy,-791.9,-718.7,HMT Colony,-722.6,-522.8,207.7962944809171
+Navanagara East,Post Office,post_office,-764.5,-471.1,HMT Colony,-722.6,-522.8,66.54697588921671
+Navanagara East,Ration Shop,ration_shop,-853.4,-708.6,HMT Colony,-722.6,-522.8,227.22297419055147
+Navanagara East,Water Tank,water_tank,-513.7,-557.1,HMT Colony,-722.6,-522.8,211.6971894003319
+Navanagara East,Bus Stop,bus_stop,3788.5,411.2,Lakeview Phase 2,3653.7,367.3,141.76829687909793
+Navanagara East,Community Hall,community_hall,3391.3,470.7,Lakeview Phase 2,3653.7,367.3,282.03779888518454
+Navanagara East,Masjid,masjid,3482.0,744.3,Lakeview Phase 2,3653.7,367.3,414.2582407146536
+Navanagara East,Medical Store,medical_store,3763.3,925.0,Lakeview Phase 2,3653.7,367.3,568.3673547979336
+Navanagara East,Milk Dairy,milk_dairy,3509.8,540.2,Lakeview Phase 2,3653.7,367.3,224.948038444437
+Navanagara East,Ration Shop,ration_shop,3616.5,556.1,Lakeview Phase 2,3653.7,367.3,192.42993530113756
+Navanagara East,Ganesh Temple,ganesha_temple,-136.4,-3781.7,Orchid Enclave,-433.5,-3467.4,432.49612715029
+Navanagara East,Hanuman Temple,hanuman_temple,-639.9,-3367.2,Orchid Enclave,-433.5,-3467.4,229.43626565998682
+Navanagara East,Masjid,masjid,-460.7,-3589.7,Orchid Enclave,-433.5,-3467.4,125.28818779118778
+Navanagara East,Medical Store,medical_store,-31.9,-3138.2,Orchid Enclave,-433.5,-3467.4,519.2833523231803
+Navanagara East,Park,park,-568.0,-3271.2,Orchid Enclave,-433.5,-3467.4,237.87536652625488
+Navanagara East,Bus Stop,bus_stop,3443.4,-1945.1,Palm Meadows,3188.8,-1960.7,255.07747842567355
+Navanagara East,Ganesh Temple,ganesha_temple,3433.8,-1644.8,Palm Meadows,3188.8,-1960.7,399.77219763260183
+Navanagara East,Masjid,masjid,3428.0,-1931.1,Palm Meadows,3188.8,-1960.7,241.0244800844925
+Navanagara East,Milk Dairy,milk_dairy,3051.1,-2317.6,Palm Meadows,3188.8,-1960.7,382.5426773577034
+Navanagara East,Park,park,3550.4,-2296.1,Palm Meadows,3188.8,-1960.7,493.2015004032326
+Navanagara East,Post Office,post_office,3205.8,-1685.6,Palm Meadows,3188.8,-1960.7,275.62476303844704
+Navanagara East,Ration Shop,ration_shop,3231.2,-1663.6,Palm Meadows,3188.8,-1960.7,300.11026307009234
+Navanagara East,Water Tank,water_tank,3469.5,-2083.9,Palm Meadows,3188.8,-1960.7,306.5464565118963
+Navanagara East,Bus Stop,bus_stop,-2463.3,1582.8,Railway Colony,-2446.2,1613.2,34.879363526303315
+Navanagara East,Community Hall,community_hall,-2201.3,1392.4,Railway Colony,-2446.2,1613.2,329.7402765814328
+Navanagara East,Ganesh Temple,ganesha_temple,-2110.2,1617.4,Railway Colony,-2446.2,1613.2,336.02624897468945
+Navanagara East,Govt School,govt_school,-2618.5,2009.2,Railway Colony,-2446.2,1613.2,431.86026675303214
+Navanagara East,Masjid,masjid,-2378.1,1427.1,Railway Colony,-2446.2,1613.2,198.16866553519515
+Navanagara East,Milk Dairy,milk_dairy,-2878.1,1621.2,Railway Colony,-2446.2,1613.2,431.97408487084044
+Navanagara East,Water Tank,water_tank,-2392.4,1990.7,Railway Colony,-2446.2,1613.2,381.31442406497024
+Navanagara East,Bus Stop,bus_stop,431.5,1548.7,Royal Gardens,524.3,1610.0,111.21838876732564
+Navanagara East,Ganesh Temple,ganesha_temple,497.2,1572.2,Royal Gardens,524.3,1610.0,46.51075144523032
+Navanagara East,Govt School,govt_school,900.0,1772.8,Royal Gardens,524.3,1610.0,409.45613928722577
+Navanagara East,Milk Dairy,milk_dairy,311.7,1955.9,Royal Gardens,524.3,1610.0,406.01178554322786
+Navanagara East,Park,park,820.5,1955.8,Royal Gardens,524.3,1610.0,455.31536323739397
+Navanagara East,Ration Shop,ration_shop,254.3,1926.8,Royal Gardens,524.3,1610.0,416.24781080505386
+Navanagara East,Water Tank,water_tank,518.8,1925.1,Royal Gardens,524.3,1610.0,315.14799697919693
+Navanagara East,Bus Stop,bus_stop,-2847.1,-569.9,Silver Oak Layout,-2605.6,-262.1,391.232782368758
+Navanagara East,Church,church,-2678.2,-543.8,Silver Oak Layout,-2605.6,-262.1,290.9048813615886
+Navanagara East,Govt School,govt_school,-2505.6,-92.4,Silver Oak Layout,-2605.6,-262.1,196.97230769831583
+Navanagara East,Masjid,masjid,-2477.9,-542.1,Silver Oak Layout,-2605.6,-262.1,307.7454954991217
+Navanagara East,Petrol Bunk,petrol_bunk,-2772.6,-349.4,Silver Oak Layout,-2605.6,-262.1,188.4417416603869
+Navanagara East,Post Office,post_office,-2279.5,-487.4,Silver Oak Layout,-2605.6,-262.1,396.36006357855973
+Navanagara East,Water Tank,water_tank,-2910.2,-36.3,Silver Oak Layout,-2605.6,-262.1,379.16592673920474
+Navanagara East,Bus Stop,bus_stop,-800.4,3450.6,Sunrise Enclave,-438.3,3208.9,435.35652056676474
+Navanagara East,Church,church,-720.2,2971.9,Sunrise Enclave,-438.3,3208.9,368.28875899217996
+Navanagara East,Community Hall,community_hall,-661.1,3190.5,Sunrise Enclave,-438.3,3208.9,223.55849346423858
+Navanagara East,Hanuman Temple,hanuman_temple,-37.5,3542.0,Sunrise Enclave,-438.3,3208.9,521.1489710246005
+Navanagara East,Masjid,masjid,-107.4,3568.5,Sunrise Enclave,-438.3,3208.9,488.6788004405347
+Navanagara East,Milk Dairy,milk_dairy,-386.8,3422.8,Sunrise Enclave,-438.3,3208.9,220.01240874096177
+Navanagara East,Park,park,-768.2,3483.0,Sunrise Enclave,-438.3,3208.9,428.91120293132934
+Navanagara East,Ration Shop,ration_shop,-842.2,2899.6,Sunrise Enclave,-438.3,3208.9,508.72556452374215
+Navanagara East,Water Tank,water_tank,-402.8,3230.6,Sunrise Enclave,-438.3,3208.9,41.60697056984553
+Navanagara East,Bus Stop,bus_stop,603.1,-747.9,Teachers Colony,929.4,-822.2,334.6523270500296
+Navanagara East,Church,church,732.3,-1067.4,Teachers Colony,929.4,-822.2,314.59728225145244
+Navanagara East,Ganesh Temple,ganesha_temple,823.0,-420.4,Teachers Colony,929.4,-822.2,415.649130878437
+Navanagara East,Govt School,govt_school,731.9,-1039.8,Teachers Colony,929.4,-822.2,293.8639310973702
+Navanagara East,Masjid,masjid,1014.3,-406.9,Teachers Colony,929.4,-822.2,423.8892544049684
+Navanagara East,Medical Store,medical_store,1365.9,-882.5,Teachers Colony,929.4,-822.2,440.64536761436636
+Navanagara East,Ration Shop,ration_shop,658.2,-1125.8,Teachers Colony,929.4,-822.2,407.0901620034558
+Navanagara East,Church,church,921.3,-3506.1,Unity Nagar,1155.3,-3613.0,257.2617538617041
+Navanagara East,Govt School,govt_school,1386.5,-4085.8,Unity Nagar,1155.3,-3613.0,526.3015105431489
+Navanagara East,Hanuman Temple,hanuman_temple,877.2,-3615.8,Unity Nagar,1155.3,-3613.0,278.1140952918423
+Navanagara East,Medical Store,medical_store,1448.4,-3612.2,Unity Nagar,1155.3,-3613.0,293.10109177551703
+Navanagara East,Park,park,956.7,-3194.1,Unity Nagar,1155.3,-3613.0,463.59375535052243
+Navanagara East,Petrol Bunk,petrol_bunk,778.1,-3852.1,Unity Nagar,1155.3,-3613.0,446.5967420391688
+Navanagara East,Ration Shop,ration_shop,644.8,-3711.4,Unity Nagar,1155.3,-3613.0,519.8969224759846
+Navanagara East,Water Tank,water_tank,1157.3,-3636.6,Unity Nagar,1155.3,-3613.0,23.684594148939848

@@ -1,0 +1,10 @@
+{
+  "model_architecture": "DualEncoderAddressModel (google/muril-base-cased)",
+  "embedding_dimension": 768,
+  "test_sample_count": 266,
+  "canonical_entities_count": 36,
+  "recall_at_1": 0.9737,
+  "recall_at_5": 1.0,
+  "mean_reciprocal_rank_mrr": 0.9868,
+  "avg_target_cosine_similarity": 0.9585
+}

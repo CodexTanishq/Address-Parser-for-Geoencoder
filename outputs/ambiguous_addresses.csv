@@ -1,0 +1,2 @@
+address_id,town_id,address_text,reason,locality_metadata,other_details
+AD000179,T1,"#476, 11TH CR, 6TH MAIN, VIYA NAGAR, KVERIPURA - 960103",ambiguous_match,"{""locality_id"": ""T1-L08"", ""locality_name"": ""Vidya Nagar"", ""matched_phrase"": ""VIYA NAGAR"", ""match_score"": 0.952, ""second_best_score"": 0.833, ""score_margin"": 0.119, ""match_type"": ""fuzzy_gazetteer"", ""confidence"": ""AMBIGUOUS""}","#, KVERIPURA"

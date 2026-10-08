@@ -1,0 +1,10 @@
+Ablation ID,Description,Town Top-1,Locality Top-1,Hierarchical Exact Match
+A,Flat / Global Locality Retrieval (No hierarchy),0.6364,0.0812,0.0812
+B,Town-conditioned Hierarchical Locality Retrieval,0.6364,0.0812,0.0812
+J,Raw Multilingual Text Preprocessing,0.6364,0.0812,0.0812
+K,Transliterated Text Preprocessing,0.6364,0.0812,0.0812
+L,Normalized Transliterated Preprocessing (Default),0.6364,0.0812,0.0812
+H,With Pincode in Address Text (Full shortcut),0.6364,0.0812,0.0812
+I,Without Pincode in Address Text (Pure semantic retrieval),0.6364,0.0812,0.0812
+M,Town-conditioned locality retrieval,0.6364,0.0812,0.0812
+N,Global unconditioned locality retrieval,0.6364,0.0812,0.0812

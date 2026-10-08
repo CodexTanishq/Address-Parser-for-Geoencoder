@@ -1,0 +1,6 @@
+Model / Baseline,Town Top-1,Town Top-3,Town MRR,Locality Top-1,Locality Top-3,Locality MRR,Hierarchical Exact Match
+TF-IDF Word + Cosine,0.9977,1.0,0.9988,0.9869,0.9974,0.9917,0.9869
+TF-IDF Char n-gram (2-5) + Cosine,1.0,1.0,1.0,0.9948,1.0,0.9974,0.9948
+MuRIL CLS (Zero-shot),0.5221,1.0,0.7098,0.2382,0.3691,0.3294,0.1937
+MuRIL Mean (Zero-shot),0.4545,1.0,0.6768,0.1545,0.2723,0.2483,0.1204
+Trained MuRIL (Attention Pooling + Metric Learning),0.6364,1.0,0.8182,0.0812,0.2382,0.1505,0.0812

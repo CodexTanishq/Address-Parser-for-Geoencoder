@@ -1,0 +1,213 @@
+{
+  "baselines": {
+    "TF-IDF Word + Cosine": {
+      "town_top1": 0.9977,
+      "town_top3": 1.0,
+      "town_mrr": 0.9988,
+      "locality_top1": 0.9869,
+      "locality_top3": 0.9974,
+      "locality_mrr": 0.9917,
+      "hierarchical_exact_match": 0.9869
+    },
+    "TF-IDF Char n-gram (2-5) + Cosine": {
+      "town_top1": 1.0,
+      "town_top3": 1.0,
+      "town_mrr": 1.0,
+      "locality_top1": 0.9948,
+      "locality_top3": 1.0,
+      "locality_mrr": 0.9974,
+      "hierarchical_exact_match": 0.9948
+    },
+    "MuRIL CLS (Zero-shot)": {
+      "town_top1": 0.5221,
+      "town_top3": 1.0,
+      "town_mrr": 0.7098,
+      "locality_top1": 0.2382,
+      "locality_top3": 0.3691,
+      "locality_mrr": 0.3294,
+      "hierarchical_exact_match": 0.1937
+    },
+    "MuRIL Mean (Zero-shot)": {
+      "town_top1": 0.4545,
+      "town_top3": 1.0,
+      "town_mrr": 0.6768,
+      "locality_top1": 0.1545,
+      "locality_top3": 0.2723,
+      "locality_mrr": 0.2483,
+      "hierarchical_exact_match": 0.1204
+    },
+    "Trained MuRIL (Attention Pooling + Metric Learning)": {
+      "samples_evaluated": 429,
+      "town_top1": 0.6364,
+      "town_top3": 1.0,
+      "town_mrr": 0.8182,
+      "locality_top1": 0.0812,
+      "locality_top3": 0.2382,
+      "locality_mrr": 0.1505,
+      "landmark_top1": 0.0,
+      "landmark_top3": 0.0101,
+      "landmark_mrr": 0.0045,
+      "hierarchical_exact_match": 0.0812
+    }
+  },
+  "stress_test_subsets": {
+    "iid_test": {
+      "samples_evaluated": 429,
+      "town_top1": 0.6364,
+      "town_top3": 1.0,
+      "town_mrr": 0.8182,
+      "locality_top1": 0.0812,
+      "locality_top3": 0.2382,
+      "locality_mrr": 0.1505,
+      "landmark_top1": 0.0,
+      "landmark_top3": 0.0101,
+      "landmark_mrr": 0.0045,
+      "hierarchical_exact_match": 0.0812
+    },
+    "multilingual": {
+      "samples_evaluated": 262,
+      "town_top1": 0.8969,
+      "town_top3": 1.0,
+      "town_mrr": 0.9485,
+      "locality_top1": 0.1079,
+      "locality_top3": 0.39,
+      "locality_mrr": 0.231,
+      "landmark_top1": 0.04,
+      "landmark_top3": 0.1111,
+      "landmark_mrr": 0.0719,
+      "hierarchical_exact_match": 0.1079
+    },
+    "noisy_spelling": {
+      "samples_evaluated": 692,
+      "town_top1": 0.8497,
+      "town_top3": 1.0,
+      "town_mrr": 0.9249,
+      "locality_top1": 0.116,
+      "locality_top3": 0.378,
+      "locality_mrr": 0.2332,
+      "landmark_top1": 0.0126,
+      "landmark_top3": 0.0377,
+      "landmark_mrr": 0.0237,
+      "hierarchical_exact_match": 0.116
+    },
+    "missing_locality": {
+      "samples_evaluated": 282,
+      "town_top1": 0.7092,
+      "town_top3": 1.0,
+      "town_mrr": 0.8546,
+      "locality_top1": 0.0,
+      "locality_top3": 0.0,
+      "locality_mrr": 0.0,
+      "landmark_top1": 0.0048,
+      "landmark_top3": 0.0143,
+      "landmark_mrr": 0.0079,
+      "hierarchical_exact_match": 0.0
+    },
+    "missing_pincode": {
+      "samples_evaluated": 210,
+      "town_top1": 0.681,
+      "town_top3": 1.0,
+      "town_mrr": 0.8405,
+      "locality_top1": 0.1064,
+      "locality_top3": 0.2606,
+      "locality_mrr": 0.1746,
+      "landmark_top1": 0.0,
+      "landmark_top3": 0.0072,
+      "landmark_mrr": 0.0036,
+      "hierarchical_exact_match": 0.1064
+    }
+  },
+  "ablations": [
+    {
+      "Ablation ID": "A",
+      "Description": "Flat / Global Locality Retrieval (No hierarchy)",
+      "Town Top-1": 0.6364,
+      "Locality Top-1": 0.0812,
+      "Hierarchical Exact Match": 0.0812
+    },
+    {
+      "Ablation ID": "B",
+      "Description": "Town-conditioned Hierarchical Locality Retrieval",
+      "Town Top-1": 0.6364,
+      "Locality Top-1": 0.0812,
+      "Hierarchical Exact Match": 0.0812
+    },
+    {
+      "Ablation ID": "J",
+      "Description": "Raw Multilingual Text Preprocessing",
+      "Town Top-1": 0.6364,
+      "Locality Top-1": 0.0812,
+      "Hierarchical Exact Match": 0.0812
+    },
+    {
+      "Ablation ID": "K",
+      "Description": "Transliterated Text Preprocessing",
+      "Town Top-1": 0.6364,
+      "Locality Top-1": 0.0812,
+      "Hierarchical Exact Match": 0.0812
+    },
+    {
+      "Ablation ID": "L",
+      "Description": "Normalized Transliterated Preprocessing (Default)",
+      "Town Top-1": 0.6364,
+      "Locality Top-1": 0.0812,
+      "Hierarchical Exact Match": 0.0812
+    },
+    {
+      "Ablation ID": "H",
+      "Description": "With Pincode in Address Text (Full shortcut)",
+      "Town Top-1": 0.6364,
+      "Locality Top-1": 0.0812,
+      "Hierarchical Exact Match": 0.0812
+    },
+    {
+      "Ablation ID": "I",
+      "Description": "Without Pincode in Address Text (Pure semantic retrieval)",
+      "Town Top-1": 0.6364,
+      "Locality Top-1": 0.0812,
+      "Hierarchical Exact Match": 0.0812
+    },
+    {
+      "Ablation ID": "M",
+      "Description": "Town-conditioned locality retrieval",
+      "Town Top-1": 0.6364,
+      "Locality Top-1": 0.0812,
+      "Hierarchical Exact Match": 0.0812
+    },
+    {
+      "Ablation ID": "N",
+      "Description": "Global unconditioned locality retrieval",
+      "Town Top-1": 0.6364,
+      "Locality Top-1": 0.0812,
+      "Hierarchical Exact Match": 0.0812
+    }
+  ],
+  "confidence_calibration": [
+    {
+      "margin_threshold": 0.0,
+      "coverage_pct": 100.0,
+      "town_top1_accuracy": 0.6364
+    },
+    {
+      "margin_threshold": 0.05,
+      "coverage_pct": 32.87,
+      "town_top1_accuracy": 1.0
+    },
+    {
+      "margin_threshold": 0.1,
+      "coverage_pct": 32.87,
+      "town_top1_accuracy": 1.0
+    },
+    {
+      "margin_threshold": 0.15,
+      "coverage_pct": 32.87,
+      "town_top1_accuracy": 1.0
+    },
+    {
+      "margin_threshold": 0.2,
+      "coverage_pct": 32.87,
+      "town_top1_accuracy": 1.0
+    }
+  ],
+  "timestamp": "2026-10-07 02:03:35"
+}

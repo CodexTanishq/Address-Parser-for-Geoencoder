@@ -1,0 +1,17 @@
+cat << 'EOF' > .gitignore
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Model Weights and Large Folders
+MuRIL/
+*muril*/
+*.pt
+*.bin
+*.safetensors
+*.h5
+
+# OS generated files
+.DS_Store
+EOF

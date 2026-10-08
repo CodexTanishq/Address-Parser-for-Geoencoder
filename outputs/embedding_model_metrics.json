@@ -1,0 +1,13 @@
+{
+  "samples_evaluated": 429,
+  "town_top1": 0.6364,
+  "town_top3": 1.0,
+  "town_mrr": 0.8182,
+  "locality_top1": 0.0812,
+  "locality_top3": 0.2382,
+  "locality_mrr": 0.1505,
+  "landmark_top1": 0.0,
+  "landmark_top3": 0.0101,
+  "landmark_mrr": 0.0045,
+  "hierarchical_exact_match": 0.0812
+}

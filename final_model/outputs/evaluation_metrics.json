@@ -1,0 +1,176 @@
+{
+  "clean": {
+    "N": 459,
+    "pincode_cue_enabled": true,
+    "town_accuracy": 1.0,
+    "town_macro_f1": 1.0,
+    "locality_precision_answered": 0.9766,
+    "locality_coverage": 0.8388,
+    "landmark_addresses_labeller": 273,
+    "landmark_addresses_model": 273,
+    "landmark_metrics": {
+      "tp": 273,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "relation_accuracy": 1.0,
+      "relation_N": 273,
+      "poi_accuracy": 0.9817,
+      "poi_N": 273
+    },
+    "gps_benchmarks": {
+      "N_gps_points": 139,
+      "model_median_error_m": 397.2,
+      "model_p90_error_m": 3086.1,
+      "baseline_median_error_m": 381.6,
+      "baseline_p90_error_m": 2413.5
+    }
+  },
+  "clean_no_pincode": {
+    "N": 459,
+    "pincode_cue_enabled": false,
+    "town_accuracy": 1.0,
+    "town_macro_f1": 1.0,
+    "locality_precision_answered": 0.9766,
+    "locality_coverage": 0.8388,
+    "landmark_addresses_labeller": 273,
+    "landmark_addresses_model": 273,
+    "landmark_metrics": {
+      "tp": 273,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "relation_accuracy": 1.0,
+      "relation_N": 273,
+      "poi_accuracy": 0.9817,
+      "poi_N": 273
+    },
+    "gps_benchmarks": {
+      "N_gps_points": 139,
+      "model_median_error_m": 397.2,
+      "model_p90_error_m": 3086.1,
+      "baseline_median_error_m": 381.6,
+      "baseline_p90_error_m": 2413.5
+    }
+  },
+  "mild": {
+    "N": 459,
+    "pincode_cue_enabled": true,
+    "town_accuracy": 1.0,
+    "town_macro_f1": 1.0,
+    "locality_precision_answered": 0.979,
+    "locality_coverage": 0.8301,
+    "landmark_addresses_labeller": 273,
+    "landmark_addresses_model": 260,
+    "landmark_metrics": {
+      "tp": 260,
+      "fp": 0,
+      "fn": 13,
+      "precision": 1.0,
+      "recall": 0.9524,
+      "f1": 0.9756,
+      "relation_accuracy": 0.9654,
+      "relation_N": 260,
+      "poi_accuracy": 0.9769,
+      "poi_N": 260
+    },
+    "gps_benchmarks": {
+      "N_gps_points": 138,
+      "model_median_error_m": 394.8,
+      "model_p90_error_m": 3099.2,
+      "baseline_median_error_m": 381.6,
+      "baseline_p90_error_m": 2413.5
+    }
+  },
+  "mild_no_pincode": {
+    "N": 459,
+    "pincode_cue_enabled": false,
+    "town_accuracy": 1.0,
+    "town_macro_f1": 1.0,
+    "locality_precision_answered": 0.979,
+    "locality_coverage": 0.8301,
+    "landmark_addresses_labeller": 273,
+    "landmark_addresses_model": 260,
+    "landmark_metrics": {
+      "tp": 260,
+      "fp": 0,
+      "fn": 13,
+      "precision": 1.0,
+      "recall": 0.9524,
+      "f1": 0.9756,
+      "relation_accuracy": 0.9654,
+      "relation_N": 260,
+      "poi_accuracy": 0.9769,
+      "poi_N": 260
+    },
+    "gps_benchmarks": {
+      "N_gps_points": 138,
+      "model_median_error_m": 394.8,
+      "model_p90_error_m": 3099.2,
+      "baseline_median_error_m": 381.6,
+      "baseline_p90_error_m": 2413.5
+    }
+  },
+  "heavy": {
+    "N": 459,
+    "pincode_cue_enabled": true,
+    "town_accuracy": 1.0,
+    "town_macro_f1": 1.0,
+    "locality_precision_answered": 0.984,
+    "locality_coverage": 0.8148,
+    "landmark_addresses_labeller": 273,
+    "landmark_addresses_model": 233,
+    "landmark_metrics": {
+      "tp": 233,
+      "fp": 3,
+      "fn": 40,
+      "precision": 0.9873,
+      "recall": 0.8535,
+      "f1": 0.9155,
+      "relation_accuracy": 0.9185,
+      "relation_N": 233,
+      "poi_accuracy": 0.9785,
+      "poi_N": 233
+    },
+    "gps_benchmarks": {
+      "N_gps_points": 137,
+      "model_median_error_m": 418.8,
+      "model_p90_error_m": 3112.3,
+      "baseline_median_error_m": 381.6,
+      "baseline_p90_error_m": 2413.5
+    }
+  },
+  "heavy_no_pincode": {
+    "N": 459,
+    "pincode_cue_enabled": false,
+    "town_accuracy": 1.0,
+    "town_macro_f1": 1.0,
+    "locality_precision_answered": 0.984,
+    "locality_coverage": 0.8148,
+    "landmark_addresses_labeller": 273,
+    "landmark_addresses_model": 233,
+    "landmark_metrics": {
+      "tp": 233,
+      "fp": 3,
+      "fn": 40,
+      "precision": 0.9873,
+      "recall": 0.8535,
+      "f1": 0.9155,
+      "relation_accuracy": 0.9185,
+      "relation_N": 233,
+      "poi_accuracy": 0.9785,
+      "poi_N": 233
+    },
+    "gps_benchmarks": {
+      "N_gps_points": 137,
+      "model_median_error_m": 418.8,
+      "model_p90_error_m": 3112.3,
+      "baseline_median_error_m": 381.6,
+      "baseline_p90_error_m": 2413.5
+    }
+  }
+}

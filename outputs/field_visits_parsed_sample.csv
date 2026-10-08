@@ -1,0 +1,51 @@
+visit_id,address_id,outcome,remark,extracted_landmarks,directional_vectors,is_contradiction,contradiction_reason,has_address_correction,corrected_address_clause
+VS000001,AD000840,address_not_traceable,address sikkilla,,,False,,False,
+VS000002,AD001233,cash_collected,"1,77,600 cash collect",,,False,,False,
+VS000003,AD001899,locked_premises,"yaaru illa, beega haakide; nija mane Milk Dairy hinde ide, 2 cross munde",nija mane Milk Dairy hinde,"hinde, 2 cross munde",False,,True,"nija mane Milk Dairy hinde ide, 2 cross munde"
+VS000004,AD000785,address_not_traceable,"address sikkilla, tumba hudukide",,,False,,False,
+VS000005,AD001186,met_family,"avara hendathi sikkidru, kelsakke hogidaare antharu",,,False,,False,
+VS000006,AD000761,met_borrower,"customer maneli sikkidru; nija mane Masidi hinde ide, 2 cross munde",nija mane Masidi hinde,"hinde, 2 cross munde",False,,True,"nija mane Masidi hinde ide, 2 cross munde"
+VS000007,AD002806,locked_premises,"yaaru illa, beega haakide; mane Ganapathi Gudi eduru road nalli ide",mane Ganapathi Gudi eduru,eduru,False,,False,
+VS000008,AD002771,address_not_traceable,"address sikkilla, tumba hudukide",,,False,,False,
+VS000009,AD001433,locked_premises,"yaaru illa, beega haakide; address tappu, mane Anjaneya Gudi hattira ide",mane Anjaneya Gudi hattira,hattira,False,,True,"address tappu, mane Anjaneya Gudi hattira ide"
+VS000010,AD002362,met_family,"avara hendathi sikkidru, kelsakke hogidaare antharu",,,False,,False,
+VS000011,AD001306,locked_premises,"premises locked, nobody home; house is on the road opposite Children Park",opposite Children Park,opposite,False,,False,
+VS000012,AD000569,met_borrower,met customer at shop,,,False,,False,
+VS000013,AD001267,address_not_traceable,could not trace address after search,,,False,,False,
+VS000014,AD000652,met_family,"met spouse, customer at work",,,False,,False,
+VS000015,AD001107,address_not_traceable,could not trace address after search,,,False,,False,
+VS000016,AD000237,locked_premises,"premises locked, nobody home",,,False,,False,
+VS000017,AD000314,locked_premises,"premises locked, nobody home; actual house behind Park, 2 lanes ahead",behind Park,"behind, 2 lanes ahead",False,,True,"actual house behind Park, 2 lanes ahead"
+VS000018,AD002016,no_such_person,ee hesarina yaaru illa illi,,,False,,False,
+VS000019,AD000075,locked_premises,address nahi mila,,,False,,False,
+VS000020,AD001416,met_family,avara appa jothe maataadide,,,False,,False,
+VS000021,AD002537,address_not_traceable,"address sikkilla, tumba hudukide",,,False,,False,
+VS000022,AD002691,met_borrower,"customer sikkidru,  olage kodtini andru",,,False,,False,
+VS000023,AD000193,no_such_person,ee hesarina yaaru illa illi,,,False,,False,
+VS000024,AD000904,met_borrower,"customer sikkidru, 06/04 olage kodtini andru",,,False,,False,
+VS000025,AD002359,neighbour_says_shifted,neighbour bola 2 mahine pehle ghar khali kar diya,,,False,,False,
+VS000026,AD000539,address_not_traceable,is address pe ghar nahi mila,,,False,,False,
+VS000027,AD001627,met_family,"ghar pe beta tha, customer bahar",,,False,,False,
+VS000028,AD001752,neighbour_says_shifted,"neighbour bola 2 mahine pehle ghar khali kar diya; address galat likha hai, ghar Medical Store ke paas hai",ghar Medical Store ke paas,ke paas,False,,True,"address galat likha hai, ghar Medical Store ke paas hai"
+VS000029,AD002973,address_not_traceable,is address pe ghar nahi mila,,,False,,False,
+VS000030,AD002576,met_family,"wife mili, bola kaam pe gaye hain",,,False,,False,
+VS000031,AD003074,met_borrower,"customer ghar pe mila; address galat likha hai, ghar Girja Ghar ke paas hai",,ke paas,True,Outcome is 'met_borrower' but remark indicates failure/closure/shift: 'address galat',True,"address galat likha hai, ghar Girja Ghar ke paas hai"
+VS000032,AD001495,met_family,"wife mili, bola kaam pe gaye hain; address galat likha hai, ghar Barat Ghar ke paas hai",ghar Barat Ghar ke paas,ke paas,True,Outcome is 'met_family' but remark indicates failure/closure/shift: 'address galat',True,"address galat likha hai, ghar Barat Ghar ke paas hai"
+VS000033,AD002059,met_borrower,customer ghar pe mila,,,False,,False,
+VS000034,AD001124,met_borrower,"customer se mila, baat hui",,,False,,False,
+VS000035,AD002849,met_borrower,customer ghar pe mila; ghar Dawai ki Dukaan ke saamne wali gali mein hai,,ke saamne,False,,False,
+VS000036,AD001013,locked_premises,"koi nahi mila, taala laga tha; asli ghar Doodh Dairy ke peeche hai, 2 gali aage",Doodh Dairy,2 gali aage,False,,False,
+VS000037,AD000412,locked_premises,ghar band tha; ghar Doodh Dairy ke saamne wali gali mein hai,ghar Doodh Dairy ke saamne,ke saamne,False,,False,
+VS000038,AD001673,neighbour_says_shifted,neighbour bola 2 mahine pehle ghar khali kar diya,,,False,,False,
+VS000039,AD003067,locked_premises,lock laga hai,,,False,,False,
+VS000040,AD001833,locked_premises,"ghar band tha; blue gate wala ghar, Dawai ki Dukaan se right side",,,False,,False,
+VS000041,AD001381,neighbour_says_shifted,"shift ho gaye, naya address pata nahi; blue gate wala ghar, Park se right side",Park,,False,,True,"naya address pata nahi; blue gate wala ghar, Park se right side"
+VS000042,AD002466,locked_premises,"koi nahi mila, taala laga tha; ghar Medical Store ke saamne wali gali mein hai",ghar Medical Store ke saamne,ke saamne,False,,False,
+VS000043,AD003015,address_not_traceable,is address pe ghar nahi mila,,,False,,False,
+VS000044,AD003007,address_not_traceable,"address trace nahi hua, kaafi dhunda",,,False,,False,
+VS000045,AD003060,met_family,"wife mili, bola kaam pe gaye hain; address galat likha hai, ghar Sarkari School ke paas hai",ghar Sarkari School ke paas,ke paas,True,Outcome is 'met_family' but remark indicates failure/closure/shift: 'address galat',True,"address galat likha hai, ghar Sarkari School ke paas hai"
+VS000046,AD002299,met_borrower,customer ghar pe mila,,,False,,False,
+VS000047,AD002669,address_not_traceable,is address pe ghar nahi mila,,,False,,False,
+VS000048,AD001830,met_family,"father se baat hui, message de denge; asli ghar Ganesh Mandir ke peeche hai, 2 gali aage",Ganesh Mandir,2 gali aage,False,,False,
+VS000049,AD000027,met_borrower,"customer mila, bola  tak karega",,,False,,False,
+VS000050,AD001080,met_borrower,"customer sikkidru, 08/04 olage kodtini andru",,,False,,False,

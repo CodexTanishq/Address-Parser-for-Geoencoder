@@ -1,0 +1,192 @@
+# Indian Address Parser
+
+Reads a messy, human-written Indian address (low noise) and outputs:
+
+- **Town**
+- **Locality**
+- **Landmarks** (name, type, coordinates)
+
+The coordinate team uses this output to build a predicted pin and a confidence radius (R50/R90).
+
+Not in scope: ward (dropped) and relation words such as near / opp / behind.
+
+## 1. How it works
+
+The engine is `AddressFusionEngine` in `final_model/src/fusion.py`.
+
+1. **Town.** Find the town in the address.
+2. **Locality.** Find the locality named in the text. If the text names no locality, the answer is `UNKNOWN`. There is no TF-IDF fallback.
+3. **Landmarks.** Detect the landmark type(s) in the text, then resolve POIs with the landmark rule below.
+
+### Landmark rule (`resolve_landmarks_and_coordinates`)
+
+1. Find the town.
+2. Take every POI of the mentioned type in that town.
+3. If the locality is known and has that type, return only those POIs. Mode: `in_locality`.
+4. Otherwise return all town POIs of that type. Mode: `candidates`, with `candidate_count`.
+5. Each POI carries its own `poi_x`, `poi_y`. POIs without coordinates go to `dropped`.
+
+The next team decides how to pick among candidates. This parser does not pick.
+
+Each entry in `res["landmarks"]` is one POI with these keys:
+
+`landmark_name`, `landmark_type`, `poi_id`, `poi_x`, `poi_y`, `x`, `y`, `resolution_mode`, `candidate_count`
+
+### Other design choices
+
+- `audit.py` reads `master_data_3_locations_v5.csv` as the only POI-to-locality source.
+- `fuzzy_word_match`: a length rule, and one adjacent swap counts as one edit.
+- Abbreviation map: lyt, ngr, colny, nr, opp, bhd, and others.
+- The model handles typos and mixed scripts (English, Kannada, Hindi).
+
+---
+
+## 2. Project layout
+
+```
+final_model/
+  src/
+    config.py                  paths and settings
+    audit.py                   POI-to-locality source check
+    labeller.py                rule-based silver labels
+    fusion.py                  main engine (town + locality + landmarks)
+    predict.py
+    final_check.py
+    final_check_fresh.py       strict check: name + count + mode
+    make_landmark_rows.py      one row per POI, writes landmark_rows_fresh30.csv
+    list_landmark_fp.py        lists landmark extras on the test split (read-only)
+    run_test_split_eval.py     old test run
+    run_test_split_v3.py       frozen test run (current)
+    evaluate.py
+    baselines.py
+    run_new.py
+  data_ref/
+    towns, localities, landmarks_poi, splits, addresses,
+    master_data_3_locations_v5.csv
+  outputs/
+    handcheck files
+    handcheck_fresh_30_gold.csv      hand-corrected gold, 30 addresses
+    model_output_new.csv
+    test_clean.parquet, val_clean.parquet
+    test_v3_results.json
+    landmark_rows_fresh30.csv
+    landmark_false_positives_test.csv
+```
+
+---
+
+## 3. How to run
+
+Run from the project root (the folder that contains `final_model/`) on Windows PowerShell:
+
+```
+python -m final_model.src.<name>
+```
+
+Do not write `.py` in the command. The file itself must end in `.py`.
+
+| Task | Command |
+|---|---|
+| Frozen test run (v3) | `python -m final_model.src.run_test_split_v3` |
+| Fresh 30 strict check | `python -m final_model.src.final_check_fresh` |
+| Landmark rows per POI | `python -m final_model.src.make_landmark_rows` |
+| List landmark extras on test | `python -m final_model.src.list_landmark_fp` |
+
+All CSV outputs are saved with `encoding="utf-8-sig"` so Kannada and Hindi text opens correctly in Excel.
+
+---
+
+## 4. Results
+
+### 4.1 Frozen test split v3
+
+N = 459. Run once, no tuning afterwards.
+
+| Part | Result |
+|---|---|
+| Town accuracy | 100% |
+| Locality precision (answered) | 98.43% |
+| Locality coverage | 83.22% |
+
+Locality coverage is below 100% by design. The model answers `UNKNOWN` when the text names no locality.
+
+### 4.2 Landmark types
+
+Landmarks are counted once per detected type, not once per POI.
+
+| View | TP | FP | FN | Precision | Recall |
+|---|---|---|---|---|---|
+| Agreement with labeller | 271 | 29 | 2 | 90.3% | 99.3% |
+| After hand review of the 29 extras | 300 | 0 | 2 | 100% | 99.3% |
+
+POI-in-set accuracy: 98.9%. The gold `poi_id` is inside the returned POI set.
+
+Resolution modes (first type per address):
+
+| Mode | Addresses |
+|---|---|
+| in_locality | 184 |
+| candidates | 116 |
+| none | 159 |
+
+### 4.3 Hand review of the 29 extras
+
+The labeller is a rule set, not truth. All 29 types the model returned and the labeller did not were checked by reading the address text. All 29 are real landmark mentions that the labeller missed:
+
+- **Typos:** Govt Schol, templa, SCHHOOL, MASJAD, Medical Stare, ratoin shop, Scheol, Haanuman Temple, MEDCIAL, Teemple, CHORCH.
+- **Kannada or Hindi script:** ration shop, post office, govt school, masjid, medical store, water tank, milk dairy, church, petrol bunk.
+
+The model reads noisy and mixed-script text better than the rule-based labeller. The list is in `outputs/landmark_false_positives_test.csv`.
+
+### 4.4 Fresh 30 (hand-checked gold)
+
+`handcheck_fresh_30_gold.csv` was checked against the master file. Town, locality and strict landmark (name + count + mode) are all 100%.
+
+### 4.5 What is and is not verified
+
+- The 29 extras and the fresh 30 are human-checked.
+- The other test numbers are agreement with the labeller, not checked truth.
+- The 271 matched landmark types and the 2 false negatives have not been reviewed by hand.
+
+---
+
+## 5. Note for the coordinate team
+
+Changes:
+
+- Modes are now `in_locality` and `candidates`. The old modes `exact_key` and `nearest_in_town` are gone.
+
+How to use the output:
+
+- `in_locality`: the POIs are inside the known locality. This is the accurate case.
+- `candidates`: the locality is unknown or has no POI of that type, so all town POIs of that type are returned. Treat this as **low confidence**.
+- In `candidates` mode, do not average the POIs into one pin. This gave about 3 km error. If a locality is known, use the locality centroid instead.
+- Picking among candidates is your job. The parser does not choose.
+
+Coordinate error on the frozen test vs trusted GPS (metres):
+
+| Method | N | Median | P90 |
+|---|---|---|---|
+| Model centroid, all | 142 | 421 | 3661 |
+| in_locality | 55 | 215 | 1497 |
+| candidates | 41 | 3003 | 4134 |
+| No landmark, locality fallback | 46 | 420 | 3759 |
+| Locality centroid only | 131 | 371 | 1921 |
+| Baseline geocode | 145 | 382 | 2413 |
+
+The candidates case raises the overall error above the baseline. This is expected from the rule and is for the next team to handle.
+
+---
+
+## 6. Known limits
+
+- Locality is `UNKNOWN` when the text does not name it.
+- In `candidates` mode there is no single answer, only a list.
+- Test metrics are against a rule-based labeller, not human truth.
+
+## 7. Open items
+
+1. Review the 2 landmark false negatives by hand.
+2. Check that `run_csv.py` and `run_new.py` save with `encoding="utf-8-sig"`.
+3. Optional: test a single-pin rule (POI only when `in_locality`, else locality centroid) on `val_clean.parquet`, never on the frozen test.
+4. Confirm `landmark_rows_fresh30.csv` was created from the real data.

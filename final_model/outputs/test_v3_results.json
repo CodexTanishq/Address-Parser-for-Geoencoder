@@ -1,0 +1,64 @@
+{
+  "N_test": 459,
+  "town_accuracy": 1.0,
+  "town_macro_f1": 1.0,
+  "locality_precision_answered": 0.9843,
+  "locality_coverage": 0.8322,
+  "landmark_addresses_labeller": 273,
+  "landmark_addresses_model": 300,
+  "landmark_metrics": {
+    "tp": 271,
+    "fp": 29,
+    "fn": 2,
+    "precision": 0.9033,
+    "recall": 0.9927,
+    "f1": 0.9459,
+    "relation_accuracy": 0.7897,
+    "relation_N": 271,
+    "poi_in_set_accuracy": 0.9889,
+    "poi_N": 271
+  },
+  "resolution_mode_counts": {
+    "in_locality": 184,
+    "candidates": 116,
+    "none": 159
+  },
+  "coord_error_m": {
+    "N_gps_points": 152,
+    "model_centroid_all": {
+      "N": 142,
+      "median_m": 421.4,
+      "p90_m": 3661.4
+    },
+    "model_first_poi_all": {
+      "N": 142,
+      "median_m": 420.0,
+      "p90_m": 5175.8
+    },
+    "model_centroid_in_locality": {
+      "N": 55,
+      "median_m": 214.7,
+      "p90_m": 1496.8
+    },
+    "model_centroid_candidates": {
+      "N": 41,
+      "median_m": 3003.3,
+      "p90_m": 4134.1
+    },
+    "model_no_landmark_locality_fallback": {
+      "N": 46,
+      "median_m": 420.0,
+      "p90_m": 3758.7
+    },
+    "locality_centroid_only_all": {
+      "N": 131,
+      "median_m": 371.0,
+      "p90_m": 1921.4
+    },
+    "baseline_geocode": {
+      "N": 145,
+      "median_m": 381.6,
+      "p90_m": 2413.5
+    }
+  }
+}

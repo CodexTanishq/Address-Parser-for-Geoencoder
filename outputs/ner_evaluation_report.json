@@ -1,0 +1,62 @@
+{
+  "HOUSE_NUMBER": {
+    "precision": 0.9903381642512077,
+    "recall": 0.9951456310679612,
+    "f1-score": 0.9927360774818401,
+    "support": 206
+  },
+  "LANDMARK": {
+    "precision": 0.95260663507109,
+    "recall": 0.995049504950495,
+    "f1-score": 0.973365617433414,
+    "support": 202
+  },
+  "LOCALITY": {
+    "precision": 0.9925373134328358,
+    "recall": 1.0,
+    "f1-score": 0.9962546816479401,
+    "support": 266
+  },
+  "PINCODE": {
+    "precision": 0.985239852398524,
+    "recall": 1.0,
+    "f1-score": 0.9925650557620818,
+    "support": 267
+  },
+  "STREET": {
+    "precision": 0.9228486646884273,
+    "recall": 0.9936102236421726,
+    "f1-score": 0.956923076923077,
+    "support": 313
+  },
+  "TOWN": {
+    "precision": 0.96875,
+    "recall": 0.9964285714285714,
+    "f1-score": 0.9823943661971831,
+    "support": 280
+  },
+  "WARD": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 21
+  },
+  "micro avg": {
+    "precision": 0.9664981036662452,
+    "recall": 0.9832797427652733,
+    "f1-score": 0.9748167038571883,
+    "support": 1555
+  },
+  "macro avg": {
+    "precision": 0.8303315185488692,
+    "recall": 0.854319133012743,
+    "f1-score": 0.8420341250636479,
+    "support": 1555
+  },
+  "weighted avg": {
+    "precision": 0.954091189794937,
+    "recall": 0.9832797427652733,
+    "f1-score": 0.9683147572358657,
+    "support": 1555
+  }
+}

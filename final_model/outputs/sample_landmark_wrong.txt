@@ -1,0 +1,8 @@
+[1] AD000743: 307/1 10th x 8th mn ke pass church shanthi NAGzR kaveripura - 960101
+    Labeller: ['church'] | Model: ['church', 'church']
+
+[2] AD000808: #264 BLK D RD 5 OPP CHuLDREN PARK SUNRISE ENCLAAVE NAVANAGARA EAST - 9880304
+    Labeller: ['park'] | Model: ['park', 'park']
+
+[3] AD001910: 10th x, 4th mn rd, bus stop edhuru, hosa badavane, kaveripura -
+    Labeller: ['bus_stop'] | Model: ['bus_stop', 'bus_stop']

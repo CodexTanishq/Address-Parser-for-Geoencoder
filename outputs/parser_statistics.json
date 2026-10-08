@@ -1,0 +1,38 @@
+{
+  "dataset_summary": {
+    "total_addresses_processed": 2880,
+    "valid_pincodes": 2670,
+    "valid_pincodes_pct": 92.71,
+    "resolved_localities": 2598,
+    "resolved_localities_pct": 90.21,
+    "unresolved_localities": 282,
+    "ambiguous_localities": 1
+  },
+  "entity_coverage": {
+    "house_number_coverage": 1962,
+    "house_number_pct": 68.12,
+    "street_coverage": 2398,
+    "street_pct": 83.26,
+    "ward_coverage": 240,
+    "ward_pct": 8.33,
+    "landmark_coverage": 2016,
+    "landmark_pct": 70.0
+  },
+  "weak_supervision_confidence": {
+    "high_confidence_tokens": 46907,
+    "medium_confidence_tokens": 0,
+    "ambiguous_tokens": 0,
+    "low_confidence_tokens": 0,
+    "unlabeled_tokens_O": 17161,
+    "total_tokens": 46907
+  },
+  "entity_token_counts": {
+    "STREET": 6931,
+    "LANDMARK": 6882,
+    "LOCALITY": 5466,
+    "TOWN": 4619,
+    "HOUSE_NUMBER": 2721,
+    "PINCODE": 2647,
+    "WARD": 480
+  }
+}

@@ -1,0 +1,30 @@
+﻿address_id,text,extra_type,labeller_types,model_locality,mode,candidate_count
+AD000102,#266 6th crs 7th main ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿ ಪಕ್ಕ anjaneya badavane kaveripura - 960103,ration_shop,(none),T1-L07,candidates,9
+AD000153,"Blk F, Rd 3, near Govt Schol, Silver Oak Layout, Navanagara East - 980301",govt_school,(none),T3-L06,in_locality,1
+AD000313,189/1 c blk 6th road ಅಂಚೆ ಕಚೇರಿ ಹತ್ತಿರ silver oak layout navanagara east - 980301,post_office,(none),T3-L06,in_locality,1
+AD000457,"BLK D, RD 4, ಸರ್ಕಾರಿ ಶಾಲೆ ಹತ್ತಿರ, RAILWAY COLONY, NAVANAGARA EAST - 980304",govt_school,(none),T3-L07,in_locality,1
+AD000584,h.no. 302 nr hanuman templa sunrise enclave navanagara east - 980304,hanuman_temple,(none),T3-L02,in_locality,1
+AD000764,"#375, 9TH CROSS, 3RD MAIN, ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿ ಹಿಂದೆ, GANDHI NAGAR, KAVERIPURA - 960102",ration_shop,(none),T1-L04,in_locality,1
+AD000785,"No. 46, ಮಸೀದಿ ಹತ್ತಿರ, Kaveripura - 960102",masjid,(none),UNKNOWN,candidates,8
+AD000881,"H.No. 192, ಮೆಡಿಕಲ್ ಶಾಪ್ ಹತ್ತಿರ, Anjaneya Badavane, Kaveripura - 960103",medical_store,(none),T1-L07,in_locality,1
+AD000905,no. 196 blk d rd 1 ration ki dukkaan ke paas royal gardens navanagara east - 980303,ration_shop,(none),T3-L09,in_locality,1
+AD000961,"Gali 7, पानी की टंकी के पास, Nehru Colony, Devgarh Ngr - 970203",water_tank,(none),T2-L06,in_locality,1
+AD001079,"NO. 63, BLK F, RD 4, OPPOSITE GOVERNMENT SCHHOOL, NAVANAGARA EAST - 980301",govt_school,(none),UNKNOWN,candidates,6
+AD001137,no. 134 गली नं. 5 दूध डेयरी के पास devgarh ngr - 970204,milk_dairy,(none),UNKNOWN,candidates,5
+AD001183,"H.NO. 19, E BLOCK, 5TH RD, CLOSE TO MASJAD, LAKEVIEW PHASE 2, NAVANAGARA ESAT",masjid,(none),T3-L05,in_locality,1
+AD001380,"No. 360, गली नं. 9, Ward 11, चर्च के पीछे, Patel Nagr, Devgarh Nagar - 970202",church,(none),T2-L11,in_locality,1
+AD001489,"गली नं. 11, चर्च के पास, Patel Nagr, Devgarh Nagar - 970202",church,(none),T2-L11,in_locality,1
+AD001552,"#175, 1st X, 6th Main, ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿ ಹತ್ತಿರ, Vidya Ngr, Kaveripura - 960103",ration_shop,(none),T1-L08,in_locality,1
+AD001561,"House 242, 8th Cross, 5th Mn, Medical Stare ke paas, Kuvempu Layout, Kaveripura - 960104",medical_store,(none),T1-L03,candidates,7
+AD001689,"HOUSE 314, गली नं. 4, चर्च के पीछे, SHASTRI NGR, DEVGARH NGR",church,(none),T2-L09,candidates,3
+AD001744,#28 blk e rd 1 ಪೆಟ್ರೋಲ್ ಬಂಕ್ ಹತ್ತಿರ railway colony navanagara east,petrol_bunk,(none),T3-L07,candidates,2
+AD001892,"House 200, Annapoorna Nilaya, E Block, 6th Road, ಮೆಡಿಕಲ್ ಶಾಪ್ ಹತ್ತಿರ, HMT Colony, Navanagara East - 980301",medical_store,(none),T3-L03,in_locality,1
+AD001903,house 437 8th cr 3rd main bhd ratoin shop kaveripura - 960103,ration_shop,(none),UNKNOWN,candidates,9
+AD001908,"No. 173, Blk F, Rd 5, ಸರ್ಕಾರಿ ಶಾಲೆ ಹತ್ತಿರ, Silver Oak Layout, Navanagara East - 980301",govt_school,(none),T3-L06,in_locality,1
+AD002114,"D Blok, 4th Road, near Govt Scheol, HMT Colony, Navanagara East - 980301",govt_school,(none),T3-L03,in_locality,1
+AD002159,"Gali No. 12, nr Haanuman Temple, Ambedkar Nagar, Devgarh Nagar - 970204",hanuman_temple,(none),T2-L03,in_locality,1
+AD002237,"NO. 241, MEDCIAL STORE KE SAMNE, DEVGARH NAGAR - 970202",medical_store,(none),UNKNOWN,candidates,6
+AD002467,blk d rd 1 ಹಾಲಿನ ಡೈರಿ ಹತ್ತಿರ palm meadows navanagara east - 980302,milk_dairy,(none),T3-L10,in_locality,1
+AD002787,"#346, Gali No. 2, Ward 1, behind Hanuman Teemple, Shivaji Ngr, Devgarh Nagar - 970201",hanuman_temple,(none),T2-L01,in_locality,1
+AD002889,"206/2, BLK C, RD 1, BEHIND CHORCH, LAKEVIEW PHASE 2, NAVANAGARA EAST - 980303",church,(none),T3-L05,candidates,5
+AD003016,h.no. 74 1st cross 4th main ಮಸೀದಿ ಹತ್ತಿರ vidya nagar kaveripura - 960103,masjid,(none),T1-L08,in_locality,1

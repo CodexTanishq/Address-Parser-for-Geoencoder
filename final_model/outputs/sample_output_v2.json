@@ -1,0 +1,949 @@
+{
+  "sample_5_addresses": [
+    {
+      "address_id": "AD000022",
+      "raw_address": "4th cross, 8th main, ಹತ್ತಿರ govt school, kuvempu layout, kaveripura - 960102",
+      "town_name": "Kaveripura",
+      "locality_name": "Kuvempu Layout",
+      "locality_x": 1112.8,
+      "locality_y": -196.7,
+      "landmarks": [
+        {
+          "landmark_name": "Govt School",
+          "landmark_type": "govt_school",
+          "relation": "near",
+          "poi_x": 1268.8,
+          "poi_y": 49.0,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000030",
+      "raw_address": "11TH CROSS 3RD MN ADJ. GANAPATHI TEMPLE NEHRU COLONY KAVERIPURA - 90102",
+      "town_name": "Kaveripura",
+      "locality_name": "Nehru Colony",
+      "locality_x": 2735.1,
+      "locality_y": -2128.6,
+      "landmarks": [
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "next_to",
+          "poi_x": -3155.2,
+          "poi_y": 823.8,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "next_to",
+          "poi_x": 916.1,
+          "poi_y": -109.8,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "next_to",
+          "poi_x": -1122.4,
+          "poi_y": 327.5,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "next_to",
+          "poi_x": 345.8,
+          "poi_y": 2454.5,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "next_to",
+          "poi_x": 2122.2,
+          "poi_y": 625.0,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "next_to",
+          "poi_x": -2026.3,
+          "poi_y": 2547.9,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "next_to",
+          "poi_x": -85.8,
+          "poi_y": -1467.4,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000052",
+      "raw_address": "10th cross 1st main hanuman mandir ke paas gandhi nagr kaveripura - 960102",
+      "town_name": "Kaveripura",
+      "locality_name": "Gandhi Nagar",
+      "locality_x": 665.2,
+      "locality_y": -3094.2,
+      "landmarks": [
+        {
+          "landmark_name": "Hanuman Temple",
+          "landmark_type": "hanuman_temple",
+          "relation": "unknown",
+          "poi_x": 216.6,
+          "poi_y": -2659.5,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000061",
+      "raw_address": "#461, GALI 7, NR CHURCH, PATEL NAGAR, DEVGGARH NGR - 970202",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Patel Nagar",
+      "locality_x": 1577.4,
+      "locality_y": -2059.5,
+      "landmarks": [
+        {
+          "landmark_name": "Church",
+          "landmark_type": "church",
+          "relation": "near",
+          "poi_x": 1440.8,
+          "poi_y": -1984.6,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000063",
+      "raw_address": "GALI 6 COMMUNITY HALL KE PAAS NEHRU COLONY DEVGARH NAGR - 970203",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Nehru Colony",
+      "locality_x": 3029.6,
+      "locality_y": 575.7,
+      "landmarks": [
+        {
+          "landmark_name": "Community Hall",
+          "landmark_type": "community_hall",
+          "relation": "near",
+          "poi_x": 2958.1,
+          "poi_y": 214.7,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    }
+  ],
+  "validation_20_addresses": [
+    {
+      "address_id": "AD000014",
+      "raw_address": "HOUSE 458, GALI NO-4, AMBEDKAR NAGAR, DEVGARH NAGAR",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Ambedkar Nagar",
+      "locality_x": -603.5,
+      "locality_y": 2996.1,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000016",
+      "raw_address": "No. 86, Gali 2, Ward 8, Azad Mohalla, Devgarh Nagar - 970203",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Azad Mohalla",
+      "locality_x": 986.3,
+      "locality_y": 2772.6,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000020",
+      "raw_address": "house 25 3rd cross 6th main rd kaveripura - 960104",
+      "town_name": "Kaveripura",
+      "locality_name": "UNKNOWN",
+      "locality_x": null,
+      "locality_y": null,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000027",
+      "raw_address": "89/2, Azad Mohalla, Devgarh Nagar - 970203",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Azad Mohalla",
+      "locality_x": 986.3,
+      "locality_y": 2772.6,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000035",
+      "raw_address": "A Block, 2nd Road, behind Milk Dairy, Palm Meadows, Navanagara East - 980302",
+      "town_name": "Navanagara East",
+      "locality_name": "Palm Meadows",
+      "locality_x": 3188.8,
+      "locality_y": -1960.7,
+      "landmarks": [
+        {
+          "landmark_name": "Milk Dairy",
+          "landmark_type": "milk_dairy",
+          "relation": "behind",
+          "poi_x": 3051.1,
+          "poi_y": -2317.6,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000036",
+      "raw_address": "D BLOCK, 5TH ROAD, OPP. KALYANA MANTAPA, LAKEVIEW PHASE 2, NAVANAAGARA EAST - 980303",
+      "town_name": "Navanagara East",
+      "locality_name": "Lakeview Phase 2",
+      "locality_x": 3653.7,
+      "locality_y": 367.3,
+      "landmarks": [
+        {
+          "landmark_name": "Community Hall",
+          "landmark_type": "community_hall",
+          "relation": "opposite",
+          "poi_x": 3391.3,
+          "poi_y": 470.7,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000043",
+      "raw_address": "H.NO. 452, BLK F, RD 5, LAKEVIEW PHASE 2, NAVANAGARA EAST - 980303",
+      "town_name": "Navanagara East",
+      "locality_name": "Lakeview Phase 2",
+      "locality_x": 3653.7,
+      "locality_y": 367.3,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000044",
+      "raw_address": "Village Mallapura, Taluk A, District North - 999665",
+      "town_name": "OUT",
+      "locality_name": "UNKNOWN",
+      "locality_x": null,
+      "locality_y": null,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000048",
+      "raw_address": "#160, 5th Cross, 1st Main, ಕಲ್ಯಾಣ ಮಂಟಪ ಹತ್ತಿರ, Kalyana Ngr, Kaveripura - 960104",
+      "town_name": "Kaveripura",
+      "locality_name": "Kalyana Nagar",
+      "locality_x": -1885.4,
+      "locality_y": 2441.1,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000050",
+      "raw_address": "197/1, 4TH CROSS, 8TH MAIN, KUVEMPU LAYT, KAVERIPURA - 960104",
+      "town_name": "Kaveripura",
+      "locality_name": "Kuvempu Layout",
+      "locality_x": 1112.8,
+      "locality_y": -196.7,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000051",
+      "raw_address": "Village Hosahalli, Taluk A, District West - 993028",
+      "town_name": "OUT",
+      "locality_name": "UNKNOWN",
+      "locality_x": null,
+      "locality_y": null,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000057",
+      "raw_address": "441/3, NR. GOVT SCHOOL, SILVUR OAK LAYOUT, NAVANAGARA EAST - 980301",
+      "town_name": "Navanagara East",
+      "locality_name": "Silver Oak Layout",
+      "locality_x": -2605.6,
+      "locality_y": -262.1,
+      "landmarks": [
+        {
+          "landmark_name": "Govt School",
+          "landmark_type": "govt_school",
+          "relation": "near",
+          "poi_x": -2505.6,
+          "poi_y": -92.4,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000066",
+      "raw_address": "379/3, 6th Cross, 5th Mn, nar Pharmacy, Kuvempu Layout, Kaveripura - 960102",
+      "town_name": "Kaveripura",
+      "locality_name": "Kuvempu Layout",
+      "locality_x": 1112.8,
+      "locality_y": -196.7,
+      "landmarks": [
+        {
+          "landmark_name": "Medical Store",
+          "landmark_type": "medical_store",
+          "relation": "unknown",
+          "poi_x": -1249.4,
+          "poi_y": -3317.3,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Medical Store",
+          "landmark_type": "medical_store",
+          "relation": "unknown",
+          "poi_x": -1287.0,
+          "poi_y": -45.0,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Medical Store",
+          "landmark_type": "medical_store",
+          "relation": "unknown",
+          "poi_x": 1690.6,
+          "poi_y": -1164.5,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Medical Store",
+          "landmark_type": "medical_store",
+          "relation": "unknown",
+          "poi_x": 782.8,
+          "poi_y": 2036.1,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Medical Store",
+          "landmark_type": "medical_store",
+          "relation": "unknown",
+          "poi_x": -1861.7,
+          "poi_y": -2310.6,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Medical Store",
+          "landmark_type": "medical_store",
+          "relation": "unknown",
+          "poi_x": 2791.9,
+          "poi_y": -2113.9,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        },
+        {
+          "landmark_name": "Medical Store",
+          "landmark_type": "medical_store",
+          "relation": "unknown",
+          "poi_x": -288.4,
+          "poi_y": -1601.5,
+          "resolution_mode": "candidates",
+          "candidate_count": 7
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000076",
+      "raw_address": "Gali 9, Ward 7, close to Ganesh Temple, Gandhi Baste, Devgarh Nagr - 970203",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Gandhi Basti",
+      "locality_x": 987.4,
+      "locality_y": 1270.5,
+      "landmarks": [
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "unknown",
+          "poi_x": 331.0,
+          "poi_y": -3084.2,
+          "resolution_mode": "candidates",
+          "candidate_count": 5
+        },
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "unknown",
+          "poi_x": -506.7,
+          "poi_y": 2816.1,
+          "resolution_mode": "candidates",
+          "candidate_count": 5
+        },
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "unknown",
+          "poi_x": 2326.7,
+          "poi_y": 1917.1,
+          "resolution_mode": "candidates",
+          "candidate_count": 5
+        },
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "unknown",
+          "poi_x": 2886.7,
+          "poi_y": 951.8,
+          "resolution_mode": "candidates",
+          "candidate_count": 5
+        },
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "unknown",
+          "poi_x": -301.2,
+          "poi_y": 792.9,
+          "resolution_mode": "candidates",
+          "candidate_count": 5
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000086",
+      "raw_address": "h.no. 107 gali no. 5 opp water tank krishna puri devgarh nagar",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Krishna Puri",
+      "locality_x": 2589.2,
+      "locality_y": -1273.1,
+      "landmarks": [
+        {
+          "landmark_name": "Water Tank",
+          "landmark_type": "water_tank",
+          "relation": "opposite",
+          "poi_x": 2577.3,
+          "poi_y": -1320.1,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000087",
+      "raw_address": "#423 gali no. 11 ward 7 gandhi basti devgarh nagar - 970201",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Gandhi Basti",
+      "locality_x": 987.4,
+      "locality_y": 1270.5,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000088",
+      "raw_address": "gali no-10 hanuman mandir ke paass ambedkar nagar devgarh nagar - 970204",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Ambedkar Nagar",
+      "locality_x": -603.5,
+      "locality_y": 2996.1,
+      "landmarks": [
+        {
+          "landmark_name": "Hanuman Temple",
+          "landmark_type": "hanuman_temple",
+          "relation": "unknown",
+          "poi_x": -532.5,
+          "poi_y": 3389.7,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000092",
+      "raw_address": "#272, Blk A, Rd 1, close to Hanuman Temple, Palm Meadows, Navanagara East - 980302",
+      "town_name": "Navanagara East",
+      "locality_name": "Palm Meadows",
+      "locality_x": 3188.8,
+      "locality_y": -1960.7,
+      "landmarks": [
+        {
+          "landmark_name": "Hanuman Temple",
+          "landmark_type": "hanuman_temple",
+          "relation": "unknown",
+          "poi_x": -3990.5,
+          "poi_y": -1086.5,
+          "resolution_mode": "candidates",
+          "candidate_count": 6
+        },
+        {
+          "landmark_name": "Hanuman Temple",
+          "landmark_type": "hanuman_temple",
+          "relation": "unknown",
+          "poi_x": -37.5,
+          "poi_y": 3542.0,
+          "resolution_mode": "candidates",
+          "candidate_count": 6
+        },
+        {
+          "landmark_name": "Hanuman Temple",
+          "landmark_type": "hanuman_temple",
+          "relation": "unknown",
+          "poi_x": -305.4,
+          "poi_y": -277.2,
+          "resolution_mode": "candidates",
+          "candidate_count": 6
+        },
+        {
+          "landmark_name": "Hanuman Temple",
+          "landmark_type": "hanuman_temple",
+          "relation": "unknown",
+          "poi_x": -1292.4,
+          "poi_y": -1644.8,
+          "resolution_mode": "candidates",
+          "candidate_count": 6
+        },
+        {
+          "landmark_name": "Hanuman Temple",
+          "landmark_type": "hanuman_temple",
+          "relation": "unknown",
+          "poi_x": -639.9,
+          "poi_y": -3367.2,
+          "resolution_mode": "candidates",
+          "candidate_count": 6
+        },
+        {
+          "landmark_name": "Hanuman Temple",
+          "landmark_type": "hanuman_temple",
+          "relation": "unknown",
+          "poi_x": 877.2,
+          "poi_y": -3615.8,
+          "resolution_mode": "candidates",
+          "candidate_count": 6
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000093",
+      "raw_address": "#304, E Blk, 1st Rd, b/h Kalyana Mantapa, Sunrise Enclave, Navanagara East - 980304",
+      "town_name": "Navanagara East",
+      "locality_name": "Sunrise Enclave",
+      "locality_x": -438.3,
+      "locality_y": 3208.9,
+      "landmarks": [
+        {
+          "landmark_name": "Community Hall",
+          "landmark_type": "community_hall",
+          "relation": "unknown",
+          "poi_x": -661.1,
+          "poi_y": 3190.5,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "AD000106",
+      "raw_address": "No. 49, Ganapathi Gudi hattira, Vinayaka Nagar, Kaveripura - 960104",
+      "town_name": "Kaveripura",
+      "locality_name": "Vinayaka Nagar",
+      "locality_x": -2863.9,
+      "locality_y": 1096.5,
+      "landmarks": [
+        {
+          "landmark_name": "Ganesh Temple",
+          "landmark_type": "ganesha_temple",
+          "relation": "unknown",
+          "poi_x": -3155.2,
+          "poi_y": 823.8,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    }
+  ],
+  "fuzzy_10_test_addresses": [
+    {
+      "address_id": "F01",
+      "raw_address": "silver oak lyt 4th cross 8th main nr govt school 980301",
+      "town_name": "Navanagara East",
+      "locality_name": "Silver Oak Layout",
+      "locality_x": -2605.6,
+      "locality_y": -262.1,
+      "landmarks": [
+        {
+          "landmark_name": "Govt School",
+          "landmark_type": "govt_school",
+          "relation": "near",
+          "poi_x": -2505.6,
+          "poi_y": -92.4,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "F02",
+      "raw_address": "devggarh ngr gali 4 near church patel nagar 970202",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Patel Nagar",
+      "locality_x": 1577.4,
+      "locality_y": -2059.5,
+      "landmarks": [
+        {
+          "landmark_name": "Church",
+          "landmark_type": "church",
+          "relation": "near",
+          "poi_x": 1440.8,
+          "poi_y": -1984.6,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "F03",
+      "raw_address": "10th cross gandhi nagr hanuman mandr kaveripura 960102",
+      "town_name": "Kaveripura",
+      "locality_name": "Gandhi Nagar",
+      "locality_x": 665.2,
+      "locality_y": -3094.2,
+      "landmarks": [
+        {
+          "landmark_name": "Hanuman Temple",
+          "landmark_type": "hanuman_temple",
+          "relation": "unknown",
+          "poi_x": 216.6,
+          "poi_y": -2659.5,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "F04",
+      "raw_address": "kuvempu layt 3rd cross opp bus stand kaveripura 960102",
+      "town_name": "Kaveripura",
+      "locality_name": "Kuvempu Layout",
+      "locality_x": 1112.8,
+      "locality_y": -196.7,
+      "landmarks": [
+        {
+          "landmark_name": "Bus Stop",
+          "landmark_type": "bus_stop",
+          "relation": "opposite",
+          "poi_x": 689.7,
+          "poi_y": 86.7,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "F05",
+      "raw_address": "house 12 indira nagr nr ration shop devgarh ngr 970201",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Indira Colony",
+      "locality_x": 1046.9,
+      "locality_y": -2.6,
+      "landmarks": [
+        {
+          "landmark_name": "Ration Shop",
+          "landmark_type": "ration_shop",
+          "relation": "near",
+          "poi_x": 471.9,
+          "poi_y": -3260.2,
+          "resolution_mode": "candidates",
+          "candidate_count": 9
+        },
+        {
+          "landmark_name": "Ration Shop",
+          "landmark_type": "ration_shop",
+          "relation": "near",
+          "poi_x": -170.1,
+          "poi_y": 3207.2,
+          "resolution_mode": "candidates",
+          "candidate_count": 9
+        },
+        {
+          "landmark_name": "Ration Shop",
+          "landmark_type": "ration_shop",
+          "relation": "near",
+          "poi_x": 2335.2,
+          "poi_y": 1476.5,
+          "resolution_mode": "candidates",
+          "candidate_count": 9
+        },
+        {
+          "landmark_name": "Ration Shop",
+          "landmark_type": "ration_shop",
+          "relation": "near",
+          "poi_x": -1872.5,
+          "poi_y": -2486.2,
+          "resolution_mode": "candidates",
+          "candidate_count": 9
+        },
+        {
+          "landmark_name": "Ration Shop",
+          "landmark_type": "ration_shop",
+          "relation": "near",
+          "poi_x": 2908.5,
+          "poi_y": 940.9,
+          "resolution_mode": "candidates",
+          "candidate_count": 9
+        },
+        {
+          "landmark_name": "Ration Shop",
+          "landmark_type": "ration_shop",
+          "relation": "near",
+          "poi_x": 940.8,
+          "poi_y": 2546.9,
+          "resolution_mode": "candidates",
+          "candidate_count": 9
+        },
+        {
+          "landmark_name": "Ration Shop",
+          "landmark_type": "ration_shop",
+          "relation": "near",
+          "poi_x": 2661.9,
+          "poi_y": -1811.1,
+          "resolution_mode": "candidates",
+          "candidate_count": 9
+        },
+        {
+          "landmark_name": "Ration Shop",
+          "landmark_type": "ration_shop",
+          "relation": "near",
+          "poi_x": 1041.5,
+          "poi_y": -1855.2,
+          "resolution_mode": "candidates",
+          "candidate_count": 9
+        },
+        {
+          "landmark_name": "Ration Shop",
+          "landmark_type": "ration_shop",
+          "relation": "near",
+          "poi_x": 107.8,
+          "poi_y": 1245.9,
+          "resolution_mode": "candidates",
+          "candidate_count": 9
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "F06",
+      "raw_address": "7th mn rd 2nd x ashoka layt kaveripura 960104",
+      "town_name": "Kaveripura",
+      "locality_name": "Ashoka Layout",
+      "locality_x": -1205.8,
+      "locality_y": 409.2,
+      "landmarks": [],
+      "dropped": []
+    },
+    {
+      "address_id": "F07",
+      "raw_address": "bhd medicals basava nagr kaveripura 960101",
+      "town_name": "Kaveripura",
+      "locality_name": "Basava Nagar",
+      "locality_x": -1053.3,
+      "locality_y": -3163.0,
+      "landmarks": [
+        {
+          "landmark_name": "Medical Store",
+          "landmark_type": "medical_store",
+          "relation": "behind",
+          "poi_x": -1249.4,
+          "poi_y": -3317.3,
+          "resolution_mode": "exact_key",
+          "candidate_count": 1
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "F08",
+      "raw_address": "5th cross vinayaka layt nr pani ki tanki 960104",
+      "town_name": "Kaveripura",
+      "locality_name": "Vinayaka Nagar",
+      "locality_x": -2863.9,
+      "locality_y": 1096.5,
+      "landmarks": [
+        {
+          "landmark_name": "Water Tank",
+          "landmark_type": "water_tank",
+          "relation": "unknown",
+          "poi_x": 340.1,
+          "poi_y": -3069.3,
+          "resolution_mode": "candidates",
+          "candidate_count": 4
+        },
+        {
+          "landmark_name": "Water Tank",
+          "landmark_type": "water_tank",
+          "relation": "unknown",
+          "poi_x": -1065.2,
+          "poi_y": 770.6,
+          "resolution_mode": "candidates",
+          "candidate_count": 4
+        },
+        {
+          "landmark_name": "Water Tank",
+          "landmark_type": "water_tank",
+          "relation": "unknown",
+          "poi_x": -2350.3,
+          "poi_y": -2317.5,
+          "resolution_mode": "candidates",
+          "candidate_count": 4
+        },
+        {
+          "landmark_name": "Water Tank",
+          "landmark_type": "water_tank",
+          "relation": "unknown",
+          "poi_x": -1609.7,
+          "poi_y": 2681.5,
+          "resolution_mode": "candidates",
+          "candidate_count": 4
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "F09",
+      "raw_address": "opp doodh dairy nehru colny devgarh ngr 970203",
+      "town_name": "Devgarh Nagar",
+      "locality_name": "Nehru Colony",
+      "locality_x": 3029.6,
+      "locality_y": 575.7,
+      "landmarks": [
+        {
+          "landmark_name": "Milk Dairy",
+          "landmark_type": "milk_dairy",
+          "relation": "opposite",
+          "poi_x": 599.8,
+          "poi_y": -2839.0,
+          "resolution_mode": "candidates",
+          "candidate_count": 5
+        },
+        {
+          "landmark_name": "Milk Dairy",
+          "landmark_type": "milk_dairy",
+          "relation": "opposite",
+          "poi_x": -868.8,
+          "poi_y": 3100.8,
+          "resolution_mode": "candidates",
+          "candidate_count": 5
+        },
+        {
+          "landmark_name": "Milk Dairy",
+          "landmark_type": "milk_dairy",
+          "relation": "opposite",
+          "poi_x": -1625.7,
+          "poi_y": -2955.8,
+          "resolution_mode": "candidates",
+          "candidate_count": 5
+        },
+        {
+          "landmark_name": "Milk Dairy",
+          "landmark_type": "milk_dairy",
+          "relation": "opposite",
+          "poi_x": -280.8,
+          "poi_y": -278.0,
+          "resolution_mode": "candidates",
+          "candidate_count": 5
+        },
+        {
+          "landmark_name": "Milk Dairy",
+          "landmark_type": "milk_dairy",
+          "relation": "opposite",
+          "poi_x": 1268.9,
+          "poi_y": -2044.0,
+          "resolution_mode": "candidates",
+          "candidate_count": 5
+        }
+      ],
+      "dropped": []
+    },
+    {
+      "address_id": "F10",
+      "raw_address": "nr kalyana mantapa shanthi nagr navanagara 980302",
+      "town_name": "Navanagara East",
+      "locality_name": "UNKNOWN",
+      "locality_x": null,
+      "locality_y": null,
+      "landmarks": [
+        {
+          "landmark_name": "Community Hall",
+          "landmark_type": "community_hall",
+          "relation": "near",
+          "poi_x": -3921.2,
+          "poi_y": -577.0,
+          "resolution_mode": "candidates",
+          "candidate_count": 4
+        },
+        {
+          "landmark_name": "Community Hall",
+          "landmark_type": "community_hall",
+          "relation": "near",
+          "poi_x": -661.1,
+          "poi_y": 3190.5,
+          "resolution_mode": "candidates",
+          "candidate_count": 4
+        },
+        {
+          "landmark_name": "Community Hall",
+          "landmark_type": "community_hall",
+          "relation": "near",
+          "poi_x": 3391.3,
+          "poi_y": 470.7,
+          "resolution_mode": "candidates",
+          "candidate_count": 4
+        },
+        {
+          "landmark_name": "Community Hall",
+          "landmark_type": "community_hall",
+          "relation": "near",
+          "poi_x": -2201.3,
+          "poi_y": 1392.4,
+          "resolution_mode": "candidates",
+          "candidate_count": 4
+        }
+      ],
+      "dropped": []
+    }
+  ]
+}

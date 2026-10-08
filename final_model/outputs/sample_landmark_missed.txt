@@ -1,0 +1,59 @@
+[1] AD000022: 4th Cross, 8th Main, near Govt Shcool, Kuvempu Laout, Kaveipura - 960102
+    Labeller: ['govt_school'] | Model: []
+
+[2] AD000318: 6th crs 5th main close to phharmacy kuvempu layoout kaveripura - 960102
+    Labeller: ['medical_store'] | Model: []
+
+[3] AD000360: 6th CROSS 7th main rd nr. ratuon shop nehru col kaveirpura -
+    Labeller: ['ration_shop'] | Model: []
+
+[4] AD000638: No. 17, 2nd X, 8th Mn, Hanumaan Mandir ke pas,s Sideeshwara Cilony, Kaveripura -
+    Labeller: ['hanuman_temple'] | Model: []
+
+[5] AD000713: house 7 gali no-2 ward 8 nr. children parrk azad mphalla devgarh nagar - 970203
+    Labeller: ['park'] | Model: []
+
+[6] AD000733: H.No. 187, 6th Cross, 5th Main, opp. Kalyanna Mantaa, Nrhru Colony, Kaveripura - 960102
+    Labeller: ['community_hall'] | Model: []
+
+[7] AD000768: H.NO. 113, GALI 3, WARD 10, COSE TO PDS SHOo, KRISHNA PURj, DEGVARH ngr -
+    Labeller: ['ration_shop'] | Model: []
+
+[8] AD000833: #384, b blk., 1st road, nr. bus stp, sulver oak layotu, navanaggara eadt -
+    Labeller: ['bus_stop'] | Model: []
+
+[9] AD001174: 186/1 9th cross 2nd main close to ganesh teple nehru colony kaveriura -
+    Labeller: ['ganesha_temple'] | Model: []
+
+[10] AD001225: #150, GAALI NO. 6, hinde GANAPATHI TEMPE, SHIVAJI NG, DEVGARH NGAAR - 970202
+    Labeller: ['ganesha_temple'] | Model: []
+
+[11] AD001233: 428/2, mazidi hattira, nehhru colny, kaverpiura - 960103
+    Labeller: ['masjid'] | Model: []
+
+[12] AD001247: H.No. 279, Blk E, Rd 3, nr Pots Office, HMT Colony, Navanaagara East -
+    Labeller: ['post_office'] | Model: []
+
+[13] AD001416: #161, 12TH CROSS, 1ST MAIN RD, CLOSE TO GANAPATHI TEMPEL, NEHRU COOLONY, KAVERPURA -
+    Labeller: ['ganesha_temple'] | Model: []
+
+[14] AD001482: 293/2, Ganesh Manir Ke Peeche, Palm Meadoows, Navanagara East - 980302
+    Labeller: ['ganesha_temple'] | Model: []
+
+[15] AD001596: 4TH CROOSS, 4TH MAIN, BHEIND CMMUNITY HALL, GANDHI NAfR, KAVERIPURA
+    Labeller: ['community_hall'] | Model: []
+
+[16] AD001615: 1ST X, 2ND MN, SARKARI SCHOKL KE PAAS, KALYANA NAGAR, KAVERIPURA - 960140
+    Labeller: ['govt_school'] | Model: []
+
+[17] AD001627: House 330, Beside Milk Booh, Devgarh Nagar -
+    Labeller: ['milk_dairy'] | Model: []
+
+[18] AD001678: गली नं. 3, WARD 2, मेडिकल सटोर के पास, INDIRA COL, DEVGARH NAGR - 970202
+    Labeller: ['medical_store'] | Model: []
+
+[19] AD001733: Gali no-8, Hanman Madir ke piche, Subhash Ngr, Devgarh Ngar - 970201
+    Labeller: ['hanuman_temple'] | Model: []
+
+[20] AD001736: 7TH CROSS, 7TH MIN, ke oass GOVT SCCHOOL, HSOA BADAVANE, KAVERIPURA - 960101
+    Labeller: ['govt_school'] | Model: []

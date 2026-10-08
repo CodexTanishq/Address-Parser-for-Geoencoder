@@ -1,0 +1,41 @@
+{
+  "clean": {
+    "N": 483,
+    "labeller": {
+      "town_acc": 1.0,
+      "locality_acc": 1.0,
+      "locality_coverage": 0.8364
+    },
+    "tfidf_logreg": {
+      "town_acc": 1.0,
+      "locality_acc": 1.0,
+      "locality_coverage": 0.8613
+    }
+  },
+  "mild": {
+    "N": 483,
+    "labeller": {
+      "town_acc": 0.9979,
+      "locality_acc": 0.9505,
+      "locality_coverage": 0.795
+    },
+    "tfidf_logreg": {
+      "town_acc": 1.0,
+      "locality_acc": 0.995,
+      "locality_coverage": 0.853
+    }
+  },
+  "heavy": {
+    "N": 483,
+    "labeller": {
+      "town_acc": 0.9752,
+      "locality_acc": 0.8936,
+      "locality_coverage": 0.7516
+    },
+    "tfidf_logreg": {
+      "town_acc": 1.0,
+      "locality_acc": 0.9703,
+      "locality_coverage": 0.8323
+    }
+  }
+}

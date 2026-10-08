@@ -1,0 +1,31 @@
+address_id,raw_address,town_name,locality_name,landmark_names,landmark_types,n_landmark_candidates
+AD002373,#60 गली नं. 8 हनुमान मंदिर के पास subhash nagar devgarh nagar - 970203,Devgarh Nagar,Subhash Nagar,Hanuman Temple,hanuman_temple,1
+AD000242,"157/1, GALI 1, OPP PARK, DEVGARH NAGAR - 970203",Devgarh Nagar,UNKNOWN,Park,park,4
+AD002471,"House 91, Blk B, Rd 1, Palm Meadows, Navanagara East - 980302",Navanagara East,Palm Meadows,,,0
+AD002425,"154/1, Blk D, Rd 5, ಕಲ್ಯಾಣ ಮಂಟಪ ಹತ್ತಿರ, Green Park Layout, Navanagara Esat - 980301",Navanagara East,Green Park Layout,Community Hall,community_hall,1
+AD001084,"86/1, Gali no-8, Sarkari School ke paas, Subhash Nagar, Devgarh Nagar - 970201",Devgarh Nagar,Subhash Nagar,Govt School,govt_school,1
+AD001558,गली नं. 9 ward 6 पानी की टंकी के सामने devgarh ngr - 970203,Devgarh Nagar,UNKNOWN,Water Tank,water_tank,5
+AD001968,gali no-10 ward 6 opposite water tank nehru colony devgarh nagar,Devgarh Nagar,Nehru Colony,Water Tank,water_tank,1
+AD000715,"Gali no-9, Church ke paas, Patel Nagr, Devgarh Nagr - 970202",Devgarh Nagar,Patel Nagar,Church,church,1
+AD002694,"#177, गली नं. 8, Ward 1, डाकघर के पास, Devgarh Nagar - 970202",Devgarh Nagar,UNKNOWN,Post Office,post_office,4
+AD000204,"गली नं. 5, राशन की दुकान के सामने, Azad Mohalla, Devgarh Nagar - 970203",Devgarh Nagar,Azad Mohalla,Ration Shop,ration_shop,1
+AD000451,"No. 435, F Block, 6th Road, Teachers Colony, Navanagara East - 980302",Navanagara East,Teachers Colony,,,0
+AD002701,"293/2, Gali 9, near Petrol Pump, Devgarh Ngr - 970203",Devgarh Nagar,UNKNOWN,Petrol Bunk,petrol_bunk,3
+AD000990,"House 219, Gali 8, Ration ki Dukaan ke pass, Indira Colony, Devgarh Nagar - 970202",Devgarh Nagar,Indira Colony,Ration Shop,ration_shop,9
+AD002370,"NO. 240, BLK F, RD 6, BARAT GHAR KE PASS, RAILWAY COLONY, NAVANAGARA EAST - 980304",Navanagara East,Railway Colony,Community Hall,community_hall,1
+AD003063,"Blk E, Rd 4, Teachers Col, Navanagara East - 980302",Navanagara East,Teachers Colony,,,0
+AD000342,#329 blk a rd 2 lakeview phase 2 navanagara east - 980303,Navanagara East,Lakeview Phase 2,,,0
+AD001440,"#437, Blk D, Rd 6, HMT Colony, Navanagara East - 980301",Navanagara East,HMT Colony,,,0
+AD002413,house 103 nr. bus stop nehru colony kaveripura - 960102,Kaveripura,Nehru Colony,Bus Stop,bus_stop,7
+AD001930,"NO. 56, 2ND CROSS, 6TH MAIN RD, CLOSE TO MILK BOOTH, NEHRU COLONY, KAVERIPURA - 960101",Kaveripura,Nehru Colony,Milk Dairy,milk_dairy,4
+AD000542,"House 75, D Block, 2nd Road, close to Kalyana Mantapa, Navanagara East - 980304",Navanagara East,UNKNOWN,Community Hall,community_hall,4
+AD000489,#115 silver oak layt navanagara east - 980301,Navanagara East,Silver Oak Layout,,,0
+AD000962,"NO. 435, गली नं. 4, RAM NGR, DEVGARH NAGR - 970203",Devgarh Nagar,Ram Nagar,,,0
+AD001550,"Village Chikkapura, Tehsil C, District North - 995466",OUT,UNKNOWN,,,0
+AD000862,house 259 opposite overhead tannk kalyana nagar kaveripura - 960104,Kaveripura,Kalyana Nagar,Water Tank,water_tank,1
+AD002616,"H.NO. 441, 5TH CROSS, 5TH MAIN, CHURCH KE SAMNE, HOSA BADAVANE, KAVERIPURA - 960101",Kaveripura,Hosa Badavane,Church,church,1
+AD002098,"No. 169, Blk B, Rd 3, opp Hanuman Temple, Green Park Layt, Navanagara East - 980301",Navanagara East,Green Park Layout,Hanuman Temple,hanuman_temple,1
+AD000504,house 155 9th cross 5th main nehru colony kaveripura - 960102,Kaveripura,Nehru Colony,,,0
+AD003027,h.no. 365 close to medicals vidya nagar kaveripura - 960103,Kaveripura,Vidya Nagar,Medical Store,medical_store,7
+AD000050,"197/1, 4TH CROSS, 8TH MAIN, KUVEMPU LAYT, KAVERIPURA - 960104",Kaveripura,Kuvempu Layout,,,0
+AD002696,"#362, B BLOCK, 2ND RD., NR. MOSQUE, RIALWAY COL, NAVANAGARA EAST - 980304",Navanagara East,Railway Colony,Masjid,masjid,1

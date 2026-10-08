@@ -1,0 +1,14 @@
+{
+  "LOCALITY": {
+    "total_queries": 266,
+    "recall_at_1": 0.7707,
+    "recall_at_5": 0.8233,
+    "mrr": 0.8085
+  },
+  "OVERALL": {
+    "total_queries": 266,
+    "recall_at_1": 0.7707,
+    "recall_at_5": 0.8233,
+    "mrr": 0.8085
+  }
+}
