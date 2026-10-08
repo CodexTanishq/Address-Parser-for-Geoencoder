@@ -162,3 +162,7 @@ for lm in result['landmarks']:
 | **Landmarks Extracted** | 1,658 | 2,016 | **+358 (+21.6%)** |
 | **Total Labeled Spans** | - | 15,416 | Multi-span coverage |
 | **High-Confidence Tokens** | - | 49,363 | Silver training set |
+
+## 7. Final Predictions 
+
+Made final predictions on all datapoints of landmark coordinates, locality coordinates and town. Those addresses which has landmark missing were imputed with the nearest landmark to baseline_genencode coordinates
