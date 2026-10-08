@@ -1,0 +1,237 @@
+CreditNirvana PS3 — Dataset Guide & Data Links
+Problem Statement 3: Address Geocoder That Learns from Field Visits. This document maps every supplied CSV dataset to the PS3 pipeline, shows the key join relationships, and provides clickable links to the local dataset files.
+1. PS3 Core Data Flow
+addresses.csv → baseline_geocodes.csv → historical field evidence (field_visits.csv + visit_gps_points.csv) → evidence fusion → predicted location + confidence radius + landmark directions → new field visits → learning loopKey relationship: splits.csv.account_id → field_visits.csv.account_id → field_visits.csv.address_id → addresses.csv.address_id
+2. Dataset-by-Dataset Guide
+addresses.csv
+Role
+Core
+Purpose
+Raw borrower addresses / NLP input
+Important columns
+address_id, account_id, address_type, source, town_id, address_text
+PS3 usage / relationship
+Starting point. Parse address_text; join to field visits using address_id.
+Dataset file: addresses.csv
+baseline_geocodes.csv
+Role
+Core
+Purpose
+Initial/commercial geocoder output
+Important columns
+address_id, geocoder_x, geocoder_y, precision
+PS3 usage / relationship
+Baseline location and benchmark. Join to addresses on address_id.
+Dataset file: baseline_geocodes.csv
+field_visits.csv
+Role
+Core
+Purpose
+Historical field-visit evidence
+Important columns
+visit_id, account_id, address_id, agent_id, visit_date, checkin_ts, checkin_x, checkin_y, gps_accuracy_m, dwell_s, outcome, remark, photo_hash
+PS3 usage / relationship
+Main feedback signal. Join to addresses on address_id and to splits on account_id.
+Dataset file: field_visits.csv
+visit_gps_points.csv
+Role
+Core
+Purpose
+Detailed GPS trajectory/search path
+Important columns
+visit_id, seq, point_ts, x, y, accuracy_m
+PS3 usage / relationship
+Reconstruct agent movement/search patterns. Join to field_visits on visit_id.
+Dataset file: visit_gps_points.csv
+surveyed_addresses.csv
+Role
+Evaluation
+Purpose
+Verified address coordinates / ground truth
+Important columns
+address_id, surveyed_x, surveyed_y
+PS3 usage / relationship
+Evaluate predicted coordinates and calculate distance error. Join on address_id.
+Dataset file: surveyed_addresses.csv
+landmarks_poi.csv
+Role
+Core
+Purpose
+Landmark / POI reference database
+Important columns
+poi_id, town_id, landmark_type, name, x, y
+PS3 usage / relationship
+Match extracted landmarks and generate landmark-based directions.
+Dataset file: landmarks_poi.csv
+localities.csv
+Role
+Supporting
+Purpose
+Locality and pincode geographic context
+Important columns
+locality_id, town_id, locality_name, pincode, centroid_x, centroid_y
+PS3 usage / relationship
+Normalize locality names and provide geographic priors.
+Dataset file: localities.csv
+towns.csv
+Role
+Supporting
+Purpose
+Town-level address/geographic context
+Important columns
+town_id, town_name, address_style, approx_radius_m
+PS3 usage / relationship
+Provides town context, address style, and approximate geographic radius.
+Dataset file: towns.csv
+agents.csv
+Role
+Supporting
+Purpose
+Agent metadata
+Important columns
+agent_id, channel, language_team, town_id, tenure_months, shift
+PS3 usage / relationship
+Useful for visit/GPS reliability analysis and agent-level quality checks.
+Dataset file: agents.csv
+accounts.csv
+Role
+Supporting
+Purpose
+Account-level context
+Important columns
+account_id, lender_id, portfolio, income_type, town_id, preferred_language, ...
+PS3 usage / relationship
+Primarily a join/context table. Use account_id and town_id for PS3.
+Dataset file: accounts.csv
+splits.csv
+Role
+ML / Evaluation
+Purpose
+Train/validation/test assignment
+Important columns
+account_id, split
+PS3 usage / relationship
+Controls data leakage. Directly joins to field_visits using account_id.
+Dataset file: splits.csv
+lenders.csv
+Role
+Supporting
+Purpose
+Lender / KYC address-format context
+Important columns
+lender_id, lender_name, lender_type, kyc_address_format
+PS3 usage / relationship
+Optional input for address normalization by lender/KYC format.
+Dataset file: lenders.csv
+dial_attempts.csv
+Role
+Other PS
+Purpose
+Telecalling / dialling history
+Important columns
+attempt_id, account_id, phone_id, attempt_ts, channel, agent_id, ...
+PS3 usage / relationship
+Mostly relevant to PS2/collections analytics; not required for the PS3 geocoder core.
+Dataset file: dial_attempts.csv
+payments.csv
+Role
+Other PS
+Purpose
+Payment/recovery history
+Important columns
+payment_id, account_id, payment_ts, amount, channel
+PS3 usage / relationship
+Mostly relevant to recovery/outcome modelling; not required for the PS3 geocoder core.
+Dataset file: payments.csv
+3. Most Important Join Relationships
+Left dataset
+Key
+Right dataset
+Key
+Why
+splits.csv
+account_id
+field_visits.csv
+account_id
+Assign every field visit to train/validation/test.
+field_visits.csv
+address_id
+addresses.csv
+address_id
+Connect a visit to the original address text.
+field_visits.csv
+visit_id
+visit_gps_points.csv
+visit_id
+Connect a visit to its detailed GPS trajectory.
+baseline_geocodes.csv
+address_id
+addresses.csv
+address_id
+Connect baseline coordinates to address.
+surveyed_addresses.csv
+address_id
+addresses.csv
+address_id
+Connect verified coordinates for evaluation.
+field_visits.csv
+agent_id
+agents.csv
+agent_id
+Add agent metadata for GPS/visit quality analysis.
+addresses.csv
+town_id
+towns.csv
+town_id
+Add town/address-style context.
+landmarks_poi.csv
+town_id
+towns.csv
+town_id
+Restrict landmark matching to the relevant town.
+localities.csv
+town_id
+towns.csv
+town_id
+Add locality/pincode geographic context.
+accounts.csv
+account_id
+field_visits.csv
+account_id
+Account-level context for visits.
+4. Recommended PS3 Pipeline Mapping
+Stage
+Dataset(s)
+Use
+1. Raw address
+addresses.csv
+address_id, address_text, town_id
+2. Address NLP
+addresses.csv + landmarks_poi.csv + localities.csv + towns.csv
+Extract landmarks, locality, road/cross-road and directional cues.
+3. Baseline geocoding
+baseline_geocodes.csv
+geocoder_x, geocoder_y, precision
+4. Historical evidence
+field_visits.csv + visit_gps_points.csv
+Check-ins, trajectories, GPS accuracy, dwell and outcomes.
+5. Visit integrity
+field_visits.csv + visit_gps_points.csv + agents.csv
+Estimate whether a GPS observation is reliable.
+6. Evidence fusion
+All Core + Supporting geographic datasets
+Combine baseline, semantics, landmarks and reliable historical GPS.
+7. Prediction
+Model output
+Predicted x/y + confidence score + confidence radius.
+8. Directions
+landmarks_poi.csv
+Generate simple landmark-based directions.
+9. Ground-truth evaluation
+surveyed_addresses.csv + baseline_geocodes.csv
+Compare model error against surveyed truth and baseline.
+10. Leakage control
+splits.csv
+Keep train/validation/test accounts separated.
+5. Key Point for the Presentation
+The most important PS3 feedback loop is: addresses → baseline geocoder → field visits → GPS trajectories → reliable historical location evidence → improved prediction → new field visit evidence. The splits.csv file is used to prevent leakage: its account_id determines whether the corresponding field-visit evidence belongs to train, validation, or test.

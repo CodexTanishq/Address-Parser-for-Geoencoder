@@ -1,0 +1,349 @@
+================================================================================
+CREDITNIRVANA PS-3: ADDRESS GEOCODER & CALIBRATED CONFIDENCE RADIUS
+FINAL CONSOLIDATED WORKFLOW SPECIFICATION & SYSTEM ARCHITECTURE
+================================================================================
+
+1. CORE OBJECTIVE & ONE-LINE SUMMARY
+--------------------------------------------------------------------------------
+For every customer address, predict:
+  (1) A robust location pin (x, y) in local Cartesian metres.
+  (2) A calibrated uncertainty radius r_alpha with an honest coverage guarantee
+      (such as an 80% or 90% confidence region).
+
+THE ONE-SENTENCE WORKFLOW IDEA:
+Evidence -> Prior P(L) -> Trust (pi_i) + Likelihoods P(V_i|L) -> Bayesian Posterior P(L|E) 
+         -> Pin (Mode/Medoid) + Raw Uncertainty -> Conformal Calibration (q_alpha) 
+         -> Honest Pin + Calibrated Radius (R50, R90)
+
+WHAT IS IN SCOPE:
+- Location inference combining commercial geocoder, locality, landmarks, and GPS visits.
+- Rigorous handling of the two operational regimes:
+    * Branch A: Visited addresses (Bayesian grid fusion with robust likelihoods).
+    * Branch B: No-visit / cold-start addresses (Convex Hull with fuzzy normal boundaries).
+- Handling multiple visits, conflicting visits, and suspicious/adversarial visits.
+- Comparison of all candidate spatial, clustering, Bayesian, and ML estimators.
+- Conformal calibration against held-out ground truth to prevent overclaiming.
+
+WHAT IS NOT IN SCOPE:
+- Raw NLP address parsing, tokenization, or text embeddings (provided as structured clues
+  by an upstream team via our formal ParsedAddressClues contract).
+
+
+================================================================================
+2. EMPIRICAL DATASET FACTS (FOUNDATIONAL REALITY)
+================================================================================
+Every modeling choice is grounded in 9 verified dataset facts:
+
+[F1] Ground Truth Sample Size:
+     Only 100 addresses have surveyed verified true coordinates.
+     Official partition: 66 Train / 19 Validation / 15 Test.
+     Implication: High-capacity end-to-end neural models will overfit; robust,
+     semi-parametric Bayesian and geometric methods are required.
+
+[F2] Commercial Geocoder Precision Variation:
+     Median errors vary sharply by precision tier:
+     - Street: ~109 m median error
+     - Locality: ~386 m median error
+     - Pincode: ~1,376 m median error
+     - Rooftop: Only 1 surveyed instance in ground truth.
+     Implication: Precision must dictate prior width sigma_prec; rooftop cannot be
+     fit from n=1 and requires conservative fallback.
+
+[F3] Locality Dominance:
+     2,052 out of 2,880 catalog addresses (71.3%) have locality precision.
+     Implication: The geocoder provides an area-level guess, not a door-level pin.
+
+[F4] Cold-Start / No-Visit Prevalence:
+     Among 100 surveyed truth addresses, 49 have visits and 51 do not (1,477 of 3,117
+     in broader dataset).
+     Implication: The no-visit case is a primary operating mode (51%), not an edge case.
+
+[F5] Door-Reaching Outcomes are Powerful:
+     Borrower met at home: ~34 m median error.
+     Family met at home: ~16 m median error.
+     Locked premises at door: ~20 m median error.
+     Implication: High-confidence field visits provide vastly superior spatial signals
+     compared to locality geocoders.
+
+[F6] Heavy Tails & Outliers:
+     Locked premises P90 reaches ~3.9 km; some borrower visits sit ~7.9 km away.
+     Implication: Gaussian likelihoods fail in the tails; heavy-tailed (Student-t)
+     or explicit outlier mixtures are mandatory.
+
+[F7] Failed Searches as Negative Evidence:
+     'address_not_traceable' has median distance of ~1,603 m from truth.
+     Implication: Must be treated as search trails, not positive house observations.
+
+[F8] Empirical Error-to-Accuracy Ratio (~2.4x):
+     Median ratio of true door error to phone gps_accuracy_m is ~2.4x.
+     Implication: Never set sigma_i = accuracy_i. Must scale: sigma_i = sqrt(a^2 + (b * acc)^2).
+
+[F9] Visit Fraud & Suspicious Artifacts:
+     172 visits share duplicate photo hashes across different addresses; agent FA009
+     exhibits abnormal door-visit error.
+     Implication: Model must compute an explicit visit trust score pi_i.
+
+
+================================================================================
+3. COORDINATE REFERENCE SYSTEM (CRS) & AUDIT PROOF
+================================================================================
+1. Topocentric Planar Cartesian System:
+   - Origin: Town territory center at (0, 0).
+   - Units: Metres (m).
+   - Mathematical Proof: Observed coordinates range up to |x|, |y| ~ 3,900 m,
+     which exceed geographic latitude limits [-90, 90] and longitude limits [-180, 180],
+     and match authoritative town radii (3,800 m to 4,800 m) in towns.csv.
+2. Distance Metric:
+   - Straight-line Euclidean distance is exact:
+     error = sqrt( (x_pred - x_true)^2 + (y_pred - y_true)^2 )
+3. Scope Exclusions:
+   - Financial collections logs (dial_attempts.csv, payments.csv, loan records)
+     are strictly excluded from physical location estimation.
+
+
+================================================================================
+4. LEAK-FREE SPATIAL PARTITIONING
+================================================================================
+- To prevent spatial data leakage, addresses within a 50 m radius or sharing a
+  spatial locality grid are hashed together into a spatial_cluster_id.
+- Deterministic SHA-256 modulo hashing splits clusters:
+    * 66% Train (Prior fitting & scale model training)
+    * 19% Validation (Conformal quantile calibration)
+    * 15% Test (Strict untouched evaluation)
+- Ground-truth test surveyed coordinates are never accessed during training
+  or calibration.
+
+
+================================================================================
+5. THE TWO-BRANCH WORKFLOW ARCHITECTURE
+================================================================================
+The workflow bifurcates based on evidence availability:
+
+                       [ Address & All Available Clues ]
+                                       |
+                       +---------------+---------------+
+                       |                               |
+              [ Visits Available? ]          [ Zero Visits (k = 0)? ]
+                       |                               |
+                 BRANCH A: VISITED            BRANCH B: NO-VISIT
+                       |                               |
+          +------------+------------+                  |
+          | Trajectory Summarizer   |                  |
+          | Trust Score pi_i        |                  |
+          | Uncertainty sigma_i     |                  |
+          +------------+------------+                  |
+                       |                               |
+          +------------+------------+     +------------+------------+
+          | Geocoder Prior P(L)     |     | Gather Evidence Points: |
+          | Mixture Likelihood      |     | - Geocoder Point g      |
+          | (Gaussian or Student-t) |     | - Locality Centroid     |
+          | 2D Bayesian Grid Fusion |     | - Resolved Landmark POI |
+          +------------+------------+     +------------+------------+
+                       |                               |
+          +------------+------------+     +------------+------------+
+          | Posterior Cloud P(L|E)  |     | Convex Hull Geometry    |
+          | MAP Mode & Medoid       |     | Fuzzy Edge Expansion:   |
+          | Raw Mass Region Radius  |     | D_edge = z * sigma_edge |
+          +------------+------------+     | Hull Centroid Pin       |
+                       |                  | Max Vertex Raw Radius   |
+                       |                  +------------+------------+
+                       +---------------+---------------+
+                                       |
+                       +---------------+---------------+
+                       | GROUP-AWARE CONFORMAL         |
+                       | CALIBRATION:                  |
+                       | s_j = error_j / raw_radius_j  |
+                       | final_radius = q_alpha * r_raw|
+                       +---------------+---------------+
+                                       |
+                       +---------------+---------------+
+                       | OPERATIONAL DECISION LOGIC:   |
+                       | direct_dispatch / plan_visit /|
+                       | verify_first / revisit_needed |
+                       +---------------+---------------+
+
+
+================================================================================
+6. DETAILED STEP-BY-STEP MATHEMATICAL FORMULATIONS
+================================================================================
+
+STEP 1: Map Representation as Candidate Locations L
+- Plausible map area divided into a 41x41 grid of discrete candidate cells L.
+- Grid naturally represents non-Gaussian, multimodal, and irregular beliefs.
+
+STEP 2: Geocoder Prior Model P(L)
+- Centered at commercial geocoder point g = (g_x, g_y):
+    P(L) proportional to exp( - ||L - g||^2 / (2 * sigma_prec^2) )
+- Precision widths learned from training errors:
+    * rooftop: sigma = 25.0 m (conservative fallback)
+    * street: sigma = 100.0 m
+    * locality: sigma = 330.0 m
+    * pincode: sigma = 1,200.0 m
+
+STEP 3 & 4: Visit Likelihood & Outlier Mixture Model
+- Each check-in observation z_i is modeled as a mixture:
+    p(z_i | L) = pi_i * InlierDensity(z_i; L, sigma_i) + (1 - pi_i) * Outlier(z_i)
+- Inlier density options:
+    * Gaussian: (1 / (2*pi*sigma_i^2)) * exp(-0.5 * ||z_i - L||^2 / sigma_i^2)
+    * Student-t (nu = 3): (1 / (pi * nu * sigma_i^2)) * (1 + ||z_i - L||^2 / (nu * sigma_i^2))^(-(nu+2)/2)
+- Outlier density: Uniform broad background over town area (rho = 1e-8).
+- Visit trust score pi_i in [0, 1]:
+    * Credibility derived from outcome, GPS accuracy, dwell time, photo hash reuse,
+      and agent hotspot checks.
+    * Meeting context: Home-confirmed visits receive positive weight; work/road
+      meetings receive pi = 0.0; failed searches are treated as search trails.
+    * Single-agent capping: Multi-visits by same agent discounted by min(1, 1.5/sqrt(k)).
+
+STEP 5: Learned Visit Uncertainty sigma_i
+- Physical scatter model:
+    sigma_i = sqrt( a^2 + (b * accuracy_i)^2 )
+    Parameters fitted: a = 8.0 m (unavoidable door scatter floor), b = 2.4 (empirical ratio).
+
+STEP 6 & 7: Bayesian Posterior Fusion & Grid Point Estimation
+- Joint posterior over grid:
+    P(L | E) proportional to P(L) * Product_{i=1}^N p(z_i | L)
+- Point Estimates:
+    * Posterior Mode (MAP): Cell with maximum posterior probability mass.
+    * Posterior Medoid: Candidate point minimizing expected Euclidean distance to posterior.
+
+STEP 8: Robust Heavy-Tailed Likelihoods
+- Student-t density provides polynomial (rather than exponential) decay in tails,
+  preventing large valid check-ins from being excessively penalized while keeping
+  resilience against outliers.
+
+STEP 9: Alternative Robust & Spatial Estimators
+- Coordinate Median: (median(x), median(y))
+- Weighted Geometric Median: Weiszfeld L1-norm minimizer argmin sum w_i ||x - z_i||.
+- Robust Huber Center: Iteratively Reweighted Least Squares (IRLS) M-estimator
+  with threshold delta = 25 m.
+- DBSCAN Clustering: eps = 50 m, min_samples = 2 to isolate rogue outlier points.
+
+STEP 10: Geocoder Residual ML (g + Delta) & Pseudo-Labelling
+- Treats commercial geocoder as baseline g and trains HuberRegressor to predict
+  shift (Delta_x, Delta_y) from spatial context features:
+    x_pred = g_x + Delta_x
+    y_pred = g_y + Delta_y
+- Pseudo-labels: Augmented using unlabelled addresses having >= 2 concordant home
+  visits (dispersion <= 30 m, trust >= 0.75).
+
+STEP 11 & 12: No-Visit Branch: Convex Hull + Fuzzy Normal Boundary
+- Assembles evidence points P1, P2, ..., Pn with individual uncertainties sigma_1, ..., sigma_n:
+    * Geocoder point g (sigma_prec)
+    * Locality centroid (sigma_locality = 350 m)
+    * Landmark / POI (sigma_poi = 150 m)
+- Convex Hull computed via Quickhull algorithm.
+- For each edge between vertex A and vertex B:
+    * sigma_edge = (sigma_A + sigma_B) / 2
+    * Outward perpendicular shift: D_edge = z_alpha * sigma_edge
+      (z_50 = 0.674, z_80 = 0.842, z_90 = 1.282)
+- Shifted edges intersect to construct the 'Confidence Hull'.
+- Predicted Pin: Hull Centroid.
+- Raw Radius: R_alpha = max distance from hull centroid to any Confidence Hull vertex.
+- Fallbacks:
+    * 1 point: returns geocoder point with sigma_prec directly.
+    * 2 points: returns segment midpoint with half-length + z * avg_sigma.
+
+STEP 13: Split-Conformal Calibration
+- Calibration set: 19 held-out validation addresses.
+- Nonconformity scores:
+    score_j = error_j / raw_radius_j
+- Conformal multiplier q_alpha: Empirical (1 - alpha) quantile of calibration scores.
+- Final Calibrated Radius:
+    r_final = q_alpha * raw_radius
+- Group-Aware (Mondrian) Conformal: Evaluates visited and no-visit cohorts separately
+  to guarantee honest empirical coverage across both regimes.
+
+STEP 14: Operational Decision Logic
+- 'direct_dispatch': Tight radius (R90 <= 150 m) and high-confidence home visit (trust >= 0.65).
+- 'plan_visit': Moderate radius (R90 <= 250 m) or reliable street/rooftop geocoder without visits.
+- 'verify_first': Large radius (R90 > 250 m) or unvisited coarse locality/pincode geocoder.
+- 'revisit_needed': Contradictory visit check-ins (>80 m apart) or reused photo hashes.
+
+
+================================================================================
+7. COMPREHENSIVE EXPERIMENTAL BENCHMARK RESULTS
+================================================================================
+Evaluated on the exact same held-out test accounts (Official Test Split N=15):
+
+--------------------------------------------------------------------------------
+Candidate Method                          | Median Error | P90 Error  | Mean Error 
+--------------------------------------------------------------------------------
+1. Commercial Baseline Alone              |      384.5 m |   1671.5 m |    600.5 m
+2. Robust Huber Center (IRLS + Capping)   |      185.5 m |   1235.1 m |    415.2 m
+3a. Bayesian Mixture Mode (MAP)           |       33.6 m |   1668.8 m |    399.3 m
+3b. Bayesian Mixture Medoid               |       33.6 m |   1668.8 m |    399.3 m
+4. Coordinate Median                      |      185.5 m |   1235.1 m |    362.1 m
+5. Weighted Geometric Median (L1)         |      170.5 m |   1235.1 m |    359.1 m
+6. DBSCAN Inlier Clustering               |      170.5 m |   1235.1 m |    358.6 m
+7. Bayesian Heavy-Tailed (Student-t)      |       33.6 m |   1235.1 m |    305.0 m
+8. Geocoder Residual ML (g + Delta)       |      333.4 m |   1627.1 m |    584.3 m
+9. No-Visit Convex Hull + Fuzzy Boundary  |      343.5 m |   1654.5 m |    584.2 m
+--------------------------------------------------------------------------------
+
+PRIMARY METHOD TEST METRICS:
+- Baseline Commercial Median Error:  384.5 m
+- Primary Learned Pin Median Error:   33.6 m
+- Median Distance Error Improvement:  350.9 m reduction in search error
+- Measured R50 Coverage:              66.7% (Nominal Target: 50.0%)
+- Measured R90 Coverage:              93.3% (Nominal Target: 90.0%)
+- Median R90 Radius Size:             391.1 m overall (277.6 m for visited cases)
+
+SPECIAL METHODOLOGICAL ANALYSES:
+1. Cold-Start Analysis:
+   - Without visits: Median Error = 384.5 m (R90 expands safely to preserve coverage).
+   - With visits:    Median Error = 33.6 m (91.3% error reduction).
+2. Incremental Evidence Curve:
+   - k=0 visits: 384.5 m median error
+   - k=1 visit:  111.5 m median error
+   - k=2 visits:  70.8 m median error
+   - k=3 visits:  48.5 m median error
+3. Adversarial Poisoning Resistance:
+   - Synthetic rogue visit injected +2,121 m away.
+   - Naive arithmetic average displaced by 1,074.9 m (severely poisoned).
+   - Robust Huber & Bayesian Mixture displaced by only 34.4 m (31.2x resistance factor).
+4. Spatial Leakage Audit:
+   - Status: PASS. Zero exact duplicate coordinates leaked across splits.
+   - Median test separation from nearest training entity: 264.3 m.
+
+
+================================================================================
+8. PRODUCTION REPOSITORY STRUCTURE & INVOCATION
+================================================================================
+Core Source Code (in creditnirvana_ps3/):
+- config.py               : System constants, CRS metadata, priors, split ratios.
+- data_loader.py          : Data ingestion registry, leakage-free spatial split generator.
+- coordinate_audit.py     : CRS verification, unit checks, join integrity.
+- parser_contract.py      : Pydantic schema for NLP clues, fallback adapters.
+- visit_evidence.py       : GPS trajectory summarizer, drift guard, trust scorer.
+- landmark_resolver.py    : Town-bounded POI matching, directional constraints.
+- pin_estimator.py        : Huber, Bayesian mode/medoid, Student-t, DBSCAN, geometric median.
+- convex_hull_branch.py   : No-visit convex hull + fuzzy normal boundary expansion.
+- residual_learner.py     : Geocoder residual ML (g + Delta) & pseudo-labelling.
+- radius_calibrator.py    : Conformal dynamic calibration, group-aware scaling.
+- baseline_benchmark.py   : Ground truth benchmarking (N=100) vs commercial geocoder.
+- evaluation.py           : Complete test split evaluation comparing all 9 candidate methods.
+- experiments.py          : Cold-start, incremental, fake-visit, and leakage experiments.
+- pipeline.py             : End-to-end batch orchestrator.
+- service.py              : FastAPI REST microservice with OpenAPI documentation.
+
+How to Execute:
+1. Run Full Batch Pipeline:
+   python run_pipeline.py
+
+2. Run Comprehensive Unit Test Suite (25 Tests):
+   python -m unittest discover tests -v
+
+3. Launch FastAPI Microservice:
+   uvicorn creditnirvana_ps3.service:app --port 8000
+   OpenAPI documentation available at: http://localhost:8000/docs
+
+Output Files Generated:
+- outputs/predicted_address_pins_and_radii.csv (All 2,880 addresses)
+- outputs/predicted_address_pins_and_radii.json
+- outputs/radius_calibrator_state.json
+- reports/test_evaluation_report.md
+- reports/special_analyses_report.md
+- reports/radius_calibration_report.md
+- reports/baseline_benchmark_report.md
+- reports/data_quality_report.md
+================================================================================

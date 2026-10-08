@@ -1,0 +1,160 @@
+CreditNirvana PS3 — Coordinate Confidence Radius Work Plan
+This document sets out the coordinate team’s work to estimate an address pin and a calibrated confidence radius. We will first measure the baseline against surveyed locations, then add reliable visit and landmark evidence, and finally check that each stated radius covers the intended share of held-out addresses.
+1. Coordinate Team Flow
+Raw address and visit data → account-safe train, calibration and test split → baseline pin and evidence features → coordinate estimate → dynamic radius calibration → held-out coverage check → API and pilot.
+Stage
+Main action
+Output
+1. Prepare
+Validate IDs, coordinate units, town frames and split assignments.
+Clean, joined datasets
+2. Estimate pin
+Start from the baseline; add only reliable home-visit and parsed landmark evidence.
+Predicted x/y
+3. Calibrate radius
+Compare predictions with surveyed locations on calibration accounts.
+Per-address R50 and R90
+4. Verify
+Check error and radius coverage on held-out test accounts.
+Accuracy and calibration report
+5. Serve
+Return pin, radius, evidence summary and verify-first flag.
+Planner / field-app response
+2. What the Radius Means
+For a predicted pin (x̂, ŷ) and a verified location (x, y), the observed distance error is:
+e = √((x̂ − x)² + (ŷ − y)²)
+R50 is the calibrated radius expected to contain about 50% of similar verified locations. R90 is the calibrated radius expected to contain about 90%. These are coverage targets, not guarantees for an individual address. A useful system reports both accuracy and coverage; it should not claim a small radius unless held-out data supports it.
+For each address, the radius should change with evidence quality. Strong, consistent home-confirmed visits and accurate GPS can support a smaller radius. A locality-level baseline, weak GPS, conflicting visits or ambiguous landmarks should lead to a larger radius or a verification recommendation.
+3. Coordinate Data and Join Map
+Dataset
+Join key / useful fields
+Coordinate-team use
+addresses.csv
+address_id, account_id, address_text, town_id, address_type
+Source address and account; parser output supplies locality, landmark and relation clues.
+baseline_geocodes.csv
+address_id, geocoder_x/y, precision
+Starting pin and precision features; baseline benchmark.
+field_visits.csv
+visit_id, account_id, address_id, agent_id, outcome, remark, gps_accuracy_m, dwell_s, check-in
+Link visits to addresses; determine meeting context and evidence reliability.
+visit_gps_points.csv
+visit_id, seq, point_ts, x/y, accuracy_m
+Summarize each trail once; distinguish arrival/stationary clusters from broad searches.
+surveyed_addresses.csv
+address_id, surveyed_x/y
+Reference locations for error calculation and radius calibration; confirm these represent the address/home.
+landmarks_poi.csv
+poi_id, town_id, landmark_type, name, x/y
+Resolve parsed landmark names and derive spatial candidate constraints.
+localities.csv / towns.csv
+town_id, locality_id, pincode, centroid_x/y, address_style
+Locality priors, address context and stratified calibration.
+agents.csv
+agent_id, language_team, tenure_months, shift
+Optional agent-level reliability diagnostics; do not let one agent dominate.
+accounts.csv / splits.csv
+account_id, town_id / account_id, split
+Join context and preserve train, calibration, and test separation.
+4. Required Joins and Split Rules
+Left dataset
+Key
+Right dataset
+Purpose
+splits.csv
+account_id
+field_visits.csv
+Keep all visits for an account in its assigned partition.
+field_visits.csv
+address_id
+addresses.csv
+Connect visit evidence to address text and town.
+field_visits.csv
+visit_id
+visit_gps_points.csv
+Attach ordered GPS trails to each visit.
+baseline_geocodes.csv
+address_id
+addresses.csv
+Attach baseline coordinates and precision.
+surveyed_addresses.csv
+address_id
+addresses.csv
+Attach reference coordinates for error measurement.
+addresses.csv
+town_id
+towns.csv
+Confirm address style and town coordinate context.
+landmarks_poi.csv
+town_id
+towns.csv
+Match landmarks only within the correct town.
+Use splits.csv before feature building. Train the pin/scale models on train accounts, calibrate radii on validation accounts, and report final metrics on test accounts. Do not use surveyed coordinates from calibration or test records as estimator inputs. If several accounts share a known place, keep that place group together across splits where possible.
+5. Work Packages to Produce the Radius
+Work package
+Implementation
+Deliverable / check
+A. Coordinate audit
+Confirm x/y units, projection, town origin and distance units. Check duplicates, nulls and invalid ranges.
+Coordinate note; no distance is labelled metres until verified.
+B. Baseline benchmark
+Join baseline to surveyed coordinates on address_id; calculate Euclidean error per address. Summarize median and P90 overall and by precision.
+Baseline report and verified sample counts.
+C. Build evidence features
+For each visit, compute one summary: GPS accuracy, duration, path length, endpoint/stationary cluster, outcome and agent integrity. Preserve home/work/road/unknown meeting type.
+One weighted visit observation per visit; failed trails are search evidence, not home coordinates.
+D. Pin estimator v1
+Use baseline as the prior. Combine independent home-confirmed locations with a weighted robust center (weighted median / Huber estimate); downweight outliers and cap repeated-agent influence.
+Predicted x/y and auditable evidence weights.
+E. Landmark constraints
+Use parser output to resolve landmark and relation within town. Apply broad spatial constraints for “near”; do not treat “behind” as exact without road/entrance context.
+Candidate area and ambiguity flag.
+F. Radius v1
+On validation addresses, calculate prediction-to-survey errors. Start with calibrated quantiles by baseline precision; merge sparse groups rather than trusting tiny samples.
+Group-specific R50/R90 with sample counts.
+G. Dynamic radius v2
+Train an error-scale estimate s(x) using training features. On validation addresses compute z=e/s(x); take calibrated q50/q90 of z. For a new address use R50=q50·s(x), R90=q90·s(x).
+Per-address radii that widen or shrink with evidence.
+H. Spatial calibration
+If enough local examples exist, compare town/locality-specific or geographically weighted conformal calibration. Keep a global fallback for sparse areas.
+Local adaptation with measured coverage by territory.
+I. Test and pilot
+Freeze model and radii, then evaluate once on test accounts. Compare against baseline and commercial geocoder on the same verified addresses; run a controlled field pilot.
+Error, coverage, radius-size and operational metric report.
+6. Radius Calibration Details
+Baseline-only calibration
+For each matched baseline/surveyed address, compute eᵢ. On the calibration split, use the empirical median of eᵢ as the initial R50 and the 90th-percentile value as the initial R90. Repeat by precision category if the groups have adequate sample sizes. This produces a radius appropriate to a group, not an individualized evidence-aware radius.
+Dynamic calibration
+Let s(x) be an address-specific scale estimate derived from features available at prediction time: baseline precision, GPS accuracy, number and recency of home-confirmed visits, agreement between independent agents, visit-integrity signals, and landmark ambiguity. Fit s(x) using training accounts only. On the separate calibration accounts, calculate zᵢ=eᵢ/s(xᵢ); set q90 to the calibrated 90th-percentile score. For a new address, R90(x)=q90·s(x). Use an analogous q50 for R50. This keeps the radius adaptive while correcting scale under- or over-estimation using observed errors.
+For spatial dependence, inspect coverage by town/locality and held-out territory. Local or geographically weighted conformal methods can adapt the calibration to nearby examples, but need enough calibration data; use a global fallback where samples are sparse. Calibration should be refreshed when address mix, territories or field processes change materially.
+7. Evaluation and Acceptance Checks
+Metric
+How to calculate / use it
+Median distance error
+Median test-set distance from predicted pin to verified home location. Describes typical pin error.
+P90 distance error
+90th percentile of test-set pin errors. Compare with the commercial geocoder on exactly the same addresses.
+Coverage at 90%
+Share of test addresses where error ≤ that address’s assigned R90. Target about 90% overall; also inspect town and precision groups.
+Radius size
+Median/mean assigned R90. Among methods with similar coverage, smaller radii are more useful.
+Operational outcomes
+In the controlled pilot, track “not traceable” share and productive visits per agent-day alongside coverage.
+A method does not pass simply because its radii are large enough to cover everything. Review coverage together with radius size, and show sample counts for every subgroup. Use only home-confirmed locations as address truth where possible; report work/road/unknown meetings separately.
+8. Service Output and Team Deliverables
+Output field
+Meaning
+address_id, pin_x, pin_y
+Address key and estimated location in the documented coordinate reference.
+radius_50_m, radius_90_m
+Empirically calibrated coverage radii for typical and cautious use.
+evidence_summary
+Counts and types of evidence used; distinguish home visits from search trails.
+confidence_action
+Plan visit, or verify first when evidence is weak / radius exceeds the planner’s approved tolerance.
+model_version, calculated_at
+Traceability for updates and future recalibration.
+Coordinate team deliverables: a baseline error report; a documented point-estimation method; a radius-calibration report with held-out coverage; a clear output contract for the parser/data/app teams; and pilot results against the commercial baseline.
+9. Key Point for the Presentation
+We will not assign one fixed radius to every address. We will use surveyed locations to measure coordinate errors, learn how errors vary with baseline precision and evidence quality, and calibrate an address-specific R50/R90. The test is whether the stated R90 contains about 90% of held-out verified locations while remaining as small as the evidence allows.
+Location evidence is used only for collections and within the DPD period.

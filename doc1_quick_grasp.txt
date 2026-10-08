@@ -1,0 +1,464 @@
+PS-3 LOCATION PREDICTION
+Quick-Grasp Report & Senior Presentation Guide
+Predict where an address actually is — and quantify how confident we are
+30-second version
+We have messy address text, a commercial geocoder, and noisy field-visit GPS data. Some visits are genuine, some may be unreliable, and many addresses have no visit at all. The proposed system cleans the data, estimates how trustworthy each visit is, builds an initial location prior, combines evidence using Bayesian fusion, and finally outputs a predicted location plus a calibrated confidence radius.
+Question
+Answer
+What is the task?
+Predict the actual location of an address and provide a confidence region around the prediction.
+What is the baseline?
+A commercial geocoder already produces a location from address text; its error is measured against surveyed truth.
+What makes the problem hard?
+Noisy GPS visits, potentially fake visits, messy Indian address text, duplicate/related addresses, and ~55% addresses with no useful visit evidence.
+What is the core idea?
+Treat every clue as evidence with different reliability rather than treating every GPS point equally.
+Source: PS-3 Research Guide — Pages 1, 2, 11, 17 and 23.
+1. Problem in Plain English
+The problem statement
+For a given address, predict the most likely true location (x, y). Do not stop at one point: also provide a radius that is intended to contain the true location with a stated coverage level such as 80%.
+Input
+What it tells us
+Final use
+Address text
+House/street/locality/landmark clues
+Initial location prior
+Commercial geocoder
+A starting location + precision label
+Initial point + uncertainty clue
+Field visits
+Where agents actually checked in
+Strong location evidence when trustworthy
+Visit outcome / GPS accuracy
+How reliable a visit may be
+Visit trust weighting
+GPS trails / agent behaviour
+Whether movement looks genuine
+Fraud/noise detection
+Landmarks / nearby confirmed addresses
+Spatial context
+Useful especially when visits are missing
+Key distinction
+The commercial geocoder is not the same thing as a field-agent GPS visit. The geocoder starts from address text and returns a location; field_visits.csv records what happened during an actual field visit.
+The target is therefore:
+• Predicted location (pin).
+• Confidence radius / region around that pin.
+Source: PS-3 Research Guide — Pages 1, 3, 7, 11, 15 and 17.
+2. Dataset: What Each File Is For
+File
+What it contains
+Why we care
+ps-3/surveyed_addresses.csv
+True surveyed x, y for labelled addresses
+Ground truth / answer key
+shared/field_visits.csv
+Check-in x,y, GPS accuracy, outcome, dwell time, remarks
+Main visit evidence
+ps-3/visit_gps_points.csv
+GPS trail points during visits
+Movement/trail behaviour
+ps-3/baseline_geocodes.csv
+Commercial geocoder point + precision label
+Baseline and initial prior
+shared/addresses.csv
+Address text, type, source/town
+Text features and parsing
+ps-3/landmarks_poi.csv
+Landmarks / POIs with x,y and type
+Landmark-based localization
+ps-3/localities.csv
+Locality name, pincode, centroid
+Locality prior
+ps-3/towns.csv
+Town/address style/radius rules
+Town-specific parsing/context
+shared/agents.csv
+Agent tenure/language/team/town
+Agent reliability features
+shared/splits.csv
+Train / validation / test assignment
+Honest evaluation
+Data-quality warnings in the guide
+The guide notes that field_visits.csv and field_visits (1).csv are byte-for-byte identical, so only one should be used. It also flags addresses with no baseline geocode and some non-location fields as missing/out-of-scope.
+Files mostly out of scope
+• Loan / financial fields and dial/payment logs are not location evidence and are explicitly excluded by the guide.
+Source: PS-3 Research Guide — Pages 3 and 10.
+3. Ground Truth, Baseline & Error
+Ground truth
+`surveyed_addresses.csv` contains the surveyed true location. This is what we compare our prediction against during evaluation.
+Baseline geocoder
+The guide reports a commercial geocoder baseline. It takes address text and returns a location plus a precision label such as rooftop, street, locality, or pincode. This is not the field-agent GPS.
+Geocoder precision
+Median error in guide
+Interpretation
+rooftop
+26 m
+Usually very precise
+street
+109 m
+Reasonably precise
+locality
+386 m
+Much broader location
+pincode
+1,376 m
+Very coarse location
+Reported baseline score
+Across the 100 surveyed addresses, the guide reports a median geocoder error of about 376 m and a 90th-percentile error of about 839 m. This is the benchmark we try to improve on.
+How one error is calculated
+For each labelled address, compare the predicted point with the surveyed true point. In the local (x, y) grid used by the guide:
+error = sqrt((x_pred - x_true)^2 + (y_pred - y_true)^2)
+• Do this for every surveyed address → one error per address.
+• Median error = middle of the sorted errors (for 100 cases, the 50th/51st average).
+• P90 error = error value below which 90% of cases fall.
+Source: PS-3 Research Guide — Pages 1, 3, 4 and 16.
+4. Why We Cannot Trust Every Visit Equally
+The guide analyzes how close a visit check-in is to the true house, and shows that the visit outcome matters a lot. This is the motivation for assigning different levels of trust to different visits.
+Outcome
+Median distance to truth
+Plain-English meaning
+met_family
+16 m
+Agent was at/very near the house
+locked_premises
+20 m
+Agent was at the house, but it was locked
+neighbour_says_shifted
+20 m
+Agent was near the house; neighbour says it moved
+met_borrower
+34 m
+Usually at the house, but slightly more variable
+cash_collected / no_such_person
+~70 m
+Small sample in the guide
+address_not_traceable
+1,603 m
+Agent appears to have searched in the wrong place
+The key idea
+The visit outcome is already recorded in field_visits.csv. Our model does not need to predict whether the agent met the customer; it can use the recorded outcome as an input feature when estimating how much to trust that visit.
+Multiple visits
+Repeated independent visits are stronger evidence because agreement between visits helps distinguish a real cluster from an isolated outlier. The guide reports median errors of roughly 40 m (1 visit), 14 m (2), 8 m (3) and 23 m (4+).
+Important nuance
+The point is not that “more visits always means lower median error” in a perfectly monotonic way. The key insight is that with only one visit we cannot tell whether it is an outlier; multiple independent visits provide consistency information.
+Source: PS-3 Research Guide — Pages 4-5.
+5. Fake / Suspicious Visits: What Are We Detecting?
+Goal of this block
+We are not trying to accuse an agent of fraud from one field alone. We are looking for patterns that make a visit less trustworthy, so that suspicious GPS evidence gets less influence on the final location.
+Feature / term
+Meaning
+Suspicious example
+photo_hash_reuse_count
+How often the same photo appears across visits
+One photo reused for many different addresses
+agent_hotspot_score
+How many distinct addresses an agent checks from nearly the same spot
+Dozens of “visits” from one ~25 m hotspot
+trail_n_points
+Number of GPS points in the visit trail
+Very short trail / very few points
+trail_path_len
+Total path distance of the GPS trail
+Implausibly short movement
+trail_displacement
+Straight-line start-to-end distance
+Start and end almost identical despite many alleged visits
+trail_tortuosity
+Path length relative to displacement
+Weird/jittery path or unusual movement pattern
+remark_outcome_contradiction
+Written remark conflicts with recorded outcome
+Outcome says met borrower, remark says locked
+agent_consensus_residual
+Distance from the consensus of other agents’ visits
+One agent reports a point far from everyone else
+agent_tenure_months
+Agent tenure in months
+Possible novice-noise effect; guide says this is a hypothesis
+FA009 example in the guide
+The suspicious agent pattern includes very short trails, a small start-to-end displacement, repeated photo hashes, and many check-ins packed into the same hotspot. The lesson is: do not blindly average every visit GPS point.
+Trust / fraud score
+The guide suggests learning the probability that a visit is genuine using a small classifier such as logistic regression or gradient boosting. That probability becomes a trust weight in the probabilistic location model.
+Source: PS-3 Research Guide — Pages 5 and 8.
+6. Feature Engineering: What Goes Into the Model?
+The guide groups useful signals into six families. Think of these as the ingredients we feed into the location system.
+Family
+Examples
+What the family contributes
+A. Visit evidence
+outcome_type, gps_accuracy_m, stay_point_xy, trail_end_xy, checkin-vs-trail-end distance
+Where the agent went + how reliable that visit looks
+B. Integrity / trust
+photo reuse, hotspot score, trail stats, contradictions, agent consensus
+Whether the visit may be noisy/fake
+C. Address text
+locality_id, pincode validity, landmarks, street tokens, text completeness, script mix
+Location clues when visits are weak or absent
+D. Remark-derived corrections
+landmark relation + direction + step count, correction count
+Turns free-text remarks into spatial hints
+E. Spatial / cross-account
+entity_cluster_id, neighbour confirmed offset, number confirmed within 200 m
+Uses nearby confirmed places and same-place evidence
+F. Prior features
+geocoder x,y + precision, locality centroid, town radius, negative-search mask
+Starting location and uncertainty before visit fusion
+Most important practical message
+A feature is simply a useful measurable clue. The model uses many small clues together rather than relying on one magical column.
+What not to use
+• The guide says loan/financial fields and dial/payment logs have no causal link to house location and are out of scope.
+• Avoid leakage: do not use information that would only become available after the prediction time when evaluating a new-address prediction.
+Source: PS-3 Research Guide — Pages 7-10.
+7. Bayesian Fusion — The Core Mathematical Idea
+The core formula
+P(L | evidence) ∝ P(L) × ∏ P(V_i | L)
+Symbol
+Meaning
+L
+A candidate true location
+P(L)
+Prior: our initial belief about that location
+V_i
+The i-th visit / piece of visit evidence
+P(V_i | L)
+Likelihood: how compatible that visit is with location L
+P(L | evidence)
+Posterior: our updated belief after combining the evidence
+Why this formula?
+The expression comes from Bayes’ theorem. The product form assumes the visits are conditionally independent given the true location. The theorem itself is exact; whether this particular modeling assumption works best must be tested empirically.
+A simple mental model
+• Prior: “From the address text + geocoder, I think the house is probably around Area A.”
+• Likelihood: “If the house were in Area A, how plausible is this visit GPS?”
+• Posterior: “After seeing all visits and clues, where do I believe the house is most likely to be?”
+Where do the probabilities come from?
+The prior is built from initial location evidence such as text, landmarks, geocoder and locality. Visit likelihood can be modeled from GPS distance/uncertainty plus a trust probability for whether the visit is genuine.
+Source: PS-3 Research Guide — Pages 11-12.
+8. How the Visit Probability Is Modeled
+For the core probabilistic model, the guide writes each observed GPS point as a mixture of a genuine visit component and an outlier component:
+p(z_i | μ) = π_i × N(z_i; μ, σ_i² I) + (1 − π_i) × Outlier(z_i)
+Term
+Plain-English meaning
+z_i
+Observed GPS position of visit i
+μ
+Candidate true house location
+σ_i
+GPS uncertainty for visit i; related to GPS accuracy
+π_i
+Probability the visit is genuine / trustworthy
+N(...)
+Gaussian “bell curve” around the candidate house location
+Outlier(...)
+A broad model for a visit that may not come from the house
+The important intuition
+If a visit is close to the candidate house and has good GPS accuracy, the genuine-visit likelihood is high. If the visit is far away or looks suspicious, the outlier component gets more weight.
+Where does π_i come from?
+The guide suggests predicting π_i with features such as outcome_type, GPS accuracy and fraud-pattern features, using a small classifier such as logistic regression or gradient boosting. In other words, π_i is the mathematical form of the “trust score” we discussed earlier.
+Why this is useful
+• Good visit → high π_i → stronger location evidence.
+• Suspicious visit → low π_i → weaker location evidence.
+• Bad GPS accuracy → larger uncertainty σ_i → less sharply concentrated evidence.
+Source: PS-3 Research Guide — Pages 8, 12 and 17.
+9. From One Point to a Probability Cloud
+The guide says the beginner instinct is to predict one dot. A better approach is to maintain a probability distribution over possible locations: dense where the house is likely to be, sparse where it is unlikely.
+Level
+Method in guide
+What it gives us
+1. Robust estimation
+Median, geometric median, inverse-variance weighting, DBSCAN/HDBSCAN, RANSAC
+Simple robust location estimate; useful baseline methods
+2. Probabilistic model
+Mixture model + EM
+Posterior belief while accounting for outliers
+3. Grid / particle posterior
+Grid-based Bayes filter / particle filter
+A full spatial probability cloud; naturally handles multiple candidate locations
+4. Learned models
+LightGBM/XGBoost/CatBoost, residual regression, GPR, quantile regression, NGBoost, NLP models
+Learn corrections, trust, error or full distributions from data
+Practical reading of the levels
+These are not four things that must all be stacked blindly. The guide presents them as a progression from simple to advanced. A sensible project should establish a strong simple baseline first, then add complexity only if validation shows a gain.
+Address-text sub-pipeline
+Normalize abbreviations (e.g. nr→near, opp→opposite, bhd→behind, Rd→road, Blk→block), transliterate where needed, extract house/street/locality/landmark entities, resolve landmarks against locality data, and combine the resulting clue with the geocoder/locality prior.
+Source: PS-3 Research Guide — Pages 12-15.
+10. Confidence Radius: Proving We Are Honest
+Definition
+For a target coverage α (e.g. 0.80), choose radius r_α such that P(||true − pin|| ≤ r_α) = α.
+In plain English: if we publish an “80% confidence circle”, then across many similar addresses, about 80% of the true locations should actually lie inside those circles.
+Method
+Idea
+Role
+Gaussian posterior
+Derive radius analytically from a 2-D Gaussian under the model assumptions
+Fast theoretical radius
+Grid/particle posterior
+Take the smallest circle containing α of the probability mass
+Directly matches the probability cloud
+Quantile regression
+Predict the α-quantile of location error from features
+Learn a radius from data
+Conformal prediction
+Calibrate radius using held-out errors
+Recommended final calibration layer in the guide
+Coverage vs sharpness
+Coverage asks: “Do my circles actually contain the truth often enough?” Sharpness asks: “How small are those circles?” A huge radius can get good coverage but is not useful. The goal is calibrated AND as small as possible.
+Source: PS-3 Research Guide — Pages 15-16 and 18.
+11. Validation: How We Prove the System Works
+Experiment / check
+What we do
+Why seniors should care
+Train/validation/test split
+Respect splits.csv
+Keeps final score honest
+Pseudo-label check
+Use well-visited addresses to form approximate labels when appropriate
+Tests whether extra weak supervision helps
+Simulated cold start
+Hide visits for addresses where truth is known; predict from text/geocoder/etc.
+Directly tests the no-visit case
+Incremental learning curve
+Compare 0, 1, 2, 3... visits
+Shows how much each new visit helps
+Adversarial test
+Inject synthetic fake visits
+Tests whether the model can resist poisoning
+Spatial leakage check
+Keep nearby/same-entity places from leaking across splits
+Prevents inflated test performance
+Metrics
+Median error, P90 error, coverage, calibration, sharpness
+Measures accuracy AND honesty of confidence
+How to justify “this is the best approach”
+Do not say Bayesian fusion is proven to be universally best. Say: Bayes gives a principled evidence-combination framework; the guide recommends it for this problem; and our experiments will compare it with simpler baselines and alternative models on the official splits.
+Source: PS-3 Research Guide — Pages 16-17.
+12. Recommended Final System — Step by Step
+Stage
+What we do
+Output
+1. Clean
+Deduplicate; normalize address text; flag missing/invalid fields
+Cleaned records
+2. Trust
+Use visit outcome, GPS accuracy, trail/photo/agent signals to estimate visit trust
+Trust probability per visit
+3. Prior
+Build initial location from text, landmarks, geocoder and locality context
+Prior location distribution
+4. Fuse
+Combine prior + trustworthy visits + spatial context + negative evidence
+Posterior probability over location
+5. Calibrate
+Apply conformal / other calibration to error or posterior
+Reliable confidence radius
+6. Output
+Return pin, radius, nearby landmarks / directional description
+User-facing prediction
+7. Update
+When a new visit arrives, update the posterior
+Improved prediction over time
+One-line pipeline for a presentation
+Address text + geocoder + landmarks + field visits → trust each clue → Bayesian/spatial fusion → predicted pin + calibrated confidence radius.
+What the final output should look like
+Output
+Example format
+Pin
+(x, y) predicted location
+Confidence level
+80%
+Confidence radius
+e.g. 420 m
+Nearest landmarks
+Water Tank, Masjid
+Direction / offset
+e.g. ~120 m north of selected landmark
+Source: PS-3 Research Guide — Page 17.
+13. What to Say to Seniors — Quick Answers
+Q: Why not just use the geocoder?
+A: Because the baseline has large errors for coarse precision levels and some addresses have no useful geocoder/visit evidence. The project is about improving beyond that baseline.
+Q: Why not average every GPS visit?
+A: Because visits can be noisy or suspicious. Reliability differs by visit outcome, GPS accuracy and agent/trail behaviour.
+Q: Is outcome_type predicted by our model?
+A: No. It is already recorded in field_visits.csv and can be used as an input feature for visit trust.
+Q: What is the trust/fraud score?
+A: A learned estimate of how genuine/reliable a visit appears; higher trust means stronger influence on location estimation.
+Q: Why Bayesian fusion?
+A: Bayes gives a principled way to combine prior location information with multiple evidence sources. We still need empirical validation to show it is effective on this dataset.
+Q: Where do the P values come from?
+A: The prior comes from initial location evidence; visit likelihood comes from how compatible a GPS observation is with a candidate location, considering GPS uncertainty and visit trust.
+Q: Why a confidence radius?
+A: A single point hides uncertainty. The project requires a calibrated region around the prediction so the system can say how uncertain it is.
+Q: How do we know confidence is honest?
+A: Check empirical coverage on held-out data and calibration curves; ideally an 80% region contains the truth about 80% of the time.
+Q: What if there are no visits?
+A: Use address text, landmarks, geocoder, locality and nearby confirmed-address information; the guide specifically proposes a cold-start evaluation.
+Q: Do we need deep learning?
+A: Not by default. The guide lists deep NLP as an advanced option. Start with robust statistics + engineered features + tabular ML and only add complexity if validation supports it.
+Source: PS-3 Research Guide — Synthesized directly from the guide’s framing, feature tables, methodology and validation sections (pp. 1-17).
+14. One-Page Mental Model
+Step
+Ask this question
+Use this evidence
+1. Start
+“Where do I think the address is?”
+Address text, geocoder, landmarks, locality
+2. Check visits
+“Where did the agent actually go?”
+Check-in GPS, trail, stay point
+3. Trust visits
+“How much should I believe each visit?”
+Outcome, GPS accuracy, photo reuse, hotspot, trail, agent consensus
+4. Combine
+“What location best explains all evidence?”
+Bayesian / probabilistic fusion
+5. Handle missing visits
+“What if no visit exists?”
+Text + landmarks + nearby confirmed addresses + geocoder
+6. Quantify uncertainty
+“How big should my circle be?”
+Posterior/grid, quantiles, conformal calibration
+7. Evaluate
+“Does this actually work?”
+Median error, P90, coverage, calibration, sharpness
+The single most important conceptual shift
+Do not think: “GPS point = truth.” Think: “Each source is evidence with a reliability level. The model combines evidence and keeps uncertainty instead of pretending it knows one exact point.”
+15. Glossary for Quick Revision
+Term
+Plain-English meaning
+Ground truth
+The correct surveyed location used for evaluation.
+Feature
+A measurable input clue given to the model.
+Prior
+Initial belief about where the house is before all visit evidence is fused.
+Likelihood
+How compatible a piece of evidence is with a candidate location.
+Posterior
+Updated belief after combining prior and evidence.
+Outlier
+A point that may not represent the true location.
+Robust estimator
+A location estimator that is less damaged by extreme outliers.
+Clustering
+Grouping nearby observations to find dense spatial patterns and isolate noise.
+Trust score / π_i
+Estimated probability that a visit is genuine/reliable.
+Geocoder precision
+Label describing how fine-grained the commercial geocoder result is.
+Calibration
+Checking that predicted confidence matches real-world frequency.
+Coverage
+Fraction of true locations captured by predicted regions.
+Sharpness
+How small those valid confidence regions are.
+P90 error
+Error value at the 90th percentile; 90% of cases are at or below it.
+Conformal prediction
+A calibration method for producing prediction regions with a coverage guarantee under its assumptions.
+Entity resolution
+Deciding whether two different address records refer to the same physical place.
+Data leakage
+Using information during prediction that should not be available at prediction time.
+Pseudo-label
+An approximate label created from indirect evidence rather than direct ground truth.
+Source: PS-3 Research Guide — Appendix glossary and terminology used throughout the guide.
+Important source boundary: This report explains the attached PS-3 guide. Where the guide lists multiple methods, this report presents them as alternatives/progression, not as proof that every method must be implemented.
