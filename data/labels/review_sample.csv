@@ -1,0 +1,151 @@
+address_id,town_id,label_quality,labelled_address
+AD000721,T3,sure,h/O no/O 89/O bhd/O milk/O booth/O silver/B-LOCALITY oak/I-LOCALITY layt/I-LOCALITY navanagara/B-TOWN est/I-TOWN 980301/B-PINCODE
+AD001069,T3,no_locality,h/O no/O 29/O a/O block/O 4th/O road/O b/O h/O ganapathi/O temple/O navanagara/B-TOWN east/I-TOWN
+AD001811,T2,sure,416/O 1/O gali/O no/O 11/O petrol/O pump/O ke/O bagal/O me/O azad/B-LOCALITY mohalla/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD002825,T1,sure,no/O 183/O green/O view/O apts/O 5th/O cross/O 4th/O main/O rd/O church/O ke/O pass/O gandhi/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD002537,T1,no_locality,4th/O crs/O 5th/O main/O udyanavana/B-LANDMARK hattira/B-RELATION kaveripura/B-TOWN 960102/B-PINCODE
+AD000471,T3,sure,71/O blk/O b/O rd/O 6/O nr/B-RELATION overhead/O tank/B-LANDMARK green/B-LOCALITY park/I-LOCALITY lyt/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD001946,T3,sure,no/O 98/O blk/O c/O rd/O 2/O nr/B-RELATION milk/B-LANDMARK booth/O hmt/B-LOCALITY colny/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD000746,T2,sure,house/O 71/O gali/O no/O 12/O opp/B-RELATION pds/O shop/O nehru/B-LOCALITY colony/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD000769,T2,sure,house/O 476/O gali/O no/O 11/O petrola/B-LANDMARK pampa/O ke/O samane/B-RELATION tilak/B-LOCALITY nagr/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970204/B-PINCODE
+AD000911,T1,sure,no/O 281/O 2nd/O cross/O 1st/O main/O near/B-RELATION park/B-LANDMARK hosa/B-LOCALITY badavane/I-LOCALITY kaveripura/B-TOWN 960101/B-PINCODE
+AD000317,T1,no_locality,house/O 75/O 11th/O cr/O 7th/O main/O rd/O kalyana/O mamtapa/B-LANDMARK hattira/B-RELATION kaveripura/B-TOWN 960104/B-PINCODE
+AD002500,T3,sure,h/O no/O 34/O blk/O f/O rd/O 3/O church/B-LANDMARK eduru/B-RELATION royal/B-LOCALITY gardens/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980303/B-PINCODE
+AD002898,T3,sure,74/O 2/O blk/O d/O rd/O 3/O orchid/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980304/B-PINCODE
+AD000268,T2,sure,gali/O 11/O azad/B-LOCALITY mohalla/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD001236,T1,sure,no/O 377/O halina/B-LANDMARK dairi/I-LANDMARK eduru/B-RELATION nehru/B-LOCALITY col/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD002157,T3,sure,hiuse/O 42/O 0/O blk/O d/O rd/O 4/O teachers/B-LOCALITY col/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD002487,T2,sure,gali/O no/O 9/O ward/O 8/O azad/B-LOCALITY mohalla/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD001265,T3,sure,d/O block/O 6th/O road/O defence/B-LOCALITY colony/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD001295,T1,sure,gandhi/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD000982,T3,sure,blk/O f/O rd/O 6/O nr/B-RELATION pharmacy/B-LANDMARK lakeview/B-LOCALITY phase/I-LOCALITY 2/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD001854,T3,sure,h/O no/O 405/O blk/O e/O rd/O 2/O nr/B-RELATION govt/O school/B-LANDMARK teachers/B-LOCALITY colony/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD001989,T3,sure,no/O 230/O a/O block/O 6th/O rd/O palm/B-LOCALITY meadows/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD002990,T3,sure,d/O blk/O 4th/O rod/O hmt/B-LOCALITY colony/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD000168,T1,sure,236/O 3rd/O cross/O 3rd/O main/O sarkari/O shaale/B-LANDMARK hattira/B-RELATION kalyana/B-LOCALITY nagr/I-LOCALITY kaveripura/B-TOWN 960104/B-PINCODE
+AD001850,T1,sure,3rd/O cross/O 4th/O main/O neerina/O tank/B-LANDMARK hattira/B-RELATION basava/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960101/B-PINCODE
+AD001165,T3,no_locality,h/O no/O 142/O blk/O c/O rd/O 3/O surise/O enclave/O navanagara/B-TOWN east/I-TOWN 980304/B-PINCODE
+AD000972,T3,no_locality,house/O 275/O blk/O c/O rd/O 6/O halina/B-LANDMARK dairi/I-LANDMARK hattira/B-RELATION navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD002514,T1,no_locality,7/O 3rd/O cross/O 4th/O main/O rd/O nr/B-RELATION kalyana/O mantapa/B-LANDMARK kaveripura/B-TOWN 960102/B-PINCODE
+AD003074,T2,no_locality,215/O devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD002195,T1,no_locality,9th/O crs/O 8th/O main/O kaveripura/B-TOWN 960101/B-PINCODE
+AD000140,T2,sure,h/O no/O 227/O gali/O 8/O near/B-RELATION petrol/B-LANDMARK bunk/I-LANDMARK tilak/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970204/B-PINCODE
+AD002591,T3,sure,blk/O a/O rd/O 2/O nr/B-RELATION church/B-LANDMARK sunrise/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980304/B-PINCODE
+AD002781,T1,sure,h/O no/O 333/O 2nd/O cross/O 8th/O main/O nehru/B-LOCALITY col/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD000091,T2,no_locality,no/O 410/O gali/O no/O 1/O bus/B-LANDMARK adda/O ke/O piche/B-RELATION devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD002071,T3,sure,h/O no/O 402/O om/O sai/O complex/O c/O block/O 1st/O rd/O palm/B-LOCALITY meadows/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD002575,T2,sure,gali/O no/O 7/O nr/B-RELATION water/B-LANDMARK tank/I-LANDMARK krishna/B-LOCALITY puri/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD001224,T1,sure,h/O no/O 284/O 3rd/O cross/O 8th/O main/O nehru/B-LOCALITY colony/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD002314,T1,sure,house/O 474/O 6th/O cross/O 4th/O main/O neerina/O tank/B-LANDMARK hattira/B-RELATION basava/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960101/B-PINCODE
+AD001100,T1,sure,164/O 2/O halina/B-LANDMARK dairi/I-LANDMARK eduru/B-RELATION nehru/B-LOCALITY colony/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD002718,T3,sure,436/O 2/O blk/O c/O rd/O 1/O sunrise/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980304/B-PINCODE
+AD001047,T1,sure,6/O 2/O 12th/O cross/O 2nd/O main/O nehru/B-LOCALITY colony/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD000615,T3,sure,292/O 3/O b/O blk/O 6th/O road/O tanki/O ke/O paas/B-RELATION sunrise/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD002711,T1,sure,no/O 275/O 4th/O cross/O 8th/O main/O close/O to/O ganesh/O temple/O gandhi/B-LOCALITY nagar/I-LOCALITY kaveeripura/B-TOWN 960102/B-PINCODE
+AD001630,T1,sure,house/O 223/O 12th/O cross/O 7th/O main/O rd/O anjaneya/B-LOCALITY badavane/I-LOCALITY kaveripura/B-TOWN 960103/B-PINCODE
+AD003069,T2,sure,h/O no/O 256/O gali/O 3/O nr/B-RELATION masjid/B-LANDMARK gandhi/B-LOCALITY basti/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD002166,T2,sure,no/O 143/O doodh/O dairy/B-LANDMARK ke/O paas/B-RELATION ambedkar/B-LOCALITY nagr/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970204/B-PINCODE
+AD001597,T2,sure,h/O no/O 401/O gali/O no/O 8/O ganesha/B-LANDMARK mamdira/I-LANDMARK ke/O pasa/B-RELATION shivaji/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD001962,T2,sure,gali/O no/O 8/O ward/O 11/O girja/O ghar/O ke/O pass/O patel/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN
+AD000685,T2,sure,304/O 2/O gali/O no/O 5/O ward/O 1/O shivaji/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD002504,T3,sure,c/O block/O 5th/O roaad/O close/O to/O kalyana/O mantapa/O railway/B-LOCALITY colony/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980340/B-PINCODE
+AD000628,T3,sure,blk/O d/O rd/O 2/O close/O to/O bus/O stop/O sunrise/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980304/B-PINCODE
+AD002647,T3,no_locality,blk/O d/O rd/O 1/O nr/B-RELATION hanuman/B-LANDMARK temple/I-LANDMARK navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD000071,T3,sure,no/O 19/O blk/O a/O rd/O 3/O petrol/O bunk/O edhuu/O unity/B-LOCALITY nagar/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD001757,T1,sure,255/O 7th/O cross/O 1st/O main/O shanthi/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960101/B-PINCODE
+AD001438,T3,sure,no/O 12/O a/O blk/O 2nd/O road/O railway/B-LOCALITY colny/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980304/B-PINCODE
+AD001267,T1,sure,11/O h/O crs/O 4th/O main/O near/B-RELATION overhead/O tank/B-LANDMARK shanthi/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960101/B-PINCODE
+AD001593,T3,sure,341/O blk/O c/O rd/O 3/O nr/B-RELATION milk/B-LANDMARK dairy/I-LANDMARK defence/B-LOCALITY colony/I-LOCALITY navangara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD001932,T3,sure,blk/O e/O rd/O 3/O bhd/O park/O orchid/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD000368,T3,sure,e/O block/O 1st/O road/O close/O to/O bus/O stand/O railway/B-LOCALITY colony/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980304/B-PINCODE
+AD001680,T2,sure,gali/O no/O 2/O masjid/O ke/O pass/O patel/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD001451,T2,sure,no/O 197/O gali/O 5/O pots/O office/O ke/O pass/O shastri/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970201/B-PINCODE
+AD000901,T2,sure,patel/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD003012,T3,sure,house/O 477/O a/O blk/O 2nd/O rd/O orchid/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD002966,T2,sure,house/O 375/O gali/O no/O 2/O ward/O 8/O barata/B-LANDMARK ghara/I-LANDMARK ke/O samane/B-RELATION azad/B-LOCALITY mohalla/I-LOCALITY devgarh/B-TOWN ngar/I-TOWN 970203/B-PINCODE
+AD002997,T3,sure,near/B-RELATION hanuman/B-LANDMARK temple/I-LANDMARK palm/B-LOCALITY meadows/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD001531,T1,no_locality,211/O 1st/O cross/O 4th/O main/O rd/O near/B-RELATION ganesh/B-LANDMARK temple/I-LANDMARK kaveripura/B-TOWN 960104/B-PINCODE
+AD001889,T1,sure,6th/O cross/O 5th/O main/O shanthi/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960101/B-PINCODE
+AD002535,T2,sure,house/O 141/O gali/O no/O 14/O nr/B-RELATION children/O park/B-LANDMARK nehru/B-LOCALITY colony/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD002000,T3,sure,h/O no/O 327/O bas/B-LANDMARK nildana/I-LANDMARK eduru/B-RELATION silver/B-LOCALITY oak/I-LOCALITY layt/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD001750,T2,sure,nr/B-RELATION ganapathi/O temple/B-LANDMARK gandhi/B-LOCALITY basti/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD001829,T2,sure,sri/O krishna/O nivas/O gali/O no/O 12/O ward/O 4/O sarakari/O skula/B-LANDMARK ke/O pasa/B-RELATION ram/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN
+AD000995,T2,sure,h/O no/O 252/O gali/O no/O 10/O nr/B-RELATION kalyana/O mantapa/B-LANDMARK shivaji/B-LOCALITY nagr/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD000387,T2,sure,house/O 287/O gali/O 11/O sarkari/O school/B-LANDMARK ke/O paas/B-RELATION tilak/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970204/B-PINCODE
+AD001847,T3,sure,c/O blk/O 1st/O road/O masidi/B-LANDMARK hattira/B-RELATION railway/B-LOCALITY colny/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980303/B-PINCODE
+AD000922,T2,sure,175/O 1/O gali/O no/O 2/O dakaghara/B-LANDMARK ke/O pasa/B-RELATION subhash/B-LOCALITY nagr/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970201/B-PINCODE
+AD002947,T2,sure,no/O 416/O gali/O no/O 10/O behind/B-RELATION pots/O office/B-LANDMARK indira/B-LOCALITY colony/I-LOCALITY devgarh/B-TOWN nagr/I-TOWN 9702002/O
+AD002140,T2,sure,gali/O no/O 5/O sarakari/O skula/B-LANDMARK ke/O piche/B-RELATION indira/B-LOCALITY colony/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD002837,T1,sure,3rd/O crs/O 4th/O main/O nr/B-RELATION community/O hall/O gandhi/B-LOCALITY nagr/I-LOCALITY kaveripura/B-TOWN 960104/B-PINCODE
+AD002581,T3,sure,house/O 55/O e/O block/O 4th/O rd/O sunrise/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980304/B-PINCODE
+AD000281,T1,sure,10th/O cross/O 7th/O main/O near/B-RELATION ration/B-LANDMARK shop/O gandhi/B-LOCALITY nagr/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD002354,T1,sure,h/O no/O 95/O nr/B-RELATION post/B-LANDMARK office/I-LANDMARK vinayaka/B-LOCALITY nagr/I-LOCALITY kaveripura/B-TOWN 960104/B-PINCODE
+AD001250,T1,sure,lakshmi/O nilaya/O 9th/O cross/O 7th/O main/O nr/B-RELATION pds/O shop/O nehru/B-LOCALITY colony/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD001253,T1,sure,no/O 191/O 4th/O cr/O 6th/O main/O rd/O nr/B-RELATION church/B-LANDMARK basava/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN
+AD001442,T1,no_locality,no/O 187/O opp/B-RELATION milk/B-LANDMARK booth/O kaveripura/B-TOWN 960102/B-PINCODE
+AD000912,T2,sure,no/O 148/O gali/O no/O 12/O patel/B-LOCALITY nagr/I-LOCALITY devarh/B-TOWN nagar/I-TOWN
+AD001827,T3,sure,261/O 1/O blk/O f/O rd/O 1/O close/O to/O water/O tank/O unity/B-LOCALITY nagar/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD002273,T2,sure,gali/O no/O 11/O close/O to/O water/O tank/O krishna/B-LOCALITY puri/I-LOCALITY devgarh/B-TOWN ngr/I-TOWN 970202/B-PINCODE
+AD001766,T3,sure,239/O 3/O blk/O d/O rd/O 3/O close/O to/O hanuman/O temple/O palm/B-LOCALITY meadows/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD001577,T2,sure,house/O 245/O gali/O no/O 12/O indira/B-LOCALITY colny/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN
+AD002177,T2,sure,no/O 388/O gali/O 1/O ward/O 5/O b/O h/O pharmacy/O subhash/B-LOCALITY ngr/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970201/B-PINCODE
+AD002757,T1,sure,352/O 5th/O cross/O 1st/O main/O near/B-RELATION masjid/B-LANDMARK nehru/B-LOCALITY colony/I-LOCALITY kaveripura/B-TOWN
+AD000144,T3,sure,h/O no/O 246/O shanti/O kunj/O blk/O d/O rd/O 5/O opp/B-RELATION bus/B-LANDMARK stop/I-LANDMARK sunrise/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980304/B-PINCODE
+AD000770,T2,sure,lakshmi/O nilaya/O gali/O no/O 12/O krishna/B-LOCALITY puri/I-LOCALITY devgarh/B-TOWN nagr/I-TOWN 970202/B-PINCODE
+AD002230,T3,sure,house/O 263/O blk/O f/O rd/O 3/O b/O h/O mosque/O palm/B-LOCALITY meadows/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD002303,T1,no_locality,h/O no/O 218/O 3rd/O cross/O 8th/O main/O kaveripura/B-TOWN 960101/B-PINCODE
+AD001631,T2,no_locality,283/O gali/O no/O 7/O ward/O 6/O devgarh/B-TOWN ngr/I-TOWN 970203/B-PINCODE
+AD001317,T1,sure,house/O 202/O 4th/O cross/O 4th/O main/O siddeshwara/B-LOCALITY colony/I-LOCALITY kaveripura/B-TOWN
+AD000531,T2,no_locality,h/O no/O 103/O gai/O no/O 2/O doodh/O dairy/O ke/O pass/O devgarh/B-TOWN nagr/I-TOWN 970202/B-PINCODE
+AD002484,T1,sure,h/O no/O 384/O 9th/O cross/O 3rd/O main/O ganapathi/O gudi/O hattira/B-RELATION nehru/B-LOCALITY colony/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD002826,T2,sure,47/O gali/O 5/O ward/O 12/O near/B-RELATION water/B-LANDMARK tank/I-LANDMARK tilak/B-LOCALITY ngr/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN
+AD000382,T2,sure,no/O 34/O gali/O no/O 7/O ward/O 6/O dudha/B-LANDMARK deyari/I-LANDMARK ke/O pasa/B-RELATION nehru/B-LOCALITY colny/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD001743,T2,sure,433/O 2/O gali/O 10/O ganesh/O mandir/O ke/O pass/O azad/B-LOCALITY mohalla/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN
+AD001291,T3,sure,e/O block/O 2nd/O rd/O near/B-RELATION govt/O school/B-LANDMARK teachers/B-LOCALITY col/I-LOCALITY navanagra/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD001373,T2,sure,house/O 289/O gali/O no/O 1/O ward/O 4/O parka/B-LANDMARK ke/O pasa/B-RELATION ram/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD001528,T2,sure,gali/O no/O 1/O nr/B-RELATION masjid/B-LANDMARK patel/B-LOCALITY ngr/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD001809,T2,sure,176/O gali/O 11/O adj/O hanuman/O temple/O indira/B-LOCALITY colony/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD000547,T1,sure,90/O 7th/O crs/O 4th/O mn/O nr/B-RELATION medicals/O basava/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960101/B-PINCODE
+AD002462,T1,sure,377/O b/O h/O mosque/O nehru/B-LOCALITY colny/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD002722,T3,no_locality,no/O 247/O a/O bloc/O k/O 3rd/O road/O bhd/O pds/O shop/O navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD001782,T1,sure,house/O 192/O 12th/O cross/O 7th/O mn/O close/O to/O government/O school/O gandhi/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD001211,T2,sure,house/O 299/O gali/O no/O 12/O near/B-RELATION masjid/B-LANDMARK indira/B-LOCALITY colony/I-LOCALITY devgarh/B-TOWN nagr/I-TOWN 970202/B-PINCODE
+AD000438,T2,sure,h/O no/O 372/O gali/O no/O 1/O ward/O 8/O azad/B-LOCALITY mohalla/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD001158,T2,sure,house/O 123/O gali/O no/O 5/O ward/O 8/O beside/B-RELATION government/O school/B-LANDMARK azad/B-LOCALITY mohalla/I-LOCALITY devgarh/B-TOWN nagr/I-TOWN
+AD001425,T2,sure,gali/O 3/O ward/O 1/O hanumana/B-LANDMARK mamdira/I-LANDMARK ke/O pasa/B-RELATION shivaji/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD001539,T1,sure,8/O 1/O 2nd/O x/O 2nd/O main/O milk/B-LANDMARK dairy/I-LANDMARK hattira/B-RELATION anjaneya/B-LOCALITY badavane/I-LOCALITY kaveripura/B-TOWN 960103/B-PINCODE
+AD002755,T3,sure,house/O 168/O blk/O b/O rd/O 6/O close/O to/O hanuman/O temple/O green/B-LOCALITY park/I-LOCALITY layt/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD001283,T3,sure,f/O blk/O 4th/O road/O nr/B-RELATION hanuman/O temlpe/O lakeview/B-LOCALITY phase/I-LOCALITY 2/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980304/B-PINCODE
+AD001610,T1,sure,no/O 177/O close/O to/O pds/O shop/O basava/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960101/B-PINCODE
+AD000525,T3,sure,house/O 268/O d/O blk/O 3rd/O road/O nr/B-RELATION post/B-LANDMARK office/I-LANDMARK hmt/B-LOCALITY colony/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD003096,T1,sure,9th/O cross/O 2nd/O main/O rd/O kalyana/B-LOCALITY ngr/I-LOCALITY kaveripura/B-TOWN 960104/B-PINCODE
+AD001949,T1,sure,389/O 1st/O cr/O 6th/O main/O nr/B-RELATION milk/B-LANDMARK dairy/I-LANDMARK nehru/B-LOCALITY col/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD000260,T1,sure,3rd/O cross/O 3rd/O main/O bhd/O hanuman/O temple/O kuvempu/B-LOCALITY layout/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD000539,T2,no_locality,h/O no/O 174/O gali/O no/O 9/O ward/O 10/O near/B-RELATION post/B-LANDMARK office/I-LANDMARK devgarh/B-TOWN ngr/I-TOWN 970202/B-PINCODE
+AD002595,T2,sure,no/O 398/O paani/O ki/O tanki/O ke/O pass/O shastri/B-LOCALITY ngr/I-LOCALITY devgarh/B-TOWN nagr/I-TOWN 970203/B-PINCODE
+AD001485,T1,sure,295/O ganapathi/O gudi/O eduru/B-RELATION gandhi/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD000247,T1,no_locality,h/O no/O 285/O 2nd/O crs/O 1st/O main/O rd/O hanuman/O mandir/O ke/O paos/O kaveripura/B-TOWN 960102/B-PINCODE
+AD001899,T1,sure,no/O 441/O haalina/O daory/O hattira/B-RELATION nehru/B-LOCALITY colny/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD001952,T2,no_locality,233/O gali/O 6/O ward/O 8/O azad/O mohaalla/O devgarh/B-TOWN nagar/I-TOWN 970203/B-PINCODE
+AD002705,T2,sure,146/O gali/O no/O 12/O ward/O 3/O ambedkar/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN
+AD002138,T3,sure,h/O no/O 419/O blk/O f/O rd/O 3/O close/O to/O bus/O stop/O lakeview/B-LOCALITY phase/I-LOCALITY 2/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980303/B-PINCODE
+AD000921,T2,sure,gali/O no/O 3/O patel/B-LOCALITY nagar/I-LOCALITY devgarh/B-TOWN nagar/I-TOWN 970202/B-PINCODE
+AD001217,T3,sure,blk/O c/O rd/O 3/O opp/B-RELATION pharmacy/B-LANDMARK teachers/B-LOCALITY colny/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980302/B-PINCODE
+AD000199,T1,no_locality,294/O ganga/O apartments/O anjaneya/O gudi/O hattira/B-RELATION kaveripura/B-TOWN 960102/B-PINCODE
+AD001853,T2,sure,house/O 12/O shastri/B-LOCALITY nagr/I-LOCALITY devagrh/B-TOWN nagar/I-TOWN 970201/B-PINCODE
+AD000717,T3,sure,309/O b/O blk/O 3rd/O rd/O nr/B-RELATION pharmacy/B-LANDMARK hmt/B-LOCALITY colony/I-LOCALITY navanagara/B-TOWN east/I-TOWN 98304/B-PINCODE
+AD002682,T2,sure,house/O 311/O gali/O no/O 1/O nr/B-RELATION ration/B-LANDMARK shop/O azad/B-LOCALITY mohalla/I-LOCALITY devgarh/B-TOWN ngr/I-TOWN
+AD001651,T1,sure,10th/O cross/O 6th/O main/O basava/B-LOCALITY nagar/I-LOCALITY kaveripura/B-TOWN 960101/B-PINCODE
+AD002021,T1,sure,h/O no/O 392/O 5th/O cross/O 8th/O main/O haalina/O dairy/B-LANDMARK hattira/B-RELATION nehru/B-LOCALITY colny/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD001208,T1,sure,no/O 452/O medikal/B-LANDMARK shap/O hattira/B-RELATION siddeshwara/B-LOCALITY colony/I-LOCALITY kaveripura/B-TOWN 960104/B-PINCODE
+AD002104,T1,sure,317/O 1/O 3rd/O cross/O 6th/O main/O opp/B-RELATION ration/B-LANDMARK shop/O vidya/B-LOCALITY nagr/I-LOCALITY kaveripura/B-TOWN 960103/B-PINCODE
+AD000607,T3,sure,house/O 319/O a/O block/O 1st/O road/O bhd/O pds/O shop/O orchid/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD002769,T3,sure,67/O 3/O d/O block/O 1st/O road/O royal/B-LOCALITY gardens/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980303/B-PINCODE
+AD000641,T1,sure,9th/O x/O 7th/O main/O close/O to/O community/O hall/O nehru/B-LOCALITY colny/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE
+AD002676,T3,sure,house/O 369/O e/O blk/O 2nd/O road/O close/O to/O pds/O shop/O lakeview/B-LOCALITY phase/I-LOCALITY 2/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980303/B-PINCODE
+AD002547,T3,sure,h/O no/O 442/O sai/O residency/O b/O block/O 2nd/O road/O nr/B-RELATION bus/B-LANDMARK stand/O royal/B-LOCALITY gardens/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980303/B-PINCODE
+AD001483,T3,sure,house/O 396/O a/O block/O 6th/O rd/O ad/O church/O sunrise/B-LOCALITY enclave/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980303/B-PINCODE
+AD002495,T1,no_locality,1/O 7th/O crs/O 3rd/O main/O kaveripura/B-TOWN 960101/B-PINCODE
+AD001730,T1,sure,3rd/O cross/O 7th/O mn/O vinayaka/B-LOCALITY nagr/I-LOCALITY kaveripura/B-TOWN 960104/B-PINCODE
+AD000577,T3,sure,307/O 3/O d/O blk/O 5th/O road/O opp/B-RELATION kalyana/O mantapa/B-LANDMARK lakeview/B-LOCALITY phase/I-LOCALITY 2/I-LOCALITY navanagara/B-TOWN east/I-TOWN 980301/B-PINCODE
+AD002169,T1,sure,434/O 3/O 6th/O crs/O 5th/O mn/O nr/B-RELATION milk/B-LANDMARK dairy/I-LANDMARK kuvempu/B-LOCALITY layout/I-LOCALITY kaveripura/B-TOWN 960102/B-PINCODE

@@ -1,0 +1,9 @@
+set,metric,value
+train,entity_precision_without_pincode,0.9754047322540473
+train,entity_recall_without_pincode,0.9867716535433071
+train,entity_f1_without_pincode,0.9810552685141695
+validation,entity_precision_without_pincode,0.7948717948717948
+validation,entity_recall_without_pincode,0.9317627944760357
+validation,entity_f1_without_pincode,0.8578908002991772
+validation,town_accuracy_true_addresses,0.9977426636568849
+train,town_accuracy_true_addresses,

@@ -1,0 +1,53 @@
+{
+  "add_cross_attention": false,
+  "architectures": [
+    "BertForTokenClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": null,
+  "classifier_dropout": null,
+  "dtype": "float32",
+  "embedding_size": 768,
+  "eos_token_id": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "O",
+    "1": "B-TOWN",
+    "2": "I-TOWN",
+    "3": "B-LANDMARK",
+    "4": "I-LANDMARK",
+    "5": "B-LOCALITY",
+    "6": "I-LOCALITY",
+    "7": "B-RELATION",
+    "8": "I-RELATION",
+    "9": "B-PINCODE"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "label2id": {
+    "B-LANDMARK": 3,
+    "B-LOCALITY": 5,
+    "B-PINCODE": 9,
+    "B-RELATION": 7,
+    "B-TOWN": 1,
+    "I-LANDMARK": 4,
+    "I-LOCALITY": 6,
+    "I-RELATION": 8,
+    "I-TOWN": 2,
+    "O": 0
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.18.0",
+  "type_vocab_size": 2,
+  "use_cache": false,
+  "vocab_size": 197285
+}

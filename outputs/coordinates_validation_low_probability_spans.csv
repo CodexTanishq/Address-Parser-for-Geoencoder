@@ -1,0 +1,48 @@
+﻿span,classifier_type,new_type,avg_top_prob,type_source
+ganapathi gudi,ganesha_temple,ganesha_temple,0.34892359375953674,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+rashana ki dukana,ganesha_temple,ration_shop,0.24294249713420868,avg_llm
+ganapathi temple,ganesha_temple,ganesha_temple,0.49357762932777405,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+ration ki dukaan,ration_shop,ration_shop,0.7227754592895508,avg_llm
+ganapathi gudi,ganesha_temple,ganesha_temple,0.34892359375953674,avg_llm
+ganapathi temple,ganesha_temple,ganesha_temple,0.49357762932777405,avg_llm
+dawai ki dukaan,milk_dairy,milk_dairy,0.15622174739837646,avg_llm
+ganapathi temple,ganesha_temple,ganesha_temple,0.49357762932777405,avg_llm
+neerina tank,water_tank,water_tank,0.30010226368904114,avg_llm
+ration ki dukaan,ration_shop,ration_shop,0.7227754592895508,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+pds shop,bus_stop,ration_shop,0.13471201062202454,avg_llm
+ganapathi temple,ganesha_temple,ganesha_temple,0.49357762932777405,avg_llm
+pds shop,bus_stop,ration_shop,0.13471201062202454,avg_llm
+ration ki dukaan,ration_shop,ration_shop,0.7227754592895508,avg_llm
+ganapathi temple,ganesha_temple,ganesha_temple,0.49357762932777405,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+ganapathi gudi,ganesha_temple,ganesha_temple,0.34892359375953674,avg_llm
+ganapathi gudi,ganesha_temple,ganesha_temple,0.34892359375953674,avg_llm
+barat ghhar,community_hall,milk_dairy,0.18132749199867249,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+dak ghar,post_office,milk_dairy,0.17457345128059387,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+dawai ki dukaan,milk_dairy,milk_dairy,0.15622174739837646,avg_llm
+rashana ki dukana,ganesha_temple,ration_shop,0.24294249713420868,avg_llm
+nirina tyamk,milk_dairy,milk_dairy,0.15409624576568604,avg_llm
+girja ghar,community_hall,ganesha_temple,0.3495582044124603,avg_llm
+ganapathi gudi,ganesha_temple,ganesha_temple,0.34892359375953674,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+neerina tank,water_tank,water_tank,0.30010226368904114,avg_llm
+ration ki dukaan,ration_shop,ration_shop,0.7227754592895508,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+neerina tank,water_tank,water_tank,0.30010226368904114,avg_llm
+ration ki dukaan,ration_shop,ration_shop,0.7227754592895508,avg_llm
+barat ghar,community_hall,milk_dairy,0.17048120498657227,avg_llm
+ganapathi temple,ganesha_temple,ganesha_temple,0.49357762932777405,avg_llm
+ganapathi gudi,ganesha_temple,ganesha_temple,0.34892359375953674,avg_llm
+pds shop,bus_stop,ration_shop,0.13471201062202454,avg_llm
+pds shop,bus_stop,ration_shop,0.13471201062202454,avg_llm
+dak ghar,post_office,milk_dairy,0.17457345128059387,avg_llm
+ganapathi temple,ganesha_temple,ganesha_temple,0.49357762932777405,avg_llm
+anjaneya gudi,hanuman_temple,hanuman_temple,0.19461359083652496,avg_llm
+ration dukan,ration_shop,ration_shop,0.5710933208465576,avg_llm
+neerina tank,water_tank,water_tank,0.30010226368904114,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm

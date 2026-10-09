@@ -1,0 +1,21 @@
+addresses columns: ['address_id', 'account_id', 'address_type', 'source', 'added_date', 'town_id', 'address_text']
+splits columns: ['account_id', 'split']
+validation_bio columns: ['address_id', 'town_id', 'word_index', 'word', 'tag', 'landmark_type', 'pincode_is_real', 'label_quality']
+train_v2 columns: ['address_id', 'town_id', 'word_index', 'word', 'tag', 'landmark_type', 'pincode_is_real', 'label_quality']
+towns columns: ['town_id', 'town_name', 'address_style', 'approx_radius_m']
+localities columns: ['locality_id', 'town_id', 'locality_name', 'pincode', 'centroid_x', 'centroid_y']
+landmarks_poi columns: ['poi_id', 'town_id', 'landmark_type', 'name', 'x', 'y']
+True fields: addresses.csv has town_id only; no true locality or landmark-type column exists, so those accuracies are not reported.
+validation raw rows: 483
+regex/BIO token mismatches among 200 validation addresses: 0
+14 POI types: bus_stop, church, community_hall, ganesha_temple, govt_school, hanuman_temple, masjid, medical_store, milk_dairy, park, petrol_bunk, post_office, ration_shop, water_tank
+TRAIN landmark word counts: {'temple': 149, 'school': 110, 'bus': 110, 'hanuman': 79, 'church': 75, 'shop': 71, 'milk': 68, 'ganesh': 61, 'dairy': 61, 'masjid': 59, 'tank': 53, 'ganapathi': 53, 'petrol': 53, 'ration': 52, 'stop': 49, 'office': 49, 'post': 46, 'government': 45, 'pds': 43, 'medical': 43, 'ki': 41, 'govt': 41, 'mosque': 41, 'sarkari': 40, 'mandir': 37, 'store': 36, 'park': 35, 'community': 35, 'hall': 33, 'kalyana': 32}
+ASSUMPTION: landmark spans are mapped only by WRatio against observed train landmark words and POI names/types; no unmatched generic landmark is guessed.
+town accuracy incl OUT: 11.180%
+locality accuracy: unavailable (no true locality column)
+landmark-type accuracy: unavailable (no true landmark type column)
+level share: {'out': 0.9710144927536232, 'town': 0.016563146997929608, 'locality': 0.010351966873706004, 'landmark': 0.002070393374741201}
+WRatio town choices changed from old token_set_ratio/village logic: 0
+pincode vs NER locality disagreements: 0
+OUT accuracy old village rule: 11.180%; new no-span/low-score rule: 11.180%
+wrong-town rows saved/printed: 20

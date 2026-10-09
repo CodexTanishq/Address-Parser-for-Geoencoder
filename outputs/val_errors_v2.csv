@@ -1,0 +1,21 @@
+address_id,raw_text,true_town_id,pred_town_id,pred_locality_id,landmark_type,x,y,level_used,town_span,locality_span
+AD000014,"HOUSE 458, GALI NO-4, AMBEDKAR NAGAR, DEVGARH NAGAR",T2,OUT,,,,,out,devgarh nagar,ambedkar nagar
+AD000016,"No. 86, Gali 2, Ward 8, Azad Mohalla, Devgarh Nagar - 970203",T2,OUT,,,,,out,devgarh nagar 970203,azad mohalla
+AD000020,house 25 3rd cross 6th main rd kaveripura - 960104,T1,OUT,,,,,out,kaveripura 960104,
+AD000027,"89/2, Azad Mohalla, Devgarh Nagar - 970203",T2,OUT,,,,,out,devgarh nagar 970203,azad mohalla
+AD000035,"A Block, 2nd Road, behind Milk Dairy, Palm Meadows, Navanagara East - 980302",T3,OUT,,,,,out,navanagara east 980302,palm meadows
+AD000036,"D BLOCK, 5TH ROAD, OPP. KALYANA MANTAPA, LAKEVIEW PHASE 2, NAVANAAGARA EAST - 980303",T3,OUT,,,,,out,navanaagara east 980303,lakeview phase 2
+AD000043,"H.NO. 452, BLK F, RD 5, LAKEVIEW PHASE 2, NAVANAGARA EAST - 980303",T3,OUT,,,,,out,navanagara east 980303,lakeview phase 2
+AD000048,"#160, 5th Cross, 1st Main, ಕಲ್ಯಾಣ ಮಂಟಪ ಹತ್ತಿರ, Kalyana Ngr, Kaveripura - 960104",T1,OUT,,,,,out,kaveripura 960104,kalyana ngr
+AD000050,"197/1, 4TH CROSS, 8TH MAIN, KUVEMPU LAYT, KAVERIPURA - 960104",T1,OUT,,,,,out,kaveripura 960104,kuvempu layt
+AD000057,"441/3, NR. GOVT SCHOOL, SILVUR OAK LAYOUT, NAVANAGARA EAST - 980301",T3,OUT,,,,,out,navanagara east 980301,silvur oak layout
+AD000066,"379/3, 6th Cross, 5th Mn, nar Pharmacy, Kuvempu Layout, Kaveripura - 960102",T1,OUT,,,,,out,kaveripura 960102,kuvempu layout
+AD000076,"Gali 9, Ward 7, close to Ganesh Temple, Gandhi Baste, Devgarh Nagr - 970203",T2,OUT,,,,,out,devgarh nagr 970203,gandhi baste
+AD000086,h.no. 107 gali no. 5 opp water tank krishna puri devgarh nagar,T2,OUT,,,,,out,devgarh nagar,krishna puri
+AD000087,#423 gali no. 11 ward 7 gandhi basti devgarh nagar - 970201,T2,OUT,,,,,out,devgarh nagar 970201,gandhi basti
+AD000088,gali no-10 hanuman mandir ke paass ambedkar nagar devgarh nagar - 970204,T2,OUT,,,,,out,devgarh nagar 970204,ambedkar nagar
+AD000092,"#272, Blk A, Rd 1, close to Hanuman Temple, Palm Meadows, Navanagara East - 980302",T3,OUT,,,,,out,navanagara east 980302,palm meadows
+AD000093,"#304, E Blk, 1st Rd, b/h Kalyana Mantapa, Sunrise Enclave, Navanagara East - 980304",T3,OUT,,,,,out,navanagara east 980304,sunrise enclave
+AD000106,"No. 49, Ganapathi Gudi hattira, Vinayaka Nagar, Kaveripura - 960104",T1,OUT,,,,,out,kaveripura 960104,vinayaka nagar
+AD000117,"House 105, Bus Nildana hattira, Palm Meadows, Navanagara East - 980302",T3,OUT,,,,,out,navanagara east 980302,palm meadows
+AD000145,"#179, B Blk., 3rd Road, b/h Ration Shop, HMT Colony, Navanagara East - 980301",T3,OUT,,,,,out,navanagara east 980301,hmt colony

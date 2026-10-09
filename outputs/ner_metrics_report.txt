@@ -1,0 +1,47 @@
+       set                          metric    value
+     train                  token_accuracy 0.986061
+     train            token_accuracy_non_o 0.995430
+     train                entity_precision 0.975405
+     train                   entity_recall 0.986772
+     train                       entity_f1 0.981055
+     train                   town_accuracy 0.057813
+     train   locality_exact_including_none 0.962500
+     train landmark_type_accuracy_CIRCULAR 0.686458
+     train                  TOWN_precision 0.989062
+     train                     TOWN_recall 0.989578
+     train                   TOWN_f1-score 0.989320
+     train              LOCALITY_precision 0.958164
+     train                 LOCALITY_recall 1.000000
+     train               LOCALITY_f1-score 0.978635
+     train              LANDMARK_precision 0.953868
+     train                 LANDMARK_recall 0.954545
+     train               LANDMARK_f1-score 0.954207
+     train              RELATION_precision 1.000000
+     train                 RELATION_recall 1.000000
+     train               RELATION_f1-score 1.000000
+     train               PINCODE_precision 0.000000
+     train                  PINCODE_recall 0.000000
+     train                PINCODE_f1-score 0.000000
+validation                  token_accuracy 0.894848
+validation            token_accuracy_non_o 0.975466
+validation                entity_precision 0.794872
+validation                   entity_recall 0.931763
+validation                       entity_f1 0.857891
+validation                   town_accuracy 0.054176
+validation   locality_exact_including_none 0.975169
+validation landmark_type_accuracy_CIRCULAR 0.724605
+validation                  TOWN_precision 0.995485
+validation                     TOWN_recall 0.995485
+validation                   TOWN_f1-score 0.995485
+validation              LOCALITY_precision 0.973366
+validation                 LOCALITY_recall 1.000000
+validation               LOCALITY_f1-score 0.986503
+validation              LANDMARK_precision 0.344595
+validation                 LANDMARK_recall 0.560440
+validation               LANDMARK_f1-score 0.426778
+validation              RELATION_precision 0.694158
+validation                 RELATION_recall 0.990196
+validation               RELATION_f1-score 0.816162
+validation               PINCODE_precision 0.000000
+validation                  PINCODE_recall 0.000000
+validation                PINCODE_f1-score 0.000000

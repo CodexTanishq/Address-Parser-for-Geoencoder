@@ -1,0 +1,7 @@
+validation rows 443
+holdout rows 90
+validation locality empty share 18.284%
+validation landmarks 0/1/2 {1: 296, 0: 147}
+cleaned spans containing digit/town word: 0 (removed; 0 spans changed)
+rows >2 spans before cap 0
+validation entity F1 0.8578908002991772 vs 0.8579

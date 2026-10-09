@@ -1,0 +1,21 @@
+address_id,raw_text,town_id,locality_id,landmark_type,poi_id,x,y,level_used,town_rule,locality_rule,true_town_id,landmark_span,landmark_probability
+AD000020,house 25 3rd cross 6th main rd kaveripura - 960104,T1,,,,-1985.0333333333335,1315.6000000000001,pincode_area,NER,pincode_area,T1,,0.0
+AD000050,"197/1, 4TH CROSS, 8TH MAIN, KUVEMPU LAYT, KAVERIPURA - 960104",T1,,,,-1985.0333333333335,1315.6000000000001,pincode_area,NER,pincode_area,T1,,0.0
+AD000087,#423 gali no. 11 ward 7 gandhi basti devgarh nagar - 970201,T2,,,,-1067.0,-1643.3,pincode_area,NER,pincode_area,T2,,0.0
+AD000178,"No. 46, Gali 9, nr Govt School, Idnira Col, Devgarh Nagar - 970202",T2,,,,1475.4499999999998,-1585.55,pincode_area,NER,pincode_area,T2,govt school,0.0
+AD000230,71/1 kalyana mantapa hattira lakeview phase 2 navanagara east - 983003,T3,,,,-172.75833333333335,-551.7416666666667,town,NER,town,T3,kalyana mantapa,0.0
+AD000242,"157/1, GALI 1, OPP PARK, DEVGARH NAGAR - 970203",T2,,,,1828.05,1617.0749999999998,pincode_area,NER,pincode_area,T2,park,0.0
+AD000247,"H.No. 285, 2nd Crs, 1st Main Rd, Hanuman Mandir ke paos, Kaveripura - 960102",T1,,,,1613.025,-1603.9,pincode_area,NER,pincode_area,T1,hanuman mandir,0.0
+AD000252,"#407, near Bus Stop, Lakeview Phase 2, Navanagara East - 980302",T3,,,,1757.8333333333333,-2131.9666666666667,pincode_area,NER,pincode_area,T3,bus stop,0.0
+AD000274,"6th Cross, 1st Main Rd, Jama Masjid ke pass, Basava Nagar, Kaveripura - 960104",T1,,,,-1985.0333333333335,1315.6000000000001,pincode_area,NER,pincode_area,T1,masjid,0.0
+AD000327,"2nd Cross, 7th Mn, Ration ki Dukaan ke bagal mein, Kuvempu Layt, Kaveripura - 960103",T1,,,,1394.9499999999998,1664.6499999999999,pincode_area,NER,pincode_area,T1,ration ki dukaan,0.0
+AD000347,"H.No. 78, C Block, 4th Road, beside Medical Store, Navanagara East - 980302",T3,,,,1757.8333333333333,-2131.9666666666667,pincode_area,NER,pincode_area,T3,medical store,0.0
+AD000406,"1st Crs, 8th Main, opp. Ration Shop, Vidya Nagr, Kaveripura - 90103",T1,,,,-46.70000000000002,-500.9083333333333,town,NER,town,T1,ration shop,0.0
+AD000412,"Gali No. 6, Ward 11, nr. Church, Patel Nagar, Devgarh Nagar - 970204",T2,,,,-402.05,2236.3,pincode_area,NER,pincode_area,T2,church,0.0
+AD000542,"House 75, D Block, 2nd Road, close to Kalyana Mantapa, Navanagara East - 980304",T3,,,,-1442.25,2411.05,pincode_area,NER,pincode_area,T3,kalyana mantapa,0.0
+AD000561,"227/2, 7th Cross, 8th Mn, close to Overhead Tank, Kaveripura - 960102",T1,,,,1613.025,-1603.9,pincode_area,NER,pincode_area,T1,overhead tank,0.0
+AD000600,"#183, behind Pharmacy, Patel Nagar, Devgarh Nagar - 970203",T2,,,,1828.05,1617.0749999999998,pincode_area,NER,pincode_area,T2,pharmacy,0.0
+AD000620,shanti kunj gali 4 petrol pump ke paas gandhi basti devgarh nagar - 97023,T2,,,,856.3249999999999,109.34166666666668,town,NER,town,T2,petrol pump,0.0
+AD000649,"34/1, 3rd Crs, 6th Mn, Sarkari Shaale hattira, Vinayaka Nagar, Kaveripura - 960102",T1,,,,1613.025,-1603.9,pincode_area,NER,pincode_area,T1,sarkari shaale,0.0
+AD000682,"H.No. 156, Blk F, Rd 2, Teachers Colony, Navanagara East - 980320",T3,,,,-172.75833333333335,-551.7416666666667,town,NER,town,T3,,0.0
+AD000807,b blk. 4th rd opp. church defence colony navanagara east - 980304,T3,,,,-1442.25,2411.05,pincode_area,NER,pincode_area,T3,church,0.0

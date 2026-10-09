@@ -1,0 +1,11 @@
+input test_ner_output.csv
+rows 427
+absent baseline IDs 0
+low-probability model rule: equal average of classifier probabilities and content-free-calibrated Qwen/Qwen2.5-0.5B-Instruct probabilities
+rows per area_level {'locality': 382, 'pincode_area': 40, 'town': 5}
+rows per candidate level {1: 189, 2: 69, 3: 31, 4: 18}
+types changed by avg rule 24
+rows by geocoder precision {'locality': 318, 'street': 58, 'pincode': 42, 'rooftop': 9}
+n_candidates spread {'1': 228, '2-3': 63, '4-10': 16, '>10': 0}
+zero-candidate landmark rows 0
+coordinates cannot be scored: no true coordinates

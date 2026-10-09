@@ -1,0 +1,7 @@
+number of test rows 427
+town accuracy 100.000%
+blank-town rows 0
+town pincode fallback rows 0
+locality empty share 10.539%
+rows with 0/1/2 landmarks {1: 307, 0: 120}
+locality and landmark cannot be scored: no true coordinates

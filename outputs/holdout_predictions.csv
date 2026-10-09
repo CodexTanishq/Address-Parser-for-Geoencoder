@@ -1,0 +1,91 @@
+address_id,raw_text,landmark_span,predicted_locality_name,predicted_landmark_type,poi_name,level_used,x,y
+AD000008,9th cr 1st main vinayaka nagr kaveripura - 960104,,Vinayaka Nagar,,,locality,-2863.9,1096.5
+AD000013,"H.No. 186, Gali No. 4, Ward 3, opp Overhead Tank, Ambedkar Nagar, Devgarh Nagar - 970204",overhead tank,Ambedkar Nagar,water_tank,Water Tank,landmark,-1016.5,2852.7
+AD000040,"313/2, 3rd Crs, 8th Main, Basava Nagar, Kaveripura",,Basava Nagar,,,locality,-1053.3,-3163.0
+AD000041,"9th Cross, 4th Mainn, close to Church, Hosa Badavane, Kaveripura - 960101",church,Hosa Badavane,church,Church,landmark,-563.2,-1389.8
+AD000085,house 283 ಬಸ್ ನಿಲ್ದಾಣ ಹತ್ತಿರ gandhi nagar kaveripura - 960102,bas nildana,Gandhi Nagar,bus_stop,Bus Stop,landmark,546.3,-2981.0
+AD000114,annapoorna nilaya 10ht cross 2nd main rd nehru colony kaveripura,,Nehru Colony,,,locality,2735.1,-2128.6
+AD000162,"H.No. 191, Gali no-1, Girja Ghar ke pass, Shivaji Nagar, Devgarh Ngr - 970202",girja ghar,Shivaji Nagar,,,locality,688.3,-3007.0
+AD000173,"No. 108, Gali no-3, Ward 11, near Masjid, Patel Ngr, Devgarh Nagr - 970202",masjid,Patel Nagar,masjid,Masjid,landmark,1346.4,-2520.7
+AD000174,"H.No. 470, Om Sai Complex, Gali 1, Ration ki Dukaan ke peeche, Tilak Ngr, Devgarh Nagar - 970204",ration ki dukaan,Tilak Nagar,,,locality,-200.6,1476.5
+AD000240,"GALI NO-12, CLOSE TO COMMUNITY HALL, PATEL NAGAR, DEVGARH NAGR - 970202",community hall,Patel Nagar,,,locality,1577.4,-2059.5
+AD000307,"#121, 4th Cross, 4th Main, nr Post Office, Vinayaka Ngr, Kaveripura - 960104",post office,Vinayaka Nagar,post_office,Post Office,landmark,-2799.4,893.5
+AD000324,h.no. 472 d block 2nd road close to petrlo bunk railway colony navanagara east - 980304,petrlo bunk,Railway Colony,,,locality,-2446.2,1613.2
+AD000325,"Blk F, Rd 4, Ganesh Mandir ke pass, Green Park Layt, Navanagara East - 980301",ganesh mandir,Green Park Layout,,,locality,-3766.2,-883.9
+AD000354,h.no. 276 church ke paas teachers col navanagara east - 980302,church,Teachers Colony,church,Church,landmark,732.3,-1067.4
+AD000378,"Annapoorna Nilaya, 6th X, 1st Main, Ration Angdi hattira, Hosa Badavane, Kaveripura - 960101",ration angdi,Hosa Badavane,ration_shop,Ration Shop,landmark,-880.5,-1288.3
+AD000382,"No. 34, Gali No. 7, Ward 6, दूध डेयरी के पास, Nehru Colny, Devgarh Nagar - 970203",dudha deyari,Nehru Colony,,,locality,3029.6,575.7
+AD000471,"#71, Blk B, Rd 6, nr Overhead Tank, Green Park Lyt, Navanagara East - 980301",overhead tank,Green Park Layout,water_tank,Water Tank,landmark,-4072.0,-1017.3
+AD000502,"263/2, Gali no-3, Patel Nagar, Devgarh Nagar - 970202",,Patel Nagar,,,locality,1577.4,-2059.5
+AD000513,"7th Cross, 6th Main, Bus Stop hindhe, Vinayaka Nagar, Kaveripura - 960104",bus stop,Vinayaka Nagar,bus_stop,Bus Stop,landmark,-2672.6,1243.4
+AD000567,"HOUSE 461, BLK A, RD 3, NR MILK BOOTH, RAILWAY COLNOY, NAVANAGARA EAST - 98304",milk booth,,,,town,-172.75833333333335,-551.7416666666667
+AD000656,"8TH CROSS, 4TH MAIN, VIDYA NAGAR, KAVERIPURA - 960103",,Vidya Nagar,,,locality,2499.2,994.1
+AD000657,"12TH CR, 6TH MN, SHANTHI NAGAR, KAVERIPURA - 960101",,Shanthi Nagar,,,locality,-2195.4,-2378.6
+AD000672,"453/3, GALI NO-6, NR MEDICAL STORE, AZAD MOHALLA, DEVGARH NAGAR - 970203",medical store,Azad Mohalla,medical_store,Medical Store,landmark,1213.8,2524.6
+AD000676,"House 440, Gali no-4, Community Hall ke samne, Devgarh Nagar - 970202",community hall,,,,town,856.3249999999999,109.34166666666668
+AD000677,"No. 266, Gali no-12, Ward 4, nr Pharmacy, Ram Nagar, Devgarh Nagar - 970203",pharmacy,Ram Nagar,medical_store,Medical Store,landmark,2471.8,2057.0
+AD000728,sai residency 1st cross 8th main basava nagar kaveripura - 960101,,Basava Nagar,,,locality,-1053.3,-3163.0
+AD000886,"Gali 8, Ward 2, Indira Colony, Devgarh Nagar",,Indira Colony,,,locality,1046.9,-2.6
+AD000929,"H.No. 278, 12th Cross, 1st Main, Kaveripura - 960102",,,,,town,-46.70000000000002,-500.9083333333333
+AD000948,"No. 15, Lakshmi Nilaya, E Blk., 2nd Rd, Teachers Colony, Navanagara East - 980302",,Teachers Colony,,,locality,929.4,-822.2
+AD001220,no. 411 blk f rd 5 railway colony navanagara east - 980304,,Railway Colony,,,locality,-2446.2,1613.2
+AD001263,"#370, LAKSHMI NILAYA, 12TH CROSS, 2ND MAIN, NEERINA TANK HATTIRA, SHANTHI NAGAR, KAVERIPURA - 960101",neerina tank,Shanthi Nagar,,,locality,-2195.4,-2378.6
+AD001273,"279/3, 4TH CROSS, 1ST MAN, CLOSE TO MOSQUE, NEHRU COLONY, KAVERIPURA - 960102",mosque,Nehru Colony,masjid,Masjid,landmark,2323.4,-2387.1
+AD001306,"nr Community Hall, Nehru Colny, Kaveripura - 960102",community hall,Nehru Colony,,,locality,2735.1,-2128.6
+AD001307,"H.No. 220, 6th Cross, 1st Main, adj. Water Tank, Gandhi Nagar, Kaveripura - 960102",water tank,Gandhi Nagar,water_tank,Water Tank,landmark,340.1,-3069.3
+AD001353,"D Block, 3rd Road, nr. Hanuman Temple, Lakeview Phaes 2, Navanagara East - 980032",hanuman temple,,,,town,-172.75833333333335,-551.7416666666667
+AD001401,49/1 3rd cross 3rd main rd close to pharmacy basava nagar kaveripura - 960101,pharmacy,Basava Nagar,medical_store,Medical Store,landmark,-1249.4,-3317.3
+AD001402,9th cross 2nd main opp kalyana mantapa anjaneya badavane kaveripura - 960103,kalyana mantapa,Anjaneya Badavane,community_hall,Community Hall,landmark,-76.4,2500.3
+AD001539,"8/1, 2nd X, 2nd Main, Milk Dairy hattira, Anjaneya Badavane, Kaveripura - 960103",milk dairy,Anjaneya Badavane,milk_dairy,Milk Dairy,landmark,78.9,1970.3
+AD001542,#220 blk d rd 4 orchid enclave navanagara east - 980301,,Orchid Enclave,,,locality,-433.5,-3467.4
+AD001569,257/2 f block 6th road navanagara east - 980302,,,,,town,-172.75833333333335,-551.7416666666667
+AD001585,367/2 nr mosque teachers colony navanagara east - 980302,mosque,Teachers Colony,masjid,Masjid,landmark,1014.3,-406.9
+AD001597,h.no. 401 गली नं. 8 गणेश मंदिर के पास shivaji nagar devgarh nagar - 970202,ganesha mamdira,Shivaji Nagar,ganesha_temple,Ganesh Temple,landmark,331.0,-3084.2
+AD001720,"41/2, Gali no-11, Ward 2, Dak Ghar ke pass, Idnira Colony, Devgarh Nagar - 970202",dak ghar,Indira Colony,,,locality,1046.9,-2.6
+AD001761,"No. 262, Gali no-9, Subhash Nagar, Devgarh Ngr - 970201",,Subhash Nagar,,,locality,-1600.3,-2801.9
+AD001765,"218/1, Gali 6, Krishna Puri, Devgarh Nagar - 970202",,Krishna Puri,,,locality,2589.2,-1273.1
+AD001775,"#172, 5th Crs, 6th Main Rd, near Hanuman Temple, Nehru Col, Kaveripura - 960102",hanuman temple,Nehru Colony,hanuman_temple,Hanuman Temple,landmark,2870.3,-2346.1
+AD001780,"No. 38, Blk F, Rd 1, next to Ganesh Temple, Green Park Layout, Navanagara East - 980301",ganesh temple,Green Park Layout,,,locality,-3766.2,-883.9
+AD001781,#57 sai residency blk c rd 3 nr ganesh temple orchid enclave navanagara eats - 980301,ganesh temple,Orchid Enclave,ganesha_temple,Ganesh Temple,landmark,-136.4,-3781.7
+AD001800,house 428 5th cross 2nd main nr park nehru colony kaveripura - 960102,park,Nehru Colony,park,Park,landmark,2739.7,-2130.3
+AD001860,"H.No. 358, Blk B, Rd 5, close to Post Office, Silver Oak Layout, Navanagara East - 980301",post office,Silver Oak Layout,post_office,Post Office,landmark,-2279.5,-487.4
+AD001861,"Hoouse 352, Blk D, Rd 4, Palm Meadows, Navanagara East - 980302",,Palm Meadows,,,locality,3188.8,-1960.7
+AD001911,"151/2, Gali 2, Ward 2, nr. Park, Devgarh Nagar - 970202",park,,,,town,856.3249999999999,109.34166666666668
+AD002061,"7th Cross, 5th Main, Gandhi Ngr, Kaveripura - 960102",,Gandhi Nagar,,,locality,665.2,-3094.2
+AD002102,"218/1, Blk D, Rd 6, Post Office ke pass, Palm Meadows, Navanagara East - 980302",post office,Palm Meadows,post_office,Post Office,landmark,3205.8,-1685.6
+AD002113,"H.No. 343, close to Community Hall, Gandhi Nagr, Kaveripura - 960102",community hall,Gandhi Nagar,,,locality,665.2,-3094.2
+AD002148,"Ashoka Layout, Kaveripura - 960104",,Ashoka Layout,,,locality,-1205.8,409.2
+AD002167,h.no. 319 gali nu-1 ambedkar ngr devgarh nagar - 970204,,Ambedkar Nagar,,,locality,-603.5,2996.1
+AD002176,#141 gali no. 3 azad mohalla devgarh naagr - 970203,,Azad Mohalla,,,locality,986.3,2772.6
+AD002177,no. 388 gali 1 ward 5 b/h pharmacy subhash ngr devgarh nagar - 970201,pharmacy,Subhash Nagar,,,locality,-1600.3,-2801.9
+AD002215,h.no. 361 12th cross 8th main gandhi nagar kaveripura - 960102,,Gandhi Nagar,,,locality,665.2,-3094.2
+AD002334,"HOUSE 135, BEHIND MILK BOOTH, RAILWAY COLONY, NAVANAGARA EAST - 980304",milk booth,Railway Colony,milk_dairy,Milk Dairy,landmark,-2878.1,1621.2
+AD002374,h.no. 79 12th cross 6th main rd vidya ngr kaveripura - 960103,,Vidya Nagar,,,locality,2499.2,994.1
+AD002393,h.no. 413 9th cross 2nd mn ಬಸ್ ನಿಲ್ದಾಣ ಎದುರು gandhi nagar kaveripura - 960102,bas nildana,Gandhi Nagar,bus_stop,Bus Stop,landmark,546.3,-2981.0
+AD002394,93/2 3rd cr 2nd main nr. ganesh temple kalyana ngr kaveripura - 960104,ganesh temple,Kalyana Nagar,ganesha_temple,Ganesh Temple,landmark,-2026.3,2547.9
+AD002428,house 358 near bus stop indira colony devgarh nagar - 970202,bus stop,Indira Colony,bus_stop,Bus Stop,landmark,1193.3,-221.1
+AD002485,"BLK E, RD 3, NEAR PETROL PUMP, NAVANAGARA EAST - 980301",petrol pump,,,,town,-172.75833333333335,-551.7416666666667
+AD002524,"D Block, 3rd Rd., Royal Gardens, Navanagara East - 980303",,Royal Gardens,,,locality,524.3,1610.0
+AD002539,vinayaka nagar kaveripura - 960104,,Vinayaka Nagar,,,locality,-2863.9,1096.5
+AD002563,"NO. 104, BLK C, RD 6, NEAR PETROL BUNK, ORCHID ENCLAVE, NAVANAGARA EAST - 980301",petrol bunk,Orchid Enclave,,,locality,-433.5,-3467.4
+AD002583,"438/3, Gali 5, Nehru Colny, Devgarh Nagar",,Nehru Colony,,,locality,3029.6,575.7
+AD002584,"#22, सरकारी स्कूल के पास, Devgarh Nagar - 970203",sarakari skula,,,,town,856.3249999999999,109.34166666666668
+AD002637,"5th Cross, 4th Main, Basvaa Nagar, Kaveripura - 960101",,Basava Nagar,,,locality,-1053.3,-3163.0
+AD002663,"No. 10, Gali No. 8, Ward 11, b/h Chruch, Shivaji Nagar, Devgarh Nagar - 970202",,Shivaji Nagar,,,locality,688.3,-3007.0
+AD002664,"No. 313, Gali no-3, Patel Nagar, Devgarh Nagar - 970202",,Patel Nagar,,,locality,1577.4,-2059.5
+AD002665,"#278, Gali No. 4, nr Masjid, Tilak Nagar, Devgarh Ngr - 970203",masjid,,,,town,856.3249999999999,109.34166666666668
+AD002703,343/2 gali 4 b/h post office shivaji ngr devgarh nagar - 970202,post office,Shivaji Nagar,,,locality,688.3,-3007.0
+AD002789,"186/1, Blk D, Rd 4, close to Petrol Bunk, Railway Colny, Navanagara East - 980304",petrol bunk,Railway Colony,,,locality,-2446.2,1613.2
+AD002798,"467/2, GALI NO. 8, AZAD MOHALLA, DEVGARH NAGR - 970203",,Azad Mohalla,,,locality,986.3,2772.6
+AD002829,"246/2, F BLK, 4TH RD, SILVER OAK LAYT, NAVANAGARA EAST - 980301",,Silver Oak Layout,,,locality,-2605.6,-262.1
+AD002903,"163/3, Blk F, Rd 3, Railway Colony, Navanagara East - 980304",,Railway Colony,,,locality,-2446.2,1613.2
+AD002904,"H.No. 306, 4th X, 7th Mn, Nehru Colony, Kaveripura - 960102",,Nehru Colony,,,locality,2735.1,-2128.6
+AD002905,blk f rd 1 near pharmacy teachers colny navanagara east - 980302,pharmacy,Teachers Colony,medical_store,Medical Store,landmark,1365.9,-882.5
+AD002908,"6th X, 5th Main, Anjaneya Swamy Temple hattiar, Nehru Colony, Kaveripura - 960102",anjaneya swamy temple,Nehru Colony,hanuman_temple,Hanuman Temple,landmark,2870.3,-2346.1
+AD002918,h.no. 196 near children park nehru colony kaveripuar - 960102,children park,Nehru Colony,park,Park,landmark,2739.7,-2130.3
+AD002922,"11TH CRS, 5TH MAIN, CLOSE TO GOVT SCHOOL, GANDHI NGR, KAVERIPURA - 960102",govt school,Gandhi Nagar,,,locality,665.2,-3094.2
+AD002983,"#352, 2ND CRS, 4TH MAIN RD, BUS STOP KE PASS, KAVERIPURA - 960104",bus stop,,,,town,-46.70000000000002,-500.9083333333333
+AD003000,1st cross 7th main ನ್ಯಾಯಬೆಲೆ ಅಂಗಡಿ ಹತ್ತಿರ kuvempu layout kaveripura - 960102,nyayabele amgadi,Kuvempu Layout,ration_shop,Ration Shop,landmark,817.7,172.4
+AD003074,"#215, Devgarh Nagar - 970202",,,,,town,856.3249999999999,109.34166666666668
+AD003104,h.no. 387 gali 10 opposite petrol pump tilak nagar devgarh nagr - 970204,petrol pump,Tilak Nagar,petrol_bunk,Petrol Bunk,landmark,-643.5,1512.2
+AD003117,"NO. 284, 1ST CROSS, 8TH MAIN, KAVERIPURA - 960102",,,,,town,-46.70000000000002,-500.9083333333333

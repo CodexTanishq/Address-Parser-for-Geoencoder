@@ -1,0 +1,9 @@
+﻿span,classifier_type,new_type,avg_top_prob,type_source
+girja ghar,community_hall,ganesha_temple,0.3495582044124603,avg_llm
+ration ki dukaan,ration_shop,ration_shop,0.7227754592895508,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+neerina tank,water_tank,water_tank,0.30010226368904114,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm
+dak ghar,post_office,milk_dairy,0.17457345128059387,avg_llm
+community hall,govt_school,community_hall,0.46467849612236023,avg_llm

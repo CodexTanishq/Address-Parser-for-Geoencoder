@@ -1,0 +1,101 @@
+address_id,town_id,address_text,matched_groups,landmark_has_relation,stressed_address_text
+AD000395,T3,"#126, blk e, rd 3, lakeview phase 2, navanagara east - 980303",,False,"#126, blk e, rd 3, lakeview phase 2, navanagar east - 980303"
+AD002148,T1,"ashoka layout, kaveripura - 960104",,False,"ashok layout, kaveripura - 960104"
+AD001124,T2,"gali no 12, charcha ke pasa, patel nagr, devgarh nagar - 970202",relation:near;landmark:church,True,"gali no 12, charcha ke paas, patel nagr, devgarh nagar - 970202"
+AD001034,T1,"h.no. 22, sri krishna nivas, 11th x, 7th main, nyayabele angadi hattira, nehru colony, kaveripura",landmark:ration_shop;relation:near,True,"h.no. 22, sri krishna nivas, 11th x, 7th main, nyayabele angadi bali, nehru colony, kaveripura"
+AD001701,T3,"b block, 5th road, bas nildana hattira, royal gardens, navanagara east - 980303",landmark:bus_stop;relation:near,True,"b block, 5th road, bas nildana bali, royal gardens, navanagara east - 980303"
+AD002202,T1,"2990/1, 9th cr, 5th main, bus nildana hattira, shanthi nagar, kaveripura - 960101",landmark:bus_stop;relation:near,True,"2990/1, 9th cr, 5th main, bus nildana bali, shanthi nagar, kaveripura - 960101"
+AD000576,T3,"house 35, b block, 6th road, masidi hattira, orchid enclave, navanagara east - 980301",landmark:mosque;relation:near,True,"house 35, b block, 6th road, masidi bali, orchid enclave, navanagara east - 980301"
+AD002814,T1,"house 74, 1st cross, 6th main, milk dairy hattira, basava nagar, kaveripura - 960101",landmark:dairy;relation:near,True,"house 74, 1st cross, 6th main, milk dairy bali, basava nagar, kaveripura - 960101"
+AD001524,T3,"no. 264, blk c, rd 1, lakeview phase 2, navanagara east - 980303",,False,"no. 264, blk c, rd 1, lakevie phase 2, navanagara east - 980303"
+AD002540,T2,"#5, lakshmi nilaya, paani ki tanki ke pass, krishna puri, devgarh nagar - 970202",landmark:water_tank;relation:near,True,"#5, lakshmi nilaya, paani ki tanki ke pass, krishna puri, devgar nagar - 970202"
+AD002673,T1,"h.no. 7, 4th cross, 3rd main, park hattira, nehru colony, kaveripura - 960102",landmark:park;relation:near,True,"h.no. 7, 4th cross, 3rd main, park bali, nehru colony, kaveripura - 960102"
+AD000137,T3,c block 4th rd nr. post office silver oak layt navanagara east - 980301,relation:near;landmark:post_office,True,c block 4th rd nr. post office silve oak layt navanagara east - 980301
+AD002342,T2,"nr. government school, tilk nagar, devgarh nagar - 970203",relation:near;landmark:school;landmark:dairy,True,"nr. government shaale, tilk nagar, devgarh nagar - 970203"
+AD002795,T1,"h.no. 289, 11th cross, 5th main, opp. church, anjaneya badavane, kaveripura - 960103",relation:opposite;landmark:church,True,"h.no. 289, 11th cross, 5th main, opp. churc, anjaneya badavane, kaveripura - 960103"
+AD002803,T1,"h.no. 145, 2nd cross, 7th main, ganapathi gudi hinde, hosa badavane, kaveripura - 960101",relation:behind,False,"h.no. 145, 2nd cross, 7th main, ganapath gudi hinde, hosa badavane, kaveripura - 960101"
+AD002162,T2,"no. 18, patel nagar, devgarh ngr - 970202",,False,"no. 18, ptel nagar, devgarh ngr - 970202"
+AD002397,T3,h.no. 56 nr. overhead tank green park layout navanagara east - 980301,relation:near;landmark:water_tank;landmark:park,True,h.no. 56 nr. overhea tank green park layout navanagara east - 980301
+AD000357,T3,"#60, blk b, rd 3, bus nildana hattira, royal gardens, navanagara east - 980303",landmark:bus_stop;relation:near,True,"#60, blk b, rd 3, bus nildana bali, royal gardens, navanagara east - 980303"
+AD000999,T3,"samudaya bhavana hattira, orchid enclave, naavnagara east - 980301",relation:near,False,"samudaya bhavana bali, orchid enclave, naavnagara east - 980301"
+AD002085,T3,"house 441, d block, 6th road, lakeview phase 2, navanagara east - 980303",,False,"house 441, d block, 6th road, lakeview phase 2, navanagar east - 980303"
+AD002896,T3,"blk f, rd 6, bhd mossque, teachers colny, navanagara east - 9800302",landmark:mosque,False,"blk f, rd 6, bhd mossqu, teachers colny, navanagara east - 9800302"
+AD001984,T3,"f block, 2nd road, nr overhead tank, defence colny, navanagara east - 980301",relation:near;landmark:water_tank,True,"f block, 2nd road, nr overhead tank, defence colny, navanagar east - 980301"
+AD001021,T1,"34/02, sarkari shaale eduru, hosa badavane, kaveripura - 960101",landmark:school;relation:opposite,True,"34/02, sarkari shaale eduru, hosa badavan, kaveripura - 960101"
+AD000041,T1,"9th cross, 4th mainn, close to church, hosa badavane, kaveripura - 960101",landmark:church,False,"9th coss, 4th mainn, close to church, hosa badavane, kaveripura - 960101"
+AD000507,T2,gali no-12 bhd park nehru colny devgarh ngr - 970203,relation:near;landmark:park,True,gali no-12 bhd park nhru colny devgarh ngr - 970203
+AD002816,T3,"blk e, rd 5, nr. mosque, navanagara eust - 980304",relation:near;landmark:mosque,True,"blk e, rd 5, nr. masjid, navanagara eust - 980304"
+AD002740,T1,"#215, 10th cross, 7th main, vinayaka nagr, kaveripura - 960104",,False,"#215, 10th coss, 7th main, vinayaka nagr, kaveripura - 960104"
+AD001980,T2,"gali no-11, dawai ki dukaan ke pass, shivaji ngar, devgarh nagar - 970202",relation:near,False,"gali no-11, dawai ki dukaa ke pass, shivaji ngar, devgarh nagar - 970202"
+AD000158,OUT,"village devipur, taluk a, district south - 993803",,False,"village devipu, taluk a, district south - 993803"
+AD002193,T2,424/2 gali no-11 nr church patel nagar devgarh nagar - 970202,relation:near;landmark:church,True,424/2 gali no-11 nr church patel ngar devgarh nagar - 970202
+AD000603,T2,"no. 247, gali 13, b/h post office, nehru colny, devgarh nagar - 970201",relation:near;landmark:post_office,True,"no. 247, gali 13, b/h post office, nehru colny, devgarh ngar - 970201"
+AD000338,T2,"gali no. 8, ward 11, next to govt school, patel nagar, devgarh nagar - 970202",relation:near;relation:next_to;landmark:school,True,"gali no. 8, ward 11, next to govt shaale, patel nagar, devgarh nagar - 970202"
+AD000781,T3,"house 165, blk e, rd 2, near bus stand, lakeview phase 2, navanagara east - 980303",relation:near;landmark:bus_stop,True,"house 165, blk e, rd 2, nr bus stand, lakeview phase 2, navanagara east - 980303"
+AD001460,T3,blk e rd 3 nr. post office palm meadows navanagraa east - 980302,relation:near;landmark:post_office,True,blk e rd 3 nr. post offic palm meadows navanagraa east - 980302
+AD000190,T3,"h.no. 310, a blk., 4th rd., hmt colony, navanagara east - 980302",,False,"h.no. 310, a blk., 4th rd., hmt colon, navanagara east - 980302"
+AD002830,T3,"no. 258, blk b, rd 6, neerina tank hindhe, palm meadows, navanagara east - 9800302",landmark:water_tank,False,"no. 258, blk b, rd 6, neerina tank hindhe, palm meadows, navanagar east - 9800302"
+AD001202,T2,"190/1, nr. hanuman temple, subhash nagar, devgarh nagar - 970201",relation:near;landmark:temple,True,"190/1, nr. hanuman mandir, subhash nagar, devgarh nagar - 970201"
+AD000111,T1,"h.no. 56, masidi hattira, vidya nagar, kaveripura - 960103",landmark:mosque;relation:near,True,"h.no. 56, masidi bali, vidya nagar, kaveripura - 960103"
+AD002137,OUT,"village devipur, tehsil c, district south - 992456",,False,"village devipu, tehsil c, district south - 992456"
+AD001149,T2,"#109, gali no-12, ward 11, patel nagar, devgarh ngr - 970204",relation:near,False,"#109, gali no-12, ward 11, patel ngar, devgarh ngr - 970204"
+AD002327,T2,"house 161, gali 1, devgarh ngr - 970203",relation:near,False,"house 161, gali 1, devgar ngr - 970203"
+AD000938,T1,#300 1st cross 4th main rd near hnuman temple siddeshwara colony kaveripura - 960102,relation:near;landmark:temple,True,#300 1st cross 4th main rd nr hnuman temple siddeshwara colony kaveripura - 960102
+AD002420,OUT,"village hosahalli, taluk a, district north - 996244",,False,"villag hosahalli, taluk a, district north - 996244"
+AD002273,T2,gali no. 11 close to water tank krishna puri devgarh ngr - 970202,relation:near;landmark:water_tank,False,gali no. 11 close to wter tank krishna puri devgarh ngr - 970202
+AD001314,T1,"house 258, 6th cr, 8th mn, vinayaka ngr, kaveripura - 960104",,False,"house 258, 6th cr, 8th mn, vinayaka ngr, kaveripur - 960104"
+AD001290,T3,"b block, 5th road, teachers colony, navanagara east - 980302",,False,"b block, 5th road, teachers colony, navanagar east - 980302"
+AD000535,T3,house 225 sai residency blk b rd 4 nr pds shop lakeview phase 2 navanagara east - 980303,relation:near;landmark:bus_stop,True,house 225 sai residency blk b rd 4 nr pds shop lakevie phase 2 navanagara east - 980303
+AD002953,T2,"no. 128, gali no. 1, ward 10, basa stopa ke pasa, devgarh nagar - 970202",relation:near;landmark:bus_stop,True,"no. 128, gali no. 1, ward 10, basa stopa ke paas, devgarh nagar - 970202"
+AD000886,T2,"gali 8, ward 2, indira colony, devgarh nagar",relation:near,False,"gali 8, ward 2, indira colony, devgar nagar"
+AD001587,T3,"#133, annapoorna nilaya, sunrise enclave, navanagara east - 980304",,False,"#133, annapoorna nilay, sunrise enclave, navanagara east - 980304"
+AD002129,T1,"h.no. 153, 5th crs, 3rd main, kuempu layout, kaveripura - 960102",,False,"h.no. 153, 5th crs, 3rd main, kuemp layout, kaveripura - 960102"
+AD002492,T2,"shastri nagar, devgarh nagar",,False,"shastri nagar, devgar nagar"
+AD002564,T3,"no. 128, b block, 6th road, nr church, sunrise enclave, navanagara east - 980304",relation:near;landmark:church,True,"no. 128, b bock, 6th road, nr church, sunrise enclave, navanagara east - 980304"
+AD002664,T2,"no. 313, gali no-3, patel nagar, devgarh nagar - 970202",relation:near,False,"no. 313, gali no-3, ptel nagar, devgarh nagar - 970202"
+AD000325,T3,"blk f, rd 4, ganesh mandir ke pass, green park layt, navanagara east - 980301",landmark:temple;relation:near;landmark:park,True,"blk f, rd 4, ganesh mandir ke pass, green park layt, navanagar east - 980301"
+AD000668,T1,house 340 anche kacheri hattira vidya nagar kaveripura - 960103,landmark:post_office;relation:near,True,house 340 anche kacheri bali vidya nagar kaveripura - 960103
+AD001855,T2,h.no. 420 gali no-6 opposite government school krishna puri devgarh nagar - 97022,relation:near;relation:opposite;landmark:school,True,h.no. 420 gali no-6 opp government school krishna puri devgarh nagar - 97022
+AD001595,OUT,"village mallapura, taluk b, district south - 998658",,False,"villag mallapura, taluk b, district south - 998658"
+AD001166,T1,"97/1, 9th cross, 7th main, vinayaka nagar, kaveripura - 960104",,False,"97/1, 9th cross, 7th main, vinayaka ngar, kaveripura - 960104"
+AD002921,T3,"house 33, blk a, rd 2, railway colony, navanagara east - 980304",,False,"house 33, blk a, rd 2, railway colon, navanagara east - 980304"
+AD000428,T1,41/3 ganga apartments 1st crss 7th main close to hanuman temple nehru colony kaverpura - 960102,landmark:temple,False,41/3 ganga apartments 1st crss 7th main close to hanuman mandir nehru colony kaverpura - 960102
+AD000141,T2,"gali no. 4, ward 1, devgarh nagar - 970202",relation:near,False,"gali no. 4, ward 1, devgarh ngar - 970202"
+AD000599,T1,"house 350, lakshmi nilaya, 2nd x, 3rd main, kaveripura - 960101",,False,"huse 350, lakshmi nilaya, 2nd x, 3rd main, kaveripura - 960101"
+AD000330,T2,"gli no-8, close to overhead tank, krishna puri, devgarh nagar - 970202",landmark:water_tank,False,"gli no-8, close to overhead tank, krishna puri, devgar nagar - 970202"
+AD001151,T1,"#202, behind bus stand, gandhi nagr, kaveripura - 960102",relation:behind;landmark:bus_stop,True,"#202, behin bus stand, gandhi nagr, kaveripura - 960102"
+AD001335,T1,3rd cross 3rd main rd neerina tank hattira shanthi ngr kaveripura - 960101,landmark:water_tank;relation:near,True,3rd cross 3rd main rd neerina tank bali shanthi ngr kaveripura - 960101
+AD000367,T3,"h.no. 431, blk d, rd 1, opposite milk booth, silver oak layout, navanagara east - 980301",relation:opposite;landmark:dairy,True,"h.no. 431, blk d, rd 1, opp milk booth, silver oak layout, navanagara east - 980301"
+AD002878,T2,#419 gali 12 krishna puri devgarh nagar - 970202,relation:near,False,#419 gali 12 krishna puri devgar nagar - 970202
+AD002806,T1,"224/1, 12th cross, 3rd main, bas nildana hattira, nehru colny, kaveripura - 960102",landmark:bus_stop;relation:near,True,"224/1, 12th cross, 3rd main, bas nildana bali, nehru colny, kaveripura - 960102"
+AD002109,OUT,"village mallapura, tehsil d, district south - 996231",,False,"villag mallapura, tehsil d, district south - 996231"
+AD001408,T1,5th cross 6th main next to mosque vidya nagar kaveripura - 960103,relation:next_to;landmark:mosque,True,5th cross 6th main next to masjid vidya nagar kaveripura - 960103
+AD002598,T2,gali 8 doodh dairy ke peeche patel nagar devgarh nagr - 970202,relation:near;landmark:dairy;relation:behind,True,gali 8 doodh dairy ke peeche patel ngar devgarh nagr - 970202
+AD003004,T1,"#46, near milk booth, nehru colony, kaveripura - 960102",relation:near;landmark:dairy,True,"#46, nr milk booth, nehru colony, kaveripura - 960102"
+AD002055,T2,"house 419, gali 4, ward 6, bus adda ke pass, nehru col, devgarh ngr - 970203",relation:near;landmark:bus_stop,True,"house 419, gali 4, ward 6, bus adda ke pass, nhru col, devgarh ngr - 970203"
+AD000883,T2,"h.no. 89, gali no. 7, ward 6, nr milk dairy, nehru colony, devgarh nagar - 970203",relation:near;landmark:dairy,True,"h.no. 89, gali no. 7, ward 6, nr milk dairy, nehru colony, devgarh ngar - 970203"
+AD001962,T2,gali no. 8 ward 11 girja ghar ke pass patel nagar devgarh nagar,relation:near,False,gali no. 8 ward 11 girja ghar ke pass patel ngar devgarh nagar
+AD000266,T2,"house 135, gali 4, ward 4, ram nagar, devgarh nagar - 970203",relation:near,False,"house 135, gali 4, ward 4, ram ngar, devgarh nagar - 970203"
+AD000156,T1,"1st cross, 4th main, near hanuman temple, kaveripura - 960102",relation:near;landmark:temple,True,"1st cross, 4th main, nr hanuman temple, kaveripura - 960102"
+AD000777,OUT,"village hosahalli, taluk a, district south - 996756",,False,"villag hosahalli, taluk a, district south - 996756"
+AD000751,T2,no. 388 nr. pharmacy gandhi basti devgarh nagar - 970203,relation:near;landmark:medical_store,True,no. 388 nr. pharmac gandhi basti devgarh nagar - 970203
+AD002486,T3,house 18 palm meadows navanagara eost - 9803302,landmark:post_office,False,house 18 palm meadows navanagar eost - 9803302
+AD002593,T1,"no. 147, close to medical store, vidya nagar, kaveripura - 960103",landmark:medical_store,False,"no. 147, close to medica store, vidya nagar, kaveripura - 960103"
+AD001148,T1,"house 91, ashoka layout, kaveripura - 960104",,False,"house 91, ashoka layou, kaveripura - 960104"
+AD002090,T1,5th cross 7th main ganapati devasthana hattira gandhi nagr kaveripura - 960102,landmark:temple;relation:near,True,5th cross 7th main ganapati devasthana bali gandhi nagr kaveripura - 960102
+AD003018,T2,"gali no-3, near medical store, azad mohalla, devgarh nagr - 970203",relation:near;landmark:medical_store,True,"gali no-3, nr medical store, azad mohalla, devgarh nagr - 970203"
+AD002419,T1,house 453 5th cross 5th main rd behind hanuman temple nehru colony kaveripura - 960104,relation:behind;landmark:temple,True,house 453 5th cross 5th main rd behind hanuman mandir nehru colony kaveripura - 960104
+AD002573,T1,no. 80 5th cross 5th main rd vinayaka nagar kaveripura - 960104,,False,no. 80 5th coss 5th main rd vinayaka nagar kaveripura - 960104
+AD000107,T3,f blk. 1st road lakeview phase 2 navanagara east - 980303,,False,f blk. 1st road lakevie phase 2 navanagara east - 980303
+AD002793,T1,"h.no. 391, 3rd cross, 4th main, ganapati devasthana hattira, kaveripura - 960104",landmark:temple;relation:near,True,"h.no. 391, 3rd cross, 4th main, ganapati devasthana bali, kaveripura - 960104"
+AD002915,T2,"b/h bus stand, shastri nagar, devgarh nagar - 970201",landmark:bus_stop,False,"b/h bus sand, shastri nagar, devgarh nagar - 970201"
+AD000261,T2,166/3 gali no-7 ward 2 ration dukan ke bagal me indira colony devgarh ngr - 970202,relation:near;landmark:ration_shop;relation:beside,True,166/3 gali no-7 ward 2 ration dukan ke bagal me indir colony devgarh ngr - 970202
+AD002719,T2,"gali no-11, ward 9, sarakari skula ke pasa, shastri ngr, devgarh nagr - 970201",relation:near;landmark:school,True,"gali no-11, ward 9, sarakari skula ke paas, shastri ngr, devgarh nagr - 970201"
+AD003017,T2,"krishna puri, devgarh nagar - 970202",,False,"krishna puri, devgar nagar - 970202"
+AD002428,T2,house 358 near bus stop indira colony devgarh nagar - 970202,relation:near;landmark:bus_stop,True,house 358 nr bus stop indira colony devgarh nagar - 970202
+AD002553,T3,"house 179, blk c, rd 2, udyanavana eduru, palm meadows, navanagara east - 980302",landmark:park;relation:opposite,True,"house 179, blk c, rd 2, udyanavana eduru, palm meadow, navanagara east - 980302"
+AD001075,T1,"h.no. 315, 5th cross, 2nd main, anche kacheri hattira, vinayaka nagar, kaveripura - 960104",landmark:post_office;relation:near,True,"h.no. 315, 5th cross, 2nd main, anche kacheri bali, vinayaka nagar, kaveripura - 960104"
+AD000415,OUT,"village rampura kalan, tehsil d, district north - 992673",,False,"village rampura kalan, tehsil d, district nrth - 992673"
+AD001743,T2,"433//2, gali 10, ganesh mandir ke pass, azad mohalla, devgarh nagar",relation:near;landmark:temple,True,"433//2, gali 10, ganesh mandir ke pass, azad mohall, devgarh nagar"
+AD000394,T2,"barat gar ke pass, azad mohalla, devgarh ngr - 970203",relation:near,False,"brat gar ke pass, azad mohalla, devgarh ngr - 970203"
+AD000959,T1,17/2 1st cross 8th main halina dairi hattira nehru colony kaveripura - 960102,landmark:dairy;relation:near,True,17/2 1st cross 8th main halina dairi bali nehru colony kaveripura - 960102

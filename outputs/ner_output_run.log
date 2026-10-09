@@ -1,0 +1,23 @@
+requested_ids ['address_id', 'town_id', 'word_index', 'word', 'tag', 'landmark_type', 'pincode_is_real', 'label_quality']
+train ['address_id', 'town_id', 'word_index', 'word', 'tag', 'landmark_type', 'pincode_is_real', 'label_quality']
+validation ['address_id', 'town_id', 'word_index', 'word', 'tag', 'landmark_type', 'pincode_is_real', 'label_quality']
+addresses ['address_id', 'account_id', 'address_type', 'source', 'added_date', 'town_id', 'address_text']
+towns ['town_id', 'town_name', 'address_style', 'approx_radius_m']
+localities ['locality_id', 'town_id', 'locality_name', 'pincode', 'centroid_x', 'centroid_y']
+pois ['poi_id', 'town_id', 'landmark_type', 'name', 'x', 'y']
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights:  10%|#         | 20/199 [00:00<00:00, 198.49it/s]
+Loading weights:  23%|##2       | 45/199 [00:00<00:00, 218.35it/s]
+Loading weights:  34%|###3      | 67/199 [00:00<00:00, 169.32it/s]
+Loading weights:  44%|####3     | 87/199 [00:00<00:00, 173.57it/s]
+Loading weights:  53%|#####3    | 106/199 [00:00<00:00, 176.22it/s]
+Loading weights: 100%|##########| 199/199 [00:00<00:00, 333.45it/s]
+validation rows 443
+holdout rows 90
+validation locality empty share 18.284%
+validation landmarks 0/1/2 {1: 296, 0: 147}
+cleaned spans containing digit/town word: 0 (removed; 0 spans changed)
+rows >2 spans before cap 0
+validation entity F1 0.8578908002991772 vs 0.8579
+

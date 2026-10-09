@@ -1,0 +1,241 @@
+poi_id,town_id,landmark_type,name,x,y
+LM0001,T1,community_hall,Community Hall,-3083.2,1414.7
+LM0003,T1,ration_shop,Ration Shop,-3111.6,1242.6
+LM0004,T1,ganesha_temple,Ganesh Temple,-3155.2,823.8
+LM0005,T1,masjid,Masjid,-3425.3,1304.2
+LM0007,T1,bus_stop,Bus Stop,-2672.6,1243.4
+LM0008,T1,post_office,Post Office,-2799.4,893.5
+LM0010,T1,bus_stop,Bus Stop,-1325.0,-3511.8
+LM0011,T1,medical_store,Medical Store,-1249.4,-3317.3
+LM0013,T1,church,Church,-834.6,-2978.5
+LM0015,T1,ration_shop,Ration Shop,-1388.7,-3524.7
+LM0016,T1,masjid,Masjid,-1409.6,-2935.6
+LM0017,T1,govt_school,Govt School,-1114.9,-3404.5
+LM0019,T1,ration_shop,Ration Shop,817.7,172.4
+LM0020,T1,govt_school,Govt School,1268.8,49.0
+LM0022,T1,bus_stop,Bus Stop,689.7,86.7
+LM0023,T1,hanuman_temple,Hanuman Temple,1092.3,-419.8
+LM0024,T1,ganesha_temple,Ganesh Temple,916.1,-109.8
+LM0025,T1,community_hall,Community Hall,747.1,70.2
+LM0026,T1,milk_dairy,Milk Dairy,1255.7,47.7
+LM0028,T1,bus_stop,Bus Stop,546.3,-2981.0
+LM0029,T1,hanuman_temple,Hanuman Temple,216.6,-2659.5
+LM0030,T1,ration_shop,Ration Shop,677.7,-2777.8
+LM0031,T1,water_tank,Water Tank,340.1,-3069.3
+LM0035,T1,community_hall,Community Hall,740.2,-3077.2
+LM0037,T1,ganesha_temple,Ganesh Temple,-1122.4,327.5
+LM0038,T1,water_tank,Water Tank,-1065.2,770.6
+LM0039,T1,hanuman_temple,Hanuman Temple,-1550.8,649.1
+LM0040,T1,petrol_bunk,Petrol Bunk,-1390.5,326.1
+LM0041,T1,church,Church,-1554.1,641.8
+LM0042,T1,medical_store,Medical Store,-1287.0,-45.0
+LM0043,T1,community_hall,Community Hall,-1475.9,764.5
+LM0044,T1,govt_school,Govt School,-1029.5,702.3
+LM0045,T1,masjid,Masjid,-1073.6,860.5
+LM0046,T1,govt_school,Govt School,2056.3,-641.7
+LM0047,T1,medical_store,Medical Store,1690.6,-1164.5
+LM0049,T1,hanuman_temple,Hanuman Temple,1982.8,-1241.6
+LM0050,T1,masjid,Masjid,1501.6,-1185.9
+LM0051,T1,milk_dairy,Milk Dairy,1631.8,-800.8
+LM0053,T1,park,Park,2135.9,-908.4
+LM0055,T1,medical_store,Medical Store,782.8,2036.1
+LM0056,T1,ganesha_temple,Ganesh Temple,345.8,2454.5
+LM0057,T1,milk_dairy,Milk Dairy,78.9,1970.3
+LM0058,T1,govt_school,Govt School,175.9,2722.3
+LM0059,T1,church,Church,303.0,2703.0
+LM0061,T1,petrol_bunk,Petrol Bunk,693.0,2069.9
+LM0062,T1,community_hall,Community Hall,-76.4,2500.3
+LM0064,T1,bus_stop,Bus Stop,2149.0,1301.7
+LM0065,T1,post_office,Post Office,2295.8,713.3
+LM0066,T1,ration_shop,Ration Shop,2843.8,757.1
+LM0067,T1,govt_school,Govt School,2260.1,774.1
+LM0068,T1,ganesha_temple,Ganesh Temple,2122.2,625.0
+LM0069,T1,park,Park,2078.9,752.8
+LM0070,T1,hanuman_temple,Hanuman Temple,2076.3,1122.7
+LM0071,T1,masjid,Masjid,2627.8,962.2
+LM0073,T1,post_office,Post Office,-1781.9,-2609.4
+LM0074,T1,hanuman_temple,Hanuman Temple,-1685.0,-2569.7
+LM0076,T1,masjid,Masjid,-1959.0,-1971.3
+LM0077,T1,bus_stop,Bus Stop,-2018.6,-2173.4
+LM0078,T1,ration_shop,Ration Shop,-1857.7,-2547.8
+LM0079,T1,govt_school,Govt School,-2184.5,-2407.6
+LM0080,T1,medical_store,Medical Store,-1861.7,-2310.6
+LM0081,T1,water_tank,Water Tank,-2350.3,-2317.5
+LM0082,T1,ganesha_temple,Ganesh Temple,-2026.3,2547.9
+LM0083,T1,ration_shop,Ration Shop,-1584.2,2476.5
+LM0084,T1,masjid,Masjid,-1610.3,2442.2
+LM0085,T1,govt_school,Govt School,-1870.0,2291.9
+LM0086,T1,petrol_bunk,Petrol Bunk,-1772.1,2191.4
+LM0087,T1,water_tank,Water Tank,-1609.7,2681.5
+LM0090,T1,bus_stop,Bus Stop,-2168.9,2921.1
+LM0091,T1,community_hall,Community Hall,2792.5,-2125.6
+LM0092,T1,park,Park,2739.7,-2130.3
+LM0094,T1,medical_store,Medical Store,2791.9,-2113.9
+LM0096,T1,masjid,Masjid,2323.4,-2387.1
+LM0097,T1,hanuman_temple,Hanuman Temple,2870.3,-2346.1
+LM0098,T1,ration_shop,Ration Shop,3049.4,-2157.6
+LM0100,T1,church,Church,-563.2,-1389.8
+LM0101,T1,govt_school,Govt School,-232.8,-956.2
+LM0102,T1,ganesha_temple,Ganesh Temple,-85.8,-1467.4
+LM0103,T1,milk_dairy,Milk Dairy,-320.1,-1102.8
+LM0104,T1,ration_shop,Ration Shop,-880.5,-1288.3
+LM0105,T1,medical_store,Medical Store,-288.4,-1601.5
+LM0108,T1,park,Park,-548.4,-1445.6
+LM0109,T2,community_hall,Community Hall,815.5,-2841.7
+LM0110,T2,bus_stop,Bus Stop,708.4,-3319.2
+LM0111,T2,hanuman_temple,Hanuman Temple,999.8,-3112.8
+LM0112,T2,milk_dairy,Milk Dairy,599.8,-2839.0
+LM0113,T2,medical_store,Medical Store,647.5,-2633.2
+LM0114,T2,ganesha_temple,Ganesh Temple,331.0,-3084.2
+LM0115,T2,church,Church,513.3,-3082.8
+LM0117,T2,ration_shop,Ration Shop,471.9,-3260.2
+LM0118,T2,bus_stop,Bus Stop,1193.3,-221.1
+LM0122,T2,hanuman_temple,Hanuman Temple,1309.5,290.4
+LM0125,T2,post_office,Post Office,933.9,299.4
+LM0126,T2,park,Park,1063.8,-332.3
+LM0128,T2,hanuman_temple,Hanuman Temple,-532.5,3389.7
+LM0131,T2,ganesha_temple,Ganesh Temple,-506.7,2816.1
+LM0132,T2,medical_store,Medical Store,-740.1,2565.6
+LM0133,T2,milk_dairy,Milk Dairy,-868.8,3100.8
+LM0134,T2,water_tank,Water Tank,-1016.5,2852.7
+LM0135,T2,ration_shop,Ration Shop,-170.1,3207.2
+LM0136,T2,park,Park,2698.3,1438.9
+LM0137,T2,community_hall,Community Hall,2083.6,1623.1
+LM0138,T2,ganesha_temple,Ganesh Temple,2326.7,1917.1
+LM0139,T2,ration_shop,Ration Shop,2335.2,1476.5
+LM0140,T2,govt_school,Govt School,2072.1,2097.3
+LM0141,T2,hanuman_temple,Hanuman Temple,2450.4,1996.0
+LM0142,T2,medical_store,Medical Store,2471.8,2057.0
+LM0143,T2,masjid,Masjid,1922.2,1715.5
+LM0144,T2,church,Church,2362.0,1745.2
+LM0145,T2,ration_shop,Ration Shop,-1872.5,-2486.2
+LM0149,T2,milk_dairy,Milk Dairy,-1625.7,-2955.8
+LM0150,T2,bus_stop,Bus Stop,-1421.3,-3128.0
+LM0151,T2,govt_school,Govt School,-1869.6,-2662.9
+LM0152,T2,masjid,Masjid,-1698.8,-2329.8
+LM0153,T2,hanuman_temple,Hanuman Temple,-1528.9,-2813.1
+LM0156,T2,community_hall,Community Hall,2958.1,214.7
+LM0158,T2,ganesha_temple,Ganesh Temple,2886.7,951.8
+LM0159,T2,ration_shop,Ration Shop,2908.5,940.9
+LM0160,T2,water_tank,Water Tank,2844.3,775.5
+LM0161,T2,bus_stop,Bus Stop,2665.0,509.0
+LM0163,T2,hanuman_temple,Hanuman Temple,1438.2,927.4
+LM0164,T2,govt_school,Govt School,970.9,1390.7
+LM0165,T2,petrol_bunk,Petrol Bunk,641.3,1006.0
+LM0166,T2,medical_store,Medical Store,1240.7,1472.2
+LM0167,T2,post_office,Post Office,674.9,1444.0
+LM0168,T2,park,Park,750.7,1451.6
+LM0171,T2,bus_stop,Bus Stop,1388.1,1115.9
+LM0172,T2,govt_school,Govt School,907.5,2586.7
+LM0173,T2,medical_store,Medical Store,1213.8,2524.6
+LM0175,T2,community_hall,Community Hall,492.6,2650.8
+LM0177,T2,ration_shop,Ration Shop,940.8,2546.9
+LM0179,T2,bus_stop,Bus Stop,1097.3,2655.1
+LM0180,T2,petrol_bunk,Petrol Bunk,900.0,3101.3
+LM0182,T2,milk_dairy,Milk Dairy,-280.8,-278.0
+LM0183,T2,water_tank,Water Tank,-669.0,-472.4
+LM0185,T2,bus_stop,Bus Stop,-214.4,-209.1
+LM0187,T2,masjid,Masjid,-651.2,-773.0
+LM0188,T2,hanuman_temple,Hanuman Temple,-347.0,-84.0
+LM0189,T2,post_office,Post Office,-600.4,-539.8
+LM0191,T2,hanuman_temple,Hanuman Temple,2469.1,-1329.6
+LM0192,T2,masjid,Masjid,2048.1,-1324.2
+LM0193,T2,ration_shop,Ration Shop,2661.9,-1811.1
+LM0194,T2,water_tank,Water Tank,2577.3,-1320.1
+LM0195,T2,govt_school,Govt School,2441.1,-1253.6
+LM0197,T2,bus_stop,Bus Stop,2378.9,-1282.9
+LM0198,T2,post_office,Post Office,2447.4,-1191.9
+LM0199,T2,masjid,Masjid,1346.4,-2520.7
+LM0200,T2,govt_school,Govt School,1185.3,-2043.0
+LM0201,T2,milk_dairy,Milk Dairy,1268.9,-2044.0
+LM0203,T2,ration_shop,Ration Shop,1041.5,-1855.2
+LM0204,T2,medical_store,Medical Store,1722.9,-2340.4
+LM0207,T2,church,Church,1440.8,-1984.6
+LM0208,T2,govt_school,Govt School,-128.5,1670.7
+LM0209,T2,park,Park,47.0,1401.3
+LM0211,T2,masjid,Masjid,-310.8,990.8
+LM0212,T2,ration_shop,Ration Shop,107.8,1245.9
+LM0214,T2,ganesha_temple,Ganesh Temple,-301.2,792.9
+LM0215,T2,water_tank,Water Tank,126.5,1694.7
+LM0216,T2,petrol_bunk,Petrol Bunk,-643.5,1512.2
+LM0218,T3,medical_store,Medical Store,-3993.5,-840.9
+LM0219,T3,hanuman_temple,Hanuman Temple,-3990.5,-1086.5
+LM0220,T3,community_hall,Community Hall,-3921.2,-577.0
+LM0224,T3,water_tank,Water Tank,-4072.0,-1017.3
+LM0226,T3,masjid,Masjid,-107.4,3568.5
+LM0227,T3,hanuman_temple,Hanuman Temple,-37.5,3542.0
+LM0228,T3,ration_shop,Ration Shop,-842.2,2899.6
+LM0229,T3,community_hall,Community Hall,-661.1,3190.5
+LM0230,T3,bus_stop,Bus Stop,-800.4,3450.6
+LM0231,T3,water_tank,Water Tank,-402.8,3230.6
+LM0232,T3,church,Church,-720.2,2971.9
+LM0233,T3,park,Park,-768.2,3483.0
+LM0234,T3,milk_dairy,Milk Dairy,-386.8,3422.8
+LM0235,T3,govt_school,Govt School,-1031.2,-536.6
+LM0236,T3,ration_shop,Ration Shop,-853.4,-708.6
+LM0237,T3,medical_store,Medical Store,-513.7,-242.5
+LM0239,T3,milk_dairy,Milk Dairy,-791.9,-718.7
+LM0241,T3,hanuman_temple,Hanuman Temple,-305.4,-277.2
+LM0242,T3,water_tank,Water Tank,-513.7,-557.1
+LM0243,T3,post_office,Post Office,-764.5,-471.1
+LM0244,T3,ration_shop,Ration Shop,-1290.6,-1772.0
+LM0245,T3,ganesha_temple,Ganesh Temple,-1138.4,-1991.8
+LM0246,T3,milk_dairy,Milk Dairy,-1102.7,-2213.9
+LM0248,T3,water_tank,Water Tank,-933.1,-1915.8
+LM0250,T3,church,Church,-1239.1,-2298.0
+LM0251,T3,hanuman_temple,Hanuman Temple,-1292.4,-1644.8
+LM0253,T3,masjid,Masjid,3482.0,744.3
+LM0254,T3,milk_dairy,Milk Dairy,3509.8,540.2
+LM0255,T3,ration_shop,Ration Shop,3616.5,556.1
+LM0256,T3,bus_stop,Bus Stop,3788.5,411.2
+LM0258,T3,community_hall,Community Hall,3391.3,470.7
+LM0261,T3,medical_store,Medical Store,3763.3,925.0
+LM0262,T3,petrol_bunk,Petrol Bunk,-2772.6,-349.4
+LM0263,T3,church,Church,-2678.2,-543.8
+LM0265,T3,govt_school,Govt School,-2505.6,-92.4
+LM0267,T3,water_tank,Water Tank,-2910.2,-36.3
+LM0268,T3,post_office,Post Office,-2279.5,-487.4
+LM0269,T3,masjid,Masjid,-2477.9,-542.1
+LM0270,T3,bus_stop,Bus Stop,-2847.1,-569.9
+LM0272,T3,milk_dairy,Milk Dairy,-2878.1,1621.2
+LM0273,T3,ganesha_temple,Ganesh Temple,-2110.2,1617.4
+LM0274,T3,water_tank,Water Tank,-2392.4,1990.7
+LM0275,T3,community_hall,Community Hall,-2201.3,1392.4
+LM0276,T3,bus_stop,Bus Stop,-2463.3,1582.8
+LM0277,T3,masjid,Masjid,-2378.1,1427.1
+LM0278,T3,govt_school,Govt School,-2618.5,2009.2
+LM0280,T3,medical_store,Medical Store,1365.9,-882.5
+LM0281,T3,ration_shop,Ration Shop,658.2,-1125.8
+LM0282,T3,masjid,Masjid,1014.3,-406.9
+LM0283,T3,bus_stop,Bus Stop,603.1,-747.9
+LM0284,T3,church,Church,732.3,-1067.4
+LM0286,T3,govt_school,Govt School,731.9,-1039.8
+LM0287,T3,ganesha_temple,Ganesh Temple,823.0,-420.4
+LM0289,T3,park,Park,820.5,1955.8
+LM0291,T3,milk_dairy,Milk Dairy,311.7,1955.9
+LM0293,T3,ganesha_temple,Ganesh Temple,497.2,1572.2
+LM0294,T3,ration_shop,Ration Shop,254.3,1926.8
+LM0295,T3,water_tank,Water Tank,518.8,1925.1
+LM0296,T3,govt_school,Govt School,900.0,1772.8
+LM0297,T3,bus_stop,Bus Stop,431.5,1548.7
+LM0298,T3,park,Park,3550.4,-2296.1
+LM0299,T3,ration_shop,Ration Shop,3231.2,-1663.6
+LM0300,T3,milk_dairy,Milk Dairy,3051.1,-2317.6
+LM0301,T3,ganesha_temple,Ganesh Temple,3433.8,-1644.8
+LM0302,T3,post_office,Post Office,3205.8,-1685.6
+LM0304,T3,water_tank,Water Tank,3469.5,-2083.9
+LM0305,T3,masjid,Masjid,3428.0,-1931.1
+LM0306,T3,bus_stop,Bus Stop,3443.4,-1945.1
+LM0307,T3,masjid,Masjid,-460.7,-3589.7
+LM0308,T3,medical_store,Medical Store,-31.9,-3138.2
+LM0309,T3,ganesha_temple,Ganesh Temple,-136.4,-3781.7
+LM0310,T3,hanuman_temple,Hanuman Temple,-639.9,-3367.2
+LM0311,T3,park,Park,-568.0,-3271.2
+LM0316,T3,ration_shop,Ration Shop,644.8,-3711.4
+LM0317,T3,medical_store,Medical Store,1448.4,-3612.2
+LM0318,T3,park,Park,956.7,-3194.1
+LM0319,T3,water_tank,Water Tank,1157.3,-3636.6
+LM0320,T3,govt_school,Govt School,1386.5,-4085.8
+LM0321,T3,church,Church,921.3,-3506.1
+LM0323,T3,petrol_bunk,Petrol Bunk,778.1,-3852.1
+LM0324,T3,hanuman_temple,Hanuman Temple,877.2,-3615.8

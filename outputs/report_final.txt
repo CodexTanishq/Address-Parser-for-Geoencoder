@@ -1,0 +1,9 @@
+town accuracy 100.000%
+UNKNOWN 0
+levels {'locality': 0.8442437923250564, 'pincode_area': 0.1309255079006772, 'town': 0.024830699774266364}
+town pincode use 0
+locality pincode use 0
+no landmark span 147
+landmark type accuracy 58.011% (CIRCULAR: landmark_type comes from 02_auto_label.py)
+locality accuracy unavailable: no true locality field
+ASSUMPTIONS: POI catchment is nearest locality; threshold=0.5; classifier labels originate from auto labels.

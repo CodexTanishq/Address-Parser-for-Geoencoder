@@ -1,0 +1,6 @@
+validation blank-town rows 1
+holdout blank-town rows 0
+locality_name filled/locality_id blank 0
+validation town accuracy 99.774%
+validation locality empty 7.675%
+validation landmarks {1: 296, 0: 147}

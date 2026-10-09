@@ -1,0 +1,21 @@
+address_id,raw_text,town_id,locality_id,landmark_type,poi_id,x,y,level_used,town_rule,locality_rule,true_town_id,landmark_span,landmark_probability
+AD000020,house 25 3rd cross 6th main rd kaveripura - 960104,T1,,,,-1985.0333333333335,1315.6000000000001,pincode_area,NER,pincode_area,T1,,0.0
+AD000035,"A Block, 2nd Road, behind Milk Dairy, Palm Meadows, Navanagara East - 980302",T3,T3-L10,milk_dairy,LM0300,3051.1,-2317.6,landmark,NER,NER,T3,milk dairy,0.9328380845104168
+AD000036,"D BLOCK, 5TH ROAD, OPP. KALYANA MANTAPA, LAKEVIEW PHASE 2, NAVANAAGARA EAST - 980303",T3,T3-L05,community_hall,LM0258,3391.3,470.7,landmark,NER,NER,T3,kalyana mantapa,0.8281039121086335
+AD000057,"441/3, NR. GOVT SCHOOL, SILVUR OAK LAYOUT, NAVANAGARA EAST - 980301",T3,T3-L06,govt_school,LM0265,-2505.6,-92.4,landmark,NER,NER,T3,govt school,0.9263780984950772
+AD000086,h.no. 107 gali no. 5 opp water tank krishna puri devgarh nagar,T2,T2-L10,water_tank,LM0194,2577.3,-1320.1,landmark,NER,NER,T2,water tank,0.8368422800767689
+AD000088,gali no-10 hanuman mandir ke paass ambedkar nagar devgarh nagar - 970204,T2,T2-L03,hanuman_temple,LM0128,-532.5,3389.7,landmark,NER,NER,T2,hanuman mandir,0.7604533032146699
+AD000093,"#304, E Blk, 1st Rd, b/h Kalyana Mantapa, Sunrise Enclave, Navanagara East - 980304",T3,T3-L02,community_hall,LM0229,-661.1,3190.5,landmark,NER,NER,T3,kalyana mantapa,0.8281039121086335
+AD000117,"House 105, Bus Nildana hattira, Palm Meadows, Navanagara East - 980302",T3,T3-L10,bus_stop,LM0306,3443.4,-1945.1,landmark,NER,NER,T3,bus nildana,0.8828034972776511
+AD000145,"#179, B Blk., 3rd Road, b/h Ration Shop, HMT Colony, Navanagara East - 980301",T3,T3-L03,ration_shop,LM0236,-853.4,-708.6,landmark,NER,NER,T3,ration shop,0.8290185194418175
+AD000177,house 88 blk b rd 4 nr. water tank sunrise enclave navanagara east - 980304,T3,T3-L02,water_tank,LM0231,-402.8,3230.6,landmark,NER,NER,T3,water tank,0.8368422800767689
+AD000178,"No. 46, Gali 9, nr Govt School, Idnira Col, Devgarh Nagar - 970202",T2,,,,1475.4499999999998,-1585.55,pincode_area,NER,pincode_area,T2,govt school,0.0
+AD000219,"#303, A BLK., 3RD ROAD, CLOSE TO BUS STOP, SILVER OAK LAYOUT, NAVANAGARA EAST - 980301",T3,T3-L06,bus_stop,LM0270,-2847.1,-569.9,landmark,NER,NER,T3,bus stop,0.9405434807358365
+AD000225,"9TH CRS, 4TH MAIN, HANUMAN MANDIR KE PASS, VIDYA NAGAR, KAVERIPURA - 960103",T1,T1-L08,hanuman_temple,LM0070,2076.3,1122.7,landmark,NER,NER,T1,hanuman mandir,0.7604533032146699
+AD000229,"HOUSE 90, 8TH CR, 8TH MAIN, BEHIND GOVT SCHOOL, HOSA BADAVANE, KAVERIPURA - 9601001",T1,T1-L12,govt_school,LM0101,-232.8,-956.2,landmark,NER,NER,T1,govt school,0.9263780984950772
+AD000230,71/1 kalyana mantapa hattira lakeview phase 2 navanagara east - 983003,T3,T3-L05,community_hall,LM0258,3391.3,470.7,landmark,NER,NER,T3,kalyana mantapa,0.8281039121086335
+AD000242,"157/1, GALI 1, OPP PARK, DEVGARH NAGAR - 970203",T2,,,,1828.05,1617.0749999999998,pincode_area,NER,pincode_area,T2,park,0.0
+AD000247,"H.No. 285, 2nd Crs, 1st Main Rd, Hanuman Mandir ke paos, Kaveripura - 960102",T1,,,,1613.025,-1603.9,pincode_area,NER,pincode_area,T1,hanuman mandir,0.0
+AD000252,"#407, near Bus Stop, Lakeview Phase 2, Navanagara East - 980302",T3,T3-L05,bus_stop,LM0256,3788.5,411.2,landmark,NER,NER,T3,bus stop,0.9405434807358365
+AD000253,"#300, BUS STOP HATTIRA, GANDHI NAGAR, KAVERIPURA - 960102",T1,T1-L04,bus_stop,LM0028,546.3,-2981.0,landmark,NER,NER,T1,bus stop,0.9405434807358365
+AD000254,"#414, ANNAPOORNA NILAYA, 5TH CROSS, 4TH MAIN, OPP CHURCH, HOSA BADAVANE, KAVERIPURA - 960101",T1,T1-L12,church,LM0100,-563.2,-1389.8,landmark,NER,NER,T1,church,0.9177000141546566

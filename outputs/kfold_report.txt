@@ -1,0 +1,24 @@
+Final model is ner_v2_best, not a fold model. Folds use train labels only; the 90 holdout rows were excluded.
+
+                                       mean       std
+metric                                               
+LANDMARK_f1-score                  0.948747  0.018232
+LANDMARK_precision                 0.946097  0.017886
+LANDMARK_recall                    0.951417  0.018757
+LOCALITY_f1-score                  0.979497  0.003115
+LOCALITY_precision                 0.959833  0.005976
+LOCALITY_recall                    1.000000  0.000000
+RELATION_f1-score                  0.824709  0.029915
+RELATION_precision                 0.779628  0.035635
+RELATION_recall                    0.875469  0.022601
+TOWN_f1-score                      0.989322  0.004356
+TOWN_precision                     0.989062  0.003863
+TOWN_recall                        0.989582  0.004869
+entity_f1_without_pincode          0.940821  0.005386
+entity_precision_without_pincode   0.923161  0.006980
+entity_recall_without_pincode      0.959180  0.004220
+locality_exact_including_none      0.965104  0.003949
+seconds                           65.733500  0.843203
+token_accuracy                     0.977784  0.002720
+token_accuracy_non_o               0.979004  0.002926
+town_accuracy_true_addresses       0.998958  0.001426

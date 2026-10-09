@@ -1,0 +1,12 @@
+# Python caches
+__pycache__/
+*.pyc
+
+# Large model weights (GitHub has a strict 100 MB limit per file)
+models/**/*.safetensors
+models/**/*.bin
+
+# Temporary project artifacts and zip archives
+temp_code/
+changes_big_*.txt
+*.zip

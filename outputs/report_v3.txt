@@ -1,0 +1,6 @@
+town accuracy 100.000%
+UNKNOWN 0
+levels {'locality': 0.9954853273137697, 'town': 0.004514672686230248}
+pincode/NER disagreements 277
+locality accuracy unavailable: no true locality field
+landmark-type accuracy unavailable: label landmark_type is not a true source field
